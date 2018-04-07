@@ -1,0 +1,44 @@
+GROUPINGS
+
+0. Commons
+
+1. Trade (A)
+2. *Service* (A)
+3. Applied (A)
+
+^ SKILLS
+================
+4. Property (B)
+5. *Building* (B)
+6. Permaculture (B)
+
+7. Resource (C)
+8. *Supply* (C)
+9. Equipment (C)
+-----------------
+10. Processing (D)
+11. *Wholesale* (D)
+12. Storefront (D)
+
+^ THINGS AND MOVING THINGS
+==========================
+==========================
+v INFORMATION AND MOVING INFORMATION
+
+13. *News* (E)
+14. Information (E)
+15. Project (E)
+
+16. *Academic* (F)
+17. Architecture (F)
+18. Engineering (F)
+
+19. *Art* (G)
+20. Music (G)
+21. Painting (G)
+-----------------
+22. Community (H)
+23. *Discussion* (H)
+24. Collaboration (H)
+
+SKILLS, THINGS AND INFORMATION
