@@ -9,13 +9,13 @@ GROUPINGS
 ^ I. SKILLS
 ================
 
-04. *News* (E)
-05. Information (E)
-06. Project (E)
+04. *News* (C)
+05. Information (C)
+06. Project (C)
 
-07. *Academic* (F)
-08. Architecture (F)
-09. Engineering (F)
+07. *Academic* (E)
+08. Architecture (E)
+09. Engineering (E)
 
 10. *Art* (G)
 11. Music (G)
@@ -34,12 +34,12 @@ V III. THINGS AND MOVING THINGS
 17. Permaculture (B)
 18. *Building* (B)
 
-19. Resource (C)
-20. *Supply* (C)
-21. Equipment (C)
+19. Resource (D)
+20. *Supply* (D)
+21. Equipment (D)
 -----------------
-22. Processing (D)
-23. *Wholesale* (D)
-24. Storefront (D)
+22. Processing (F)
+23. *Wholesale* (F)
+24. Storefront (F)
 
 (I.) SKILLS (II.) INFORMATION AND (III.) THINGS
