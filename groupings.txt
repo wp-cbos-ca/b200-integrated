@@ -9,8 +9,8 @@ GROUPINGS
 ^ SKILLS
 ================
 4. Property (B)
-5. *Building* (B)
-6. Permaculture (B)
+5. Permaculture (B)
+6. *Building* (B)
 
 7. Resource (C)
 8. *Supply* (C)
