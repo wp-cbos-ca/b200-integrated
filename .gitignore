@@ -16,3 +16,25 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+.*
+!/.gitignore
+!/.htaccess
+
+# /academic
+# /art
+# /building
+# /equipment
+# /information
+# /news
+# /project
+# /resource
+# /service
+# /storefront
+# /supplies
+# /trade
+
+config/
+backupwordpress-*
+*.komodoproject
+article.html
+.private/

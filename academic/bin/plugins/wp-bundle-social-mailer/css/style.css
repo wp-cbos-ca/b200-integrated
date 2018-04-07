@@ -1,0 +1,43 @@
+
+/* contact-form/css/style.css */
+
+.contact-form {
+	width: 100%;
+}
+
+.contact-form p {
+	margin: 5px 0;
+}
+
+.contact-form input, 
+textarea {
+	margin: 5px 0 !important;   
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 95%;
+}
+
+.contact-form input,
+.contact-form button {
+	display: block;
+	clear: left;
+}
+
+.contact-form textarea {
+	height: 75px;
+	margin-bottom: 12px;
+}
+
+.contact-response {
+	margin-top: 10px;
+}
+
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+	color: #333;  
+}

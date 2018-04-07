@@ -1,0 +1,44 @@
+
+/* restrained-social/css/style.css */
+
+/*
+.menu:before {
+	content: '\f419';
+}
+*/
+
+.social-media li{
+	display: inline-block;
+}
+
+.twitter:before {
+	content: '\f202';
+}
+
+.facebook:before {
+	content: '\f203';
+}
+
+.gplus:before {
+	content: '\f206';
+}
+
+.linkedin:before {
+  content: '\f208';  
+}
+
+.pinterest:before {
+  content: '\f210';  
+}
+
+.vimeo:before {
+  content: '\f212';  
+}
+
+.youtube:before {
+  content: '\f213'; 
+}
+
+.rss {
+	
+}

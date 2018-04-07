@@ -1,0 +1,7 @@
+.*
+!/.gitignore
+!/.htaccess
+article.html
+alt/config/
+! alt/config/sample.php
+! alt/config/db/sample.php

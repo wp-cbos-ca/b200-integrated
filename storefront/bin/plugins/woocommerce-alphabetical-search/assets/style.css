@@ -1,0 +1,67 @@
+.wooas h2 {
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+.wooas-container  {
+  margin-bottom: 10px;
+}
+.wooas-container ul{
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.wooas-container ul li {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  width: 35px;
+}
+.wooas-counter {   
+	position: absolute;
+	top: -5px;
+	right: 0;
+	height: 18px;
+	width: 18px;
+	text-align: center;
+	background-color: #F00;
+	color: #fff;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	font: 11px Verdana;
+	display: none;
+}
+.wooas-counter:before {
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.wooas-container ul.alphabets a {
+	background: #14a085;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+.wooas-container a.letter-disabled {
+	opacity: 0.5;
+}
+body .wooas-container ul.alphabets a:hover,
+body .wooas-container ul.alphabets a.active-letter {
+	background: #37495F;
+	color: #fff;
+}
+body .wooas-container ul.alphabets li a:hover .wooas-counter,
+body .wooas-container ul.alphabets li a.active-letter .wooas-counter {
+	display: block;
+}
+li.mg-reset, li.mg-reset a{
+	width: auto !important;
+}
+.mg-reset a {
+	padding: 0px 10px;
+}
