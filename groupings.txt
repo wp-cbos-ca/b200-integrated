@@ -6,39 +6,40 @@ GROUPINGS
 2. *Service* (A)
 3. Applied (A)
 
-^ SKILLS
+^ I. SKILLS
 ================
-4. Property (B)
-5. Permaculture (B)
-6. *Building* (B)
 
-7. Resource (C)
-8. *Supply* (C)
-9. Equipment (C)
+04. *News* (E)
+05. Information (E)
+06. Project (E)
+
+07. *Academic* (F)
+08. Architecture (F)
+09. Engineering (F)
+
+10. *Art* (G)
+11. Music (G)
+12. Painting (G)
 -----------------
-10. Processing (D)
-11. *Wholesale* (D)
-12. Storefront (D)
+13. Community (H)
+14. *Discussion* (H)
+15. Collaboration (H)
 
-^ THINGS AND MOVING THINGS
-==========================
-==========================
-v INFORMATION AND MOVING INFORMATION
+^ II. INFORMATION AND MOVING INFORMATION
+===========================
+===========================
+V III. THINGS AND MOVING THINGS
 
-13. *News* (E)
-14. Information (E)
-15. Project (E)
+16. Property (B)
+17. Permaculture (B)
+18. *Building* (B)
 
-16. *Academic* (F)
-17. Architecture (F)
-18. Engineering (F)
-
-19. *Art* (G)
-20. Music (G)
-21. Painting (G)
+19. Resource (C)
+20. *Supply* (C)
+21. Equipment (C)
 -----------------
-22. Community (H)
-23. *Discussion* (H)
-24. Collaboration (H)
+22. Processing (D)
+23. *Wholesale* (D)
+24. Storefront (D)
 
-SKILLS, THINGS AND INFORMATION
+(I.) SKILLS (II.) INFORMATION AND (III.) THINGS
