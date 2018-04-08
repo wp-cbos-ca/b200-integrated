@@ -32,15 +32,15 @@ define( 'SITE_USE_ALT', true );
 /** [ true && ( true: ALWAYS ) ][ ( true && ( false||* ): SOMETIMES ][ false && (*): NEVER ) ] */
 if 	( 	SITE_USE_CORE && ( SITE_USE_CORE_POST
 		|| ( ! empty( $_GET ) || $_SERVER['REQUEST_METHOD'] === 'POST' )
-		&& file_exists( __DIR__ . '/core/index.php' ) ) )  {
+		&& file_exists( __DIR__ . '/center/core/index.php' ) ) )  {
 
-	require_once( __DIR__ . '/core/index.php' );
+	require_once( __DIR__ . '/center/core/index.php' );
 
 }
 /** If the core is not used, use an alternate framework, if it is available. */
 else if ( SITE_USE_ALT && file_exists( __DIR__ . '/alt/framework/index.php' ) ) {
 
-	require_once( __DIR__ . '/alt/framework/index.php' );
+	require_once( __DIR__ . '/center/alt/framework/index.php' );
 	
 }
 /** Otherwise, look for a plain text index.html file and serve that. */
