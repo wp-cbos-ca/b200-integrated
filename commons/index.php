@@ -1,5 +1,8 @@
 <?php
 
+/** Set a constant for security. Use it to ensure files are not accessed directly. */
+define( 'SITE', true );
+
 /** Set a timer to measure performance. */
 global $site_elapsed;
 
