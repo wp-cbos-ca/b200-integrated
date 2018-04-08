@@ -12,24 +12,30 @@ $site_elapsed['start'] = microtime( true );
 /** Record which directory we are in, for later. */
 define( 'SITE_DIR', '/' . basename(__DIR__) );
 
-/** Decide if we should use the core. We will start without it and add it if needed. */
+/** Use this directory as the domain name. Comment out if not. */
+define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
+
+/** Use the core, if available. Start by using only if needed. */
 define( 'SITE_USE_CORE', true );
 
 /** Use the core to handle requests or not. Default is true. */
 define( 'SITE_USE_CORE_POST', true );
 
+/** Use the alternative framework, if available. */
+define( 'SITE_USE_ALT', true );
+
 /** Use the core if we have decided to. If we have decided to for a request and if it is there. */
-if 	( SITE_USE_CORE
-	 && SITE_USE_CORE_POST && (
-		! empty( $_GET )
-		|| $_SERVER['REQUEST_METHOD'] === 'POST' )
-		&& file_exists( __DIR__ . '/core/index.php' ) )  {
+
+/** [ true && ( true: ALWAYS ) ][ ( true && ( false||* ): SOMETIMES ][ false && (*): NEVER ) ] */
+if 	( 	SITE_USE_CORE && ( SITE_USE_CORE_POST
+		|| ( ! empty( $_GET ) || $_SERVER['REQUEST_METHOD'] === 'POST' )
+		&& file_exists( __DIR__ . '/core/index.php' ) ) )  {
 
 	require_once( __DIR__ . '/core/index.php' );
 	
 }
 /** If the core is not used, use an alternate framework, if it is available. */
-else if ( file_exists( __DIR__ . '/alt/framework/index.php' ) ) {
+else if ( SITE_USE_ALT && file_exists( __DIR__ . '/alt/framework/index.php' ) ) {
 
 	require_once( __DIR__ . '/alt/framework/index.php' );
 	

@@ -1,23 +1,19 @@
-*.log
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
 
-/.htaccess
+.*
+
+!/.gitignore
+!/.htaccess
+
+article.html
+alt/config/db/
+!alt/config/db/sample.php
+
+wp-content/
+
 /license.txt
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
-
-.*
-!/.gitignore
-!/.htaccess
 
 # /academic
 # /art
@@ -32,10 +28,8 @@ wp-content/plugins/hello.php
 # /supplies
 # /trade
 
-alt/config/db/
-!/commons/alt/config/db/sample.php
+archive/
+backup/
+cache/
 
-backupwordpress-*
 *.komodoproject
-article.html
-.private/

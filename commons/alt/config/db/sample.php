@@ -1,5 +1,7 @@
 <?php
 
+defined( 'SITE' ) || exit;
+
 /** Database Name */
 define( 'DB_NAME', 'change_this' );
 
@@ -15,21 +17,6 @@ define( 'DB_HOST', 'localhost' );
 /** Database table prefix (unique) */
 $table_prefix  = 'change_';
 // Keep the same for all environments for better compatibility.
-
-/** Default Theme */
-define( 'WP_DEFAULT_THEME', 'html5' );
-
-/** May be needed if root of site is in a sub-directory. */
-define( 'SITE_DIR_STUB', '' );
-
-/** The Fully Qualified Domain Name */
-define( 'SITE_ROOT_URL', 'https://www.example.ca' );
-
-/** May be the same as the domain. */
-define( 'SITE_CACHE_SLUG', '/example.ca' );
-
-/** Default: false */
-define( 'SITE_USE_ANALYTICS', false );
 
 /**#@+
  * Authentication Unique Keys and Salts. Change to force a re-login.

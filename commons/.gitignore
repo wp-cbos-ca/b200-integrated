@@ -4,3 +4,5 @@
 article.html
 alt/config/db/
 !alt/config/db/sample.php
+model/docs/
+!model/docs/index.html

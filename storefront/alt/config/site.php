@@ -8,8 +8,7 @@ defined( 'SITE' ) || exit;
 if ( ! defined( 'SITE_DOMAIN_NAME' ) ){
 	
 	/** The second level domain of the site. This needs to be unique. */
-	define( 'SITE_DOMAIN_NAME', 'commons' );
-
+	define( 'SITE_DOMAIN_NAME', 'storefront' );
 }
 
 /** Example: 'en-CA'  Used in the HTML Page. Default Below. */

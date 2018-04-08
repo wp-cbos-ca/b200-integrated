@@ -15,7 +15,7 @@ function get_firefly_html(){
 	$str .= '<meta name="viewport" content="width=device-width, initial-scale=1"/>' . PHP_EOL;
 	$str .= sprintf( '<title>%s</title>%s', $page['page-title'], PHP_EOL );
 	$str  .= SITE_INDEX_ALLOW ? '' : '<meta name="robots" content="noindex,nofollow" />' . PHP_EOL;
-	$str .= '<link rel=stylesheet href="/commons/theme/css/style.css">';
+	$str .= '<link rel=stylesheet href="/theme/css/style.css">';
 	$str .= '</head>' . PHP_EOL;
 	$str .= '<body>' . PHP_EOL;
 	$str .= '<div class="wrap">' . PHP_EOL;

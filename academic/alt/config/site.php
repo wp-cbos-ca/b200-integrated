@@ -6,10 +6,8 @@ defined( 'SITE' ) || exit;
 
 /** If not defined from the directory above. We define it here */
 if ( ! defined( 'SITE_DOMAIN_NAME' ) ){
-	
 	/** The second level domain of the site. This needs to be unique. */
-	define( 'SITE_DOMAIN_NAME', 'commons' );
-
+	define( 'SITE_DOMAIN_NAME', 'academic' );
 }
 
 /** Example: 'en-CA'  Used in the HTML Page. Default Below. */
