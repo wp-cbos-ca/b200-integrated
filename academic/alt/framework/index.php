@@ -3,9 +3,6 @@
 /** Used as a check to ensure files are being called correctly */
 define( 'FIREFLY', true );
 
-/** Do we really need this now? */
-define( 'SITE_PRODUCTION', true );
-
 if ( defined( 'SITE_PATH' ) ) {
 	
 	if ( file_exists ( SITE_PATH . '/alt/config/site.php' ) ){
