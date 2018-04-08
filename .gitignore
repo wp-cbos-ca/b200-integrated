@@ -32,7 +32,9 @@ wp-content/plugins/hello.php
 # /supplies
 # /trade
 
-config/
+alt/config/db/
+! alt/config/db/sample.php
+
 backupwordpress-*
 *.komodoproject
 article.html
