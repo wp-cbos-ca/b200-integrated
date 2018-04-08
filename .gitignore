@@ -33,7 +33,7 @@ wp-content/plugins/hello.php
 # /trade
 
 alt/config/db/
-! alt/config/db/sample.php
+!/commons/alt/config/db/sample.php
 
 backupwordpress-*
 *.komodoproject
