@@ -22,7 +22,7 @@ define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
 define( 'SITE_USE_CORE', true );
 
 /** Use the core to handle requests or not. Default is true. */
-define( 'SITE_USE_CORE_POST', false );
+define( 'SITE_USE_CORE_POST', true );
 
 /** Use the alternative framework, if available. */
 define( 'SITE_USE_ALT', true );
@@ -49,8 +49,7 @@ else if ( file_exists( __DIR__ . "/index.html" ) ){
 	echo file_get_contents( __DIR__ . '/index.html' );
 	
 }
-	
-}
+
 /** If not, bail and ask for help. */
 else {
 	
