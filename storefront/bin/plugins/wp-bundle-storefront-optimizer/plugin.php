@@ -30,7 +30,9 @@ if ( true ) {
 	
 	function enqueue_optimized_storefront_scripts() {
 		
-		wp_enqueue_style( 'storefront-style-alt', SITE_URL . '/theme/css/storefront.alt.css' );
+		wp_enqueue_style( 'storefront-alt', SITE_URL . '/theme/css/storefront-alt.css' );
+		wp_enqueue_style( 'storefront-child', SITE_URL . '/theme/css/storefront-child.css' );
+	
 	}
 	add_action( 'wp_enqueue_scripts', 'enqueue_optimized_storefront_scripts', 55 );	
 
