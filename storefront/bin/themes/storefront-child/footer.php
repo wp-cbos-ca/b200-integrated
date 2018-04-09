@@ -34,7 +34,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<?php echo get_site_elapsed(); ?>
 </body>
 </html>
 <?php
@@ -52,8 +52,9 @@ function get_site_elapsed(){
 	/** Calculates elapsed time (accurate to 1/10000 seconds). Expressed as milliseconds */
 	$time = number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' );
 	
-	$str = '<div id="elapsed-time" class="elapsed-time" style="font-size: small; opacity: 0.5;"';
+	$str = '<div id="elapsed-time" class="elapsed-time" style="font-size: smallest; opacity: 0.5;"';
 	$str .= sprintf( 'title="%s">Elapsed: %s ms</div>%s', $msg, $time , PHP_EOL ) ;
+	
 	if ( defined( 'SITE_USE_ELAPSED' ) && SITE_USE_ELAPSED ) {
 		return $str;
 	}
