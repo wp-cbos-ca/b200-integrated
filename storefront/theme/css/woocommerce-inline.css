@@ -1,0 +1,98 @@
+
+a.cart-contents,
+.site-header-cart .widget_shopping_cart a {
+	color: #333333;
+}
+
+table.cart td.product-remove,
+table.cart td.actions {
+	border-top-color: #ffffff;
+}
+
+.woocommerce-tabs ul.tabs li.active a,
+ul.products li.product .price,
+.onsale,
+.widget_search form:before,
+.widget_product_search form:before {
+	color: #6d6d6d;
+}
+
+.woocommerce-breadcrumb a,
+a.woocommerce-review-link,
+.product_meta a {
+	color: #727272;
+}
+
+.onsale {
+	border-color: #6d6d6d;
+}
+
+.star-rating span:before,
+.quantity .plus, .quantity .minus,
+p.stars a:hover:after,
+p.stars a:after,
+.star-rating span:before,
+#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: #96588a;
+}
+
+.widget_price_filter .ui-slider .ui-slider-range,
+.widget_price_filter .ui-slider .ui-slider-handle {
+	background-color: #96588a;
+}
+
+.order_details {
+	background-color: #f8f8f8;
+}
+
+.order_details > li {
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+.order_details:before,
+.order_details:after {
+	background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#f8f8f8 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#f8f8f8 33.33%,transparent 33.33%)
+}
+
+p.stars a:before,
+p.stars a:hover~a:before,
+p.stars.selected a.active~a:before {
+	color: #6d6d6d;
+}
+
+p.stars.selected a.active:before,
+p.stars:hover a:before,
+p.stars.selected a:not(.active):before,
+p.stars.selected a.active:before {
+	color: #96588a;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+	background-color: #eeeeee;
+	color: #333333;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+	background-color: #d5d5d5;
+	border-color: #d5d5d5;
+	color: #333333;
+}
+
+.button.loading {
+	color: #eeeeee;
+}
+
+.button.loading:hover {
+	background-color: #eeeeee;
+}
+
+.button.loading:after {
+	color: #333333;
+}
+
+@media screen and ( min-width: 768px ) {
+	.site-header-cart .widget_shopping_cart,
+	.site-header .product_list_widget li .quantity {
+		color: #404040;
+	}
+}
