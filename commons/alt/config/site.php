@@ -144,6 +144,9 @@ define( 'SITE_DOCTYPE', 'html' );
 /** Default: UTF-8 (Used in the HTML Page) */
 define( 'SITE_CHARSET', 'UTF-8' );
 
+/** Load external fonts. Default: false */
+define( 'SITE_USE_FONTS', true );
+
 define( 'BUNDLE_VER', 'B200-WP-4.9' );
 // Values: B000-AA-0.0 (Default: B200-WP-4.9)
 
