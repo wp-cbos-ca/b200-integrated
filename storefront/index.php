@@ -44,7 +44,7 @@ else if ( SITE_USE_ALT && file_exists( __DIR__ . '/alt/framework/index.php' ) ) 
 	
 }
 /** Otherwise, look for a plain text index.html file and serve that. */
-else if ( file_exists( __DIR__ . "/index.html" ) ){
+else if ( file_exists( __DIR__ . '/index.html' ) ){
 
 	echo file_get_contents( __DIR__ . '/index.html' );
 	

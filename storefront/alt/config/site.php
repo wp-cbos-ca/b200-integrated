@@ -1,6 +1,6 @@
 <?php
 
-defined( 'SITE' ) || exit;
+( defined( 'SITE' ) || defined( 'WP_ADMIN' ) ) || exit;
 
 /***** USER EDITABLE VARIABLES BEGIN *****/
 
@@ -143,18 +143,33 @@ define( 'SITE_DOCTYPE', 'html' );
 /** Default: UTF-8 (Used in the HTML Page) */
 define( 'SITE_CHARSET', 'UTF-8' );
 
+/***** STYLE BEGIN *****/
+
+/** Use a minified stylesheet. Default: false */
+define( 'SITE_USE_MIN', false );
+
+/** Load external fonts. Default: false */
+define( 'SITE_USE_FONTS', true );
+
+/** Adjust default spacing. Default: false */
+define( 'SITE_USE_SPACING', false );
+
+/** Add a splash of color. Default: false */
+define( 'SITE_USE_COLOR', true );
+
+/** Use a child theme. Default: false */
+define( 'SITE_USE_CHILD', false );
+
+/***** STYLE END *****/
+
 define( 'BUNDLE_VER', 'B200-WP-4.9' );
 // Values: B000-AA-0.0 (Default: B200-WP-4.9)
 
 define( 'BUNDLE_UNIQUE_ID', BUNDLE_VER . ':' . '2018.03.31:1910' );
 // Bundle Version, plus date and time stamp at time of installation
-		
+
 if ( file_exists( __DIR__ . '/enhanced.php' ) ) {
 	require_once( __DIR__ . '/enhanced.php' );
-}
-else if ( file_exists( __DIR__ . 'wp-settings.php' ) ) {
-	require_once( __DIR__ . 'wp-settings.php' );
-}
-else {
-	exit( 'Cannot serve your files. No configuration available.' );
+} else {
+	exit( 'Cannot serve your files. The complete configuration is not available.' );
 }

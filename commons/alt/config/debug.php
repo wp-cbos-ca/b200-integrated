@@ -1,6 +1,6 @@
 <?php
 
-defined( 'SITE' ) || exit;
+( defined( 'SITE' ) || defined( 'WP_ADMIN' ) ) || exit;
 
 // Rename this file to turn WordPress debug mode OFF.
 

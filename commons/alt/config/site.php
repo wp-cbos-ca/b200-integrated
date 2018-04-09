@@ -168,13 +168,9 @@ define( 'BUNDLE_VER', 'B200-WP-4.9' );
 
 define( 'BUNDLE_UNIQUE_ID', BUNDLE_VER . ':' . '2018.03.31:1910' );
 // Bundle Version, plus date and time stamp at time of installation
-		
+
 if ( file_exists( __DIR__ . '/enhanced.php' ) ) {
 	require_once( __DIR__ . '/enhanced.php' );
-}
-else if ( file_exists( __DIR__ . 'wp-settings.php' ) ) {
-	require_once( __DIR__ . 'wp-settings.php' );
-}
-else {
-	exit( 'Cannot serve your files. No configuration available.' );
+} else {
+	exit( 'Cannot serve your files. The complete configuration is not available.' );
 }
