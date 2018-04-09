@@ -25,7 +25,6 @@
 			 * @hooked storefront_credit         - 20
 			 */
 			do_action( 'storefront_footer' ); ?>
-
 		</div><!-- .col-full -->
 	</footer><!-- #colophon -->
 

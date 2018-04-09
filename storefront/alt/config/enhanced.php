@@ -119,7 +119,7 @@ define( 'SITE_USE_WP_FOOTER', false );
 define( 'SITE_USE_WP_AUTO_PARA', false );
 
 /** Default: true (Displays code processing time in milliseconds) */
-define( 'DISPLAY_ELAPSED_TIME', true );
+define( 'SITE_USE_ELAPSED', true );
 
 /***** FILES *****/
 

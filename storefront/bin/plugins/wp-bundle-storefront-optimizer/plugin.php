@@ -22,7 +22,7 @@ if ( true ) {
 		wp_deregister_style( 'storefront-woocommerce-style' );
 		wp_deregister_style( 'storefront-woocommerce-style-inline' );
 	}
-	add_action( 'wp_enqueue_scripts', 'deregister_unoptimized_storefront_scripts', 55 );	
+	add_action( 'wp_enqueue_scripts', 'deregister_unoptimized_storefront_scripts', 55 );
 
 }
 

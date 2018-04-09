@@ -336,6 +336,14 @@ article footer nav {
 	text-align: center;
 }
 
+.text-align-center {
+	text-align: center;
+}
+
+.font-size-small {
+	font-size: small;
+}
+
 /***** BODY END *****/
 
 /***** NAV:PREV-NEXT START *****/
