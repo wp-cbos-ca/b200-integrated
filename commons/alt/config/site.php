@@ -147,6 +147,9 @@ define( 'SITE_CHARSET', 'UTF-8' );
 /** Load external fonts. Default: false */
 define( 'SITE_USE_FONTS', true );
 
+/** Use a child theme. Default: false */
+define( 'SITE_USE_CHILD', false );
+
 define( 'BUNDLE_VER', 'B200-WP-4.9' );
 // Values: B000-AA-0.0 (Default: B200-WP-4.9)
 
