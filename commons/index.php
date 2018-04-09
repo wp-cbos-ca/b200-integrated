@@ -25,7 +25,7 @@ define( 'SITE_USE_CORE', false );
 define( 'SITE_USE_CORE_POST', true );
 
 /** Use the alternative framework, if available. */
-define( 'SITE_USE_ALT', false );
+define( 'SITE_USE_ALT', true );
 
 /** Use the core if we have decided to. If we have decided to for a request and if it is there. */
 

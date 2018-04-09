@@ -15,9 +15,12 @@ function get_firefly_html(){
 	$str .= '<meta name="viewport" content="width=device-width, initial-scale=1"/>' . PHP_EOL;
 	$str .= sprintf( '<title>%s</title>%s', $page['page-title'], PHP_EOL );
 	$str  .= SITE_INDEX_ALLOW ? '' : '<meta name="robots" content="noindex,nofollow" />' . PHP_EOL;
-	$str .= SITE_USE_FONTS ? '<link rel=stylesheet href="/theme/font/font.css">' : '';
-	$str .= '<link rel=stylesheet href="/theme/css/style.css">';
-	$str .= SITE_USE_CHILD ? '<link rel=stylesheet href="/theme/css/child.css">' : '';
+	$str .= ! SITE_USE_MIN ? '<link rel=stylesheet href="/theme/css/style.css">' . PHP_EOL : '';
+	$str .= SITE_USE_MIN ? '<link rel=stylesheet href="/theme/css/style.min.css">'  . PHP_EOL : '';
+	$str .= SITE_USE_FONTS ? '<link rel=stylesheet href="/theme/font/font.css">' . PHP_EOL : '';
+	$str .= SITE_USE_SPACING ? '<link rel=stylesheet href="/theme/css/spacing.css">'  . PHP_EOL : '';
+	$str .= SITE_USE_COLOR ? '<link rel=stylesheet href="/theme/css/color.css">' . PHP_EOL : '';
+	$str .= SITE_USE_CHILD ? '<link rel=stylesheet href="/theme/css/child.css">'  . PHP_EOL : '';
 	$str .= '</head>' . PHP_EOL;
 	$str .= '<body>' . PHP_EOL;
 	$str .= '<div class="wrap">' . PHP_EOL;
