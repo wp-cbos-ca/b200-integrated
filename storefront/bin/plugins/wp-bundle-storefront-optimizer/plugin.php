@@ -18,7 +18,7 @@ if ( true ) {
 		wp_deregister_style( 'storefront-style-inline' );
 		wp_deregister_style( 'storefront-fonts' );
 		wp_deregister_style( 'storefront-icons' );
-		wp_deregister_style( 'storefront-woocommerce-style-css' );
+		wp_deregister_style( 'storefront-woocommerce-style' );
 		wp_deregister_style( 'storefront-woocommerce-style-inline' );
 		}
 	add_action( 'wp_enqueue_scripts', 'deregister_unoptimized_storefront_scripts', 55 );	
