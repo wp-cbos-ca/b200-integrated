@@ -73,15 +73,17 @@ if ( file_exists( SITE_ROOT_PATH . '/.localhost' ) ){
 	/** Can use http:// if local. */
 	define( 'SITE_PROTOCOL', 'http://' );
 
-	/** .local if we are on a local machine */
-	define( 'SITE_DOMAIN_EXT', '.local' );
+	if ( ! defined( 'SITE_DOMAIN_EXT') ) {
+		/** .local if we are on a local machine */
+		define( 'SITE_DOMAIN_EXT', '.local' );
+	}
 }
 else {
 	/** Should be https if production. No override provided.*/
 	define( 'SITE_PROTOCOL', 'https://' );
 
-	/** Localized according to region emanating from. Override above. */
 	if ( ! defined( 'SITE_DOMAIN_EXT') ) {
+		/** Localized according to region emanating from. Override above. */
 		define( 'SITE_DOMAIN_EXT', '.ca' );
 	}
 }
