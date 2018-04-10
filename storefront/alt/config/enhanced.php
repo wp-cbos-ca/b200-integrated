@@ -283,7 +283,7 @@ define( 'SITE_PAGE_PATH', SITE_HTML_PATH . SITE_PAGE_DIR );
 /** Article Stub */
 define( 'SITE_ARTICLE_STUB', 'article' );
 
-/** Article Stub */
+/** HTML Extensions */
 define( 'SITE_HTML_EXT', '.html' );
 
 /*** THEME PATH ***/
@@ -297,16 +297,16 @@ define( 'SITE_THEME_HTML_PATH', SITE_THEME_PATH . SITE_HTML_DIR );
 /** The CSS files that style the site. */
 define( 'SITE_CSS_PATH', SITE_THEME_HTML_PATH . SITE_CSS_DIR );
 
-/** Theme Path */
+/** Header Path */
 define( 'SITE_HEADER_PATH', SITE_THEME_HTML_PATH . SITE_HEADER_DIR );
 
-/** Theme Path */
+/** Footer Path */
 define( 'SITE_FOOTER_PATH', SITE_THEME_HTML_PATH . SITE_FOOTER_DIR );
 
-/** Theme Path */
+/** Sidebar Path */
 define( 'SITE_SIDEBAR_PATH', SITE_THEME_HTML_PATH . SITE_SIDEBAR_DIR );
 
-/** Theme Path */
+/** Menu Path */
 define( 'SITE_MENU_PATH', SITE_THEME_HTML_PATH . SITE_MENU_DIR );
 
 /*** ALT PATH ***/
@@ -366,10 +366,14 @@ define( 'WP_UNIQUE_ID', md5( SITE_ROOT_URL ) );
 
 /** Load remaining files, if they exist */
 
+if ( file_exists( __DIR__ . '/debug.php' ) ) {
+	require_once( __DIR__ . '/debug.php' );
+}
+
 if ( file_exists( __DIR__ . '/plugins.php' ) ) {
 	require_once( __DIR__ . '/plugins.php' );
 }
 
-if ( file_exists( __DIR__ . '/debug.php' ) ) {
-	require_once( __DIR__ . '/debug.php' );
+if ( file_exists( __DIR__ . '/cart.php' ) ) {
+	require_once( __DIR__ . '/cart.php' );
 }

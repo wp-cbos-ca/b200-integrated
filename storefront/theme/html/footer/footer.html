@@ -1,11 +1,25 @@
-<footer class="site-footer">
-<div class="inner">
-<span class="copyright">Copyright &copy; 2017-2018 Integrated WordPress Bundles</span>
-<nav>
-<ul class="horizontal-menu">
-<li><a href="/page/privacy/">Privacy</a></li>
-<li><a href="/page/terms/">Terms</a></li>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="col-full">
+<div class="site-info">
+&copy; Storefront 2018<br />
+<a href="https://woocommerce.com" target="_blank" title="WooCommerce - The Best eCommerce Platform for WordPress" rel="author">Built with Storefront &amp; WooCommerce</a>
+</div><!-- .site-info -->
+<div class="storefront-handheld-footer-bar">
+<ul class="columns-1">
+<li class="search">
+<a href="">Search</a>
+<div class="site-search">
+<div class="widget woocommerce widget_product_search">
+<form role="search" method="get" class="woocommerce-product-search" action="http://storefront.local/">
+<label class="screen-reader-text" for="woocommerce-product-search-field-1">Search for:</label>
+<input type="search" id="woocommerce-product-search-field-1" class="search-field" placeholder="Search products&hellip;" value="" name="s" />
+<button type="submit" value="Search">Search</button>
+<input type="hidden" name="post_type" value="product" />
+</form>
+</div>
+</div>
+</li>
 </ul>
 </div>
-</nav>
-</footer>
+</div><!-- .col-full -->
+</footer><!-- #colophon -->

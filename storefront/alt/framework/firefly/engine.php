@@ -1,5 +1,7 @@
 <?php
 
+/** Storefront Version (Added Cart) */
+
 defined( 'FIREFLY' ) || exit;
 
 require_once( __DIR__ . '/template.php' );
@@ -48,6 +50,7 @@ function get_firefly_header( $page ){
 		//opening header tag in header.html file.
 		$str = file_get_contents( $file );
 		$str .= get_firefly_menu();
+		$str .= get_firefly_cart();
 		$str .= '</div>' . PHP_EOL;
 		$str .= '</header>' . PHP_EOL;
 		return $str;
@@ -112,6 +115,17 @@ function get_firefly_page_title( $page ){
 function get_firefly_menu() {
 	$str = 'Menu N/A';
 	$file = SITE_MENU_PATH . SITE_MENU_DIR . SITE_HTML_EXT;
+	if ( file_exists( $file ) ){
+		$str = file_get_contents( $file );
+		return $str;
+	} else {
+		return $str;
+	}
+}
+
+function get_firefly_cart() {
+	$str = 'Menu N/A';
+	$file = SITE_CART_PATH . SITE_CART_DIR . SITE_HTML_EXT;
 	if ( file_exists( $file ) ){
 		$str = file_get_contents( $file );
 		return $str;

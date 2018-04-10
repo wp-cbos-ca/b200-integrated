@@ -283,7 +283,7 @@ define( 'SITE_PAGE_PATH', SITE_HTML_PATH . SITE_PAGE_DIR );
 /** Article Stub */
 define( 'SITE_ARTICLE_STUB', 'article' );
 
-/** Article Stub */
+/** HTML Extension */
 define( 'SITE_HTML_EXT', '.html' );
 
 /*** THEME PATH ***/
@@ -300,13 +300,13 @@ define( 'SITE_CSS_PATH', SITE_THEME_HTML_PATH . SITE_CSS_DIR );
 /** Theme Path */
 define( 'SITE_HEADER_PATH', SITE_THEME_HTML_PATH . SITE_HEADER_DIR );
 
-/** Theme Path */
+/** Footer Path */
 define( 'SITE_FOOTER_PATH', SITE_THEME_HTML_PATH . SITE_FOOTER_DIR );
 
-/** Theme Path */
+/** Sidebar Path */
 define( 'SITE_SIDEBAR_PATH', SITE_THEME_HTML_PATH . SITE_SIDEBAR_DIR );
 
-/** Theme Path */
+/** Menu Path */
 define( 'SITE_MENU_PATH', SITE_THEME_HTML_PATH . SITE_MENU_DIR );
 
 /*** ALT PATH ***/
