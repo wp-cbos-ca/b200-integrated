@@ -33,3 +33,7 @@ backup/
 cache/
 
 *.komodoproject
+
+draft.html
+local.html
+commons/theme/image/1051872-*.*

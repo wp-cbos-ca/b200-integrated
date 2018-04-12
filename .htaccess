@@ -28,7 +28,7 @@ DirectoryIndex index.php index.html
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|jpg|png|gif|css|js|pdf|ico)$">
-    Header set Cache-Control "max-age=0, public, must-revalidate"
+    Header set Cache-Control "max-age=43200, public, must-revalidate"
     Header unset ETag
     FileETag None
   </FilesMatch>
@@ -47,9 +47,10 @@ DirectoryIndex index.php index.html
 
 # END WordPress
 
-ErrorDocument 403 /commons/bin/alt/code/403.html
-ErrorDocument 404 /commons/bin/alt/code/404.html
-ErrorDocument 500 /commons/bin/alt/code/500.html
+ErrorDocument 403 /commons/bin/etc/code/403.html
+ErrorDocument 404 /commons/bin/etc/code/404.html
+ErrorDocument 500 /commons/bin/etc/code/500.html
+ErrorDocument 503 /commons/bin/etc/code/503.html
 
 # Use the Source, Luke!
 # https://httpd.apache.org/docs/2.4/
