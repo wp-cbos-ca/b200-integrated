@@ -1,0 +1,9 @@
+/** Child Theme */
+
+article img {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
+	margin-right: 2px;
+	border-radius: 5px;
+	max-width: 99.7%;
+}

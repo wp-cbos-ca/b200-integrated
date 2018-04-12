@@ -21,7 +21,7 @@ Options -Indexes
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|jpg|png|gif|css|js|pdf|ico)$">
-    Header set Cache-Control "max-age=0, public, must-revalidate"
+    Header set Cache-Control "max-age=86400, public, must-revalidate"
     Header unset ETag
     FileETag None
   </FilesMatch>
@@ -40,9 +40,11 @@ Options -Indexes
 
 # END WordPress
 
-ErrorDocument 403 /bin/alt/code/403.html
-# ErrorDocument 404 /bin/alt/code/404.html
-ErrorDocument 500 /bin/alt/code/500.html
+ErrorDocument 403 /bin/etc/code/403.html
+ErrorDocument 404 /bin/etc/code/404.html
+ErrorDocument 500 /bin/etc/code/500.html
+ErrorDocument 503 /bin/etc/code/503.html
+
 
 # Use the Source, Luke!
 # https://httpd.apache.org/docs/2.4/
