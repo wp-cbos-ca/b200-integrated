@@ -1,0 +1,13 @@
+/** Child Theme */
+
+.site-header {
+	background-color: #d9d2e9;
+}
+
+.site-title {
+	text-shadow: 1px 1px 1px rgb( 100,100,100, 1.0);
+}
+
+.site-title a {
+	color: #aaa;
+}
