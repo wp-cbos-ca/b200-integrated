@@ -1,14 +1,12 @@
-
 .*
-
 !/.gitignore
 !/.htaccess
 
 article.html
 alt/config/db/
 !alt/config/db/sample.php
-
-wp-content/
+model/docs/
+!model/docs/index.html
 
 /license.txt
 /readme.html
@@ -37,3 +35,7 @@ cache/
 draft.html
 local.html
 commons/theme/image/1051872-*.*
+wp-content/
+ico-pack/
+roboto/
+roboto-condensed/
