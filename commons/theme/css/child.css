@@ -16,13 +16,12 @@
 	background: #e0e0e0;
 }
 
-.active a {
-	font-weight: bold;
-}
-
 .inactive {
 	background: #eee;
-	opacity: 0.3;
+}
+
+.community .unit a {
+	font-weight: bold;
 }
 
 .nature { background: #b6d7a8; }
@@ -43,12 +42,13 @@
 .supply { background: #f9cb9c; }
 .storefront { background: #76a5af; }
 .commons { background: #b6d7a8; }
+.download { background-color: #279f43; }
 
 .order-01 { }
 
 .boxes .unit .inner {
-	border-width: 3px;
+	border-width: 4px;
 	border-radius: 7px;
-	border-color: #999;
-	box-shadow: inset 1px 1px 2px rgba(100, 100, 100, 0.5);
+	border-color: #555;
+	box-shadow: inset 1px 1px 3px rgba(100, 100, 100, 1.0);
 }
