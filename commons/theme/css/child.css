@@ -22,25 +22,25 @@
 
 .inactive {
 	background: #eee;
-	opacity: 1.0;
+	opacity: 0.3;
 }
 
 .nature { background: #b6d7a8; }
-.art { background: #fce5cd; }
+.art { background: #d9d2e9; }
 .academic { background: #fff2cc; }
 .building { background: #d9d9d9; }
 .information { background: #ffe599; }
-.project { background: #f6b26b; }
-.profession { background: #e0e0e0; }
-.trade { background: #e69138; }
-.news { background: #ffd966; }
+.project { background: #ffd966; }
+.profession { background: #d0e0e3; }
+.trade { background: #f6b26b; }
+.news { background: #f1c232; }
 .process { background: #e6b8af; }
 .standard { background: #f4cccc; }
 .design { background: #ea9999; }
-.equipment { background: #e0e0e0; }
-.resource { background: #d0e0e3; }
+.equipment { background: #fce5cd; }
+.resource { background: #d9ead3; }
 .service { background: #a2c4c9; }
-.supply { background: #b7b7b7; }
+.supply { background: #f9cb9c; }
 .storefront { background: #76a5af; }
 .commons { background: #b6d7a8; }
 
