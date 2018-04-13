@@ -45,3 +45,9 @@
 .commons { background: #b6d7a8; }
 
 .order-01 { }
+
+.boxes .unit .inner {
+	border-width: 3px;
+	border-radius: 7px;
+	border-color: #888;
+}
