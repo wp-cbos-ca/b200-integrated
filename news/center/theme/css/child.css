@@ -1,1 +1,6 @@
 /** Child Theme */
+
+.title-wrap {
+	background: #5a92b5 url('/center/theme/image/news-logo.svg') no-repeat 12px center;
+	background-size: 55px;
+}
