@@ -12,6 +12,16 @@
 	padding-left: 100px;
 }
 
+.spacer-header-bottom {
+	border-bottom: #777 solid 4px;
+	box-shadow: 0 1px 2px rgba(50, 50, 50, 1.0);
+}
+
+.spacer-footer-top {
+	border-top: #777 solid 4px;
+	box-shadow: 1px 1px 2px rgba(50, 50, 50, 1.0);
+}
+
 .active {
 	background: #e0e0e0;
 }
@@ -42,13 +52,17 @@
 .supply { background: #f9cb9c; }
 .storefront { background: #76a5af; }
 .commons { background: #b6d7a8; }
-.download { background-color: #279f43; }
+.download { background: #279f43; }
 
 .order-01 { }
 
-.boxes .unit .inner {
-	border-width: 4px;
+.boxes .unit .border {
+	border: #777 solid 4px;
 	border-radius: 7px;
-	border-color: #555;
-	box-shadow: inset 1px 1px 3px rgba(100, 100, 100, 1.0);
+	box-shadow: 1px 1px 3px rgba(50, 50, 50, 1.0);
+}
+
+.boxes .unit .inner {
+	border-radius: 3px;
+	box-shadow: inset 1px 1px 3px rgba(50, 50, 50, 1.0);
 }

@@ -531,22 +531,25 @@ ul.horizontal-menu {
 	clear: both;
 }
 
-.boxes .unit .inner {
+.boxes .unit .border {
 	border: 1px solid #ccc;
+	border-radius: 3px;
 	box-sizing: border-box;
 	box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
-	height: 7em;
-	line-height: 7em;
 	margin: 5px;
-	border-radius: 3px;
 }
 
-.boxes .unit:first-child .inner {
+.boxes .unit:first-child .border {
 	margin-left: 0;
 }
 
-.boxes .unit:last-child .inner {
+.boxes .unit:last-child .border {
 	margin-right: 2px;
+}
+
+.boxes .unit .inner {
+	height: 7em;
+	line-height: 7em;
 }
 
 .boxes {
