@@ -1,13 +1,31 @@
 /** Child Theme */
 
+body {
+	border-radius: 7px;
+	border-color: #aaa;
+}
+
 .site-header {
-	background-color: #d9d2e9;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	background-color: #8e7cc3;
+	border-bottom-color: #ffd966;
+	border-bottom-width: 5px;
+	box-shadow: 0 1px 1px rgba( 20,20,20, 0.3);
 }
 
 .site-title {
-	text-shadow: 1px 1px 1px rgb( 100,100,100, 1.0);
+	text-shadow: 1px 1px 2px rgba( 50,50,50, 1.0);
 }
 
 .site-title a {
-	color: #aaa;
+	color: #efefef;
+}
+
+article img {
+	border: 1px solid #c8c8c8;
+	border-radius: 7px;
+	padding: 7px;
+	background: #efefef;
+	box-sizing: border-box;
 }
