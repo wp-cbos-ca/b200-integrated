@@ -23,7 +23,7 @@ body {
 	color: #efefef;
 }
 
-article img {
+article .border {
 	border: 1px solid #c8c8c8;
 	border-radius: 7px;
 	padding: 7px;

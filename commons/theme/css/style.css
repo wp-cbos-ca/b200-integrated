@@ -566,6 +566,14 @@ video {
 	height: auto;
 }
 
+article .border {
+	border: 1px solid #c8c8c8;
+	border-radius: 7px;
+	padding: 7px;
+	background: #efefef;
+	box-sizing: border-box;
+}
+
 .align-center {
 	display: block;
 	margin: 0 auto;	
