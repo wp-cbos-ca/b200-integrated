@@ -1,1 +1,21 @@
 /** Child Theme */
+
+article {
+	position: relative;
+}
+
+.column {
+	position: absolute;
+	width: 50px;
+	height: 100%;
+}
+
+.column-left {
+	left: 0;
+	border-right: 1px solid #303030;
+}
+
+.column-right {
+	right: 0;
+	border-left: 1px solid #303030;
+}
