@@ -1,7 +1,11 @@
 /** Child Theme */
 
-article {
+.frame {
 	position: relative;
+}
+
+.frame article {
+	width: 80%;
 }
 
 .column {
