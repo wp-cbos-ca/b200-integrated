@@ -22,24 +22,26 @@ body {
 	font: 1em/1.6 sans-serif;
 	color: #222;
 	
-	border: 1px solid #5a92b5;
+	border: 1px solid #bbb;
 	border-radius: 5px;
 	box-shadow: 0 2px 2px rgba(100, 100, 100, 0.5);
 	background-color: #fff;
 }
 
 .container {
-	
+	padding: 0 10px;
 }
 
 /* HEADER START */
 
 header.site {
+	min-height: 3em;
 	border-bottom: 1px solid #e0e0e0;
 }
 
 header.site .title {
-	font-size: 150%;
+	font-size: 135%;
+	font-weight: bold;
 }
 
 header.site .description {
@@ -48,35 +50,6 @@ header.site .description {
 
 header .wrap {
 	
-}
-
-/**** HEADER START *****/
-
-header.site {
-	padding: 0;
-	text-align: left;
-}
-
-header.site .wrap {
-	width: 100%;
-}
-
-header.site .title {
-	margin-bottom: 0;
-	font-size: 2em;
-	font-weight: 700;
-}
-
-header.site .title a {
-	display: inline-block;
-	text-decoration: none;
-	color: #515151;
-}
-
-header.site .description {
-	font-weight: normal;
-	font-size: 1em;
-	color: #757575;
 }
 
 /* HEADER END */
@@ -189,7 +162,7 @@ article {
 	display: block;
 	margin: 0 auto;
 	padding: 1em 2em;
-
+	min-height: 10em;
 }
 
 aside {
@@ -251,6 +224,8 @@ article footer {
 
 footer.site {
 	margin-top: 1px solid #e0e0e0;
+	min-height: 3em;
+	line-height: 3em;
 }
 
 footer.site nav {
