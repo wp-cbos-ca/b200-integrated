@@ -31,15 +31,9 @@ header .wrap {
 	
 }
 
-nav {
+.frame {
 	
 }
-
-header.site nav {
-	
-}
-
-.frame
 
 article {
 	
@@ -54,6 +48,18 @@ article {
 }
 
 .column-right {
+	
+}
+
+nav {
+	
+}
+
+nav.site {
+	
+}
+
+nav.page {
 	
 }
 
