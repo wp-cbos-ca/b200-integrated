@@ -165,7 +165,15 @@ article {
 }
 
 aside {
-	font-size: 80%;
+
+}
+
+aside.page {
+	
+}
+
+aside.site {
+	
 }
 
 article section {
