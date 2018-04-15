@@ -8,16 +8,16 @@
 @media all and (min-width: 0) {
 	
 html {
-	background-color: #e6e6e6;
 	padding: 1em;
+	background-color: #e6e6e6;
 }
 
 body {
 	position: relative;
-	max-width: 850px;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
+	max-width: 850px;
 	
 	font: 1em/1.6 sans-serif;
 	color: #222;
@@ -35,15 +35,15 @@ body {
 /* HEADER START */
 
 header.site {
-	
+	border-bottom: 1px solid #e0e0e0;
 }
 
 header.site .title {
-	
+	font-size: 150%;
 }
 
 header.site .description {
-	
+	font-size: inherit;
 }
 
 header .wrap {
@@ -62,15 +62,15 @@ header.site .wrap {
 }
 
 header.site .title {
+	margin-bottom: 0;
 	font-size: 2em;
 	font-weight: 700;
-	margin-bottom: 0;
 }
 
 header.site .title a {
-	color: #515151;
 	display: inline-block;
 	text-decoration: none;
+	color: #515151;
 }
 
 header.site .description {
@@ -115,10 +115,10 @@ nav.site .has-children:hover > ul.has-parent {
 }
 
 nav.site .has-parent {
-	display: none;
-	background: #fff;
 	position: absolute;
+	display: none;
 	width: 200px;
+	background: #fff;
 }
 
 nav.site .vertical-menu ul.has-parent {
@@ -129,9 +129,9 @@ nav.site .vertical-menu ul.has-parent {
 
 nav.site .has-parent li {
 	width: 200px;
+	padding-left: 20px;
 	text-align: left;
 	background: #fff;
-	padding-left: 20px;
 }
 
 nav.site li a {
@@ -159,10 +159,10 @@ nav.site .menu-bar {
 }
 
 nav.site .icon-bar {
-	text-align: center;
 	display: inline-block;
 	width: 2.5em;
 	height: 4px;
+	text-align: center;
 	border-radius: 1px;
 	background: #555;
 }
@@ -185,10 +185,10 @@ nav.site .caret {
 }
 
 article {
+	position: relative;
 	display: block;
 	margin: 0 auto;
 	padding: 1em 2em;
-	position: relative;
 
 }
 
@@ -250,7 +250,7 @@ article footer {
 }
 
 footer.site {
-	
+	margin-top: 1px solid #e0e0e0;
 }
 
 footer.site nav {
@@ -258,13 +258,13 @@ footer.site nav {
 }
 
 footer.site .copyright {
-	
+	opacity: 0.8;
 }
 
 /* Second Level Elements */
 
 a {
-	
+	color: inherit;
 }
 
 p a {
@@ -297,19 +297,19 @@ h5 {  font-size: 90%; }
 h6 { font-size: 80%; }
 
 a:hover {
-	
+	opacity: 0.8;
 }
 
 a:active {
-	
+	font-weight: bold;
 }
 
 a:visited {
-	
+	opacity: 0.7;
 }
 
 img, video {
-	
+	max-width: 100%;
 }
 
 img {
@@ -350,69 +350,155 @@ ol {
 
 /* NAV START */
 
-nav ul {
+nav.site ul {
 	display: inline-block;
 }
 
-nav ul li {
+nav.site ul li {
 	
 }
 
-nav li a {
-	display: inline-block;
-	color: inherit;
-	text-decoration: none;
-	height: 3em;
-	line-height: 3em;
-	padding: 0;
-}
-
-nav li:hover {
+nav.site li:hover {
 	background: #f5f5f5;
 }
 
-nav .has-parent li:hover {
+nav.site .has-parent li:hover {
 	background: #f5f5f5;
 }
 
-nav ul {
+nav.site ul {
 	display: inline-block;
 }
 
-nav li:first-child {
+nav.site li:first-child {
 	border-left: 1px dashed #e7e7e7;
 }
 
-nav li {
-	list-style-type: none;
+nav.site li {
 	display: inline-block;
+	list-style-type: none;
 	position: relative;
+	padding: 0;
 	height: 3em;
 	line-height: 3em;
-	padding: 0;
 	min-width: 120px;
-	text-align: center;
 	border-right: 1px dashed #e7e7e7;
 	box-sizing: border-box;
 }
 
-nav ul.has-parent {
+nav.site li a {
+	display: inline-block;
+	padding: 0;
+	height: 3em;
+	line-height: 3em;
+	color: inherit;
+}
+
+nav.site ul.has-parent {
 	box-sizing: border-box;
 	border: 1px dashed #e7e7e7;
 	border-top: none;
 }
 
-nav ul.has-parent li {
+nav.site ul.has-parent li {
 	border-bottom: 1px dashed #e7e7e7;
 }
 
-nav ul.has-parent li:last-child {
+nav.site ul.has-parent li:last-child {
 	border-bottom: 1px dashed #e7e7e7;
 }
 
 /* NAV END */
 
 } /* media all and (min-width: 0) END 
+
+
+/* BLOCKS START */
+
+/***** RESPONSIVE DIVS START *****/ 
+
+.unit {
+	float: left;
+}
+
+.size1of1 {
+	width: 100%;
+}
+
+.size1of2 {
+	width: 50%;
+}
+
+.size1of3 {
+	width: 33.333%;
+}
+
+.size1of4 {
+	width: 25%;
+}
+
+.size1of5 {
+	width: 20%;
+}
+
+.size2of3 {
+	width: 66%;
+}
+
+.size3of4 {
+	width: 75%;
+}
+
+.size2of5 {
+	width: 40%;
+}
+
+.size3of5 {
+	width: 60%;
+}
+
+.size4of5 {
+	width: 80%;
+}
+
+.line {
+	clear: both;
+}
+
+.unit .border {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
+	margin: 5px;
+}
+
+.unit:first-child .border {
+	margin-left: 0;
+}
+
+.unit:last-child .border {
+	margin-right: 2px;
+}
+
+.unit .inner {
+	height: 7em;
+	line-height: 7em;
+}
+
+.unit {
+	overflow: hidden;
+}
+
+/* BLOCKS END */
+
+/* OTHER BEGIN */
+
+.hide {
+	display: none;
+}
+
+/* OTHER END */
 
 /* Responsive */
 
@@ -468,7 +554,9 @@ nav ul.has-parent li:last-child {
 /* Smartphone Portrait Wide */
 
 @media (max-width: 480px) {
-	
+	.unit {
+		width: 100% !important;
+	}
 }
 
 /* Smartphone Portrait Medium */
