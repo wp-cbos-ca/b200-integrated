@@ -3,6 +3,8 @@
 
 /* Top Level Elements */
 
+@media all and (min-width: 0) {
+	
 html {
 	
 }
@@ -118,6 +120,18 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
+h1 {	}
+
+h2 {	}
+
+h3 {	}
+
+h4 {	}
+
+h5 {	}
+
+h6 {	}
+
 a:hover {
 	
 }
@@ -178,15 +192,30 @@ nav ul li {
 	
 }
 
+} /* media all and (min-width: 0) END 
+
 /* Responsive */
 
-/* Desktop */
 
-@media screen and (min-width: 1024px) {	
+/* Desktop Wide */
+
+@media screen and (min-width: 1920px) {
 	
 }
 
-/* Tablet Landscape */
+/* Desktop Medium */
+
+@media screen and (min-width: 1440px) {
+	
+}
+
+/* Desktop / Tablet Landscape */
+
+@media screen and (min-width: 1024px) {
+	
+}
+
+/* Tablet Portrait Wide */
 
 @media (max-width: 1023px) {
 	
