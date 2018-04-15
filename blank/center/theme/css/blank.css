@@ -1,0 +1,240 @@
+/* Blank CSS Stylesheet Matching Blank HTML Template. */
+/* Created: 2018-04-15. Updated: */
+
+/* Top Level Elements */
+
+html {
+	
+}
+
+body {
+	
+}
+
+.container {
+	
+}
+
+header.site {
+	
+}
+
+header.site .title {
+	
+}
+
+header.site .description {
+	
+}
+
+header .wrap {
+	
+}
+
+nav {
+	
+}
+
+header.site nav {
+	
+}
+
+.frame
+
+article {
+	
+}
+
+.column {
+	
+}
+
+.column-left {
+	
+}
+
+.column-right {
+	
+}
+
+.spacer {
+	
+}
+
+.spacer-header {
+	
+}
+
+.spacer-header-top {
+	
+}
+
+.spacer-footer {
+	
+}
+
+.spacer-footer-top {
+	
+}
+
+article footer {
+	
+}
+
+footer.site {
+	
+}
+
+footer.site nav {
+	
+}
+
+footer.site .copyright {
+	
+}
+
+/* Second Level Elements */
+
+a {
+	
+}
+
+p a {
+	
+}
+
+header a,
+footer a {
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+}
+
+a:hover {
+	
+}
+
+a:active {
+	
+}
+
+a:visited {
+	
+}
+
+img, video {
+	
+}
+
+img {
+	
+}
+
+video {
+	
+}
+
+audio {
+	
+}
+
+cite {
+	
+}
+
+code {
+	
+}
+
+pre {
+	
+}
+
+dd {
+	
+}
+
+ul {
+	
+}
+
+ol {
+	
+}
+
+nav ul {
+	
+}
+
+nav ul li {
+	
+}
+
+/* Responsive */
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {	
+	
+}
+
+/* Tablet Landscape */
+
+@media (max-width: 1023px) {
+	
+}
+
+/* Tablet Portrait Wide */
+
+@media (max-width: 960px) {
+	
+}
+
+/* Tablet Portrait */
+
+@media (max-width: 840px) {
+	
+}
+
+/* Smartphone Landscape Wide */
+
+@media (max-width: 720px) {
+	
+}
+
+/* Smartphone Landscape Medium. */
+
+@media (max-width: 640px) {
+	
+}
+
+/* Smartphone Portrait Wide */
+
+@media (max-width: 480px) {
+	
+}
+
+/* Smartphone Portrait Medium */
+
+@media (max-width: 360px) {
+	
+}
+
+/* Smartphone Portrait Narrow */
+
+@media (max-width: 240px) {
+	
+}
+
+/* Print */
+
+@media print {
+
+}
+
+/* 
+120, 240, 360, 480, 600, 720 
+840, 960, 1080, 1200, 1320, 1440
+1560 ... 1920 */
