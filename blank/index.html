@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="notice" class="notice"></div>
-<div class="container">
+<div class="container"><!-- everything, except the notice and base element-->
 <header class="site">
 <div class="wrap">
 <div class="inner">
@@ -19,9 +19,10 @@
 </div>
 </div>
 </header>
-<div class="spacer spacer-header spacer-header-bottom"></div>
-<div class="site">
-<div class="page">
+<div class="spacer spacer-header spacer-header-bottom"></div><!-- a spacer, like a moulding -->
+<div class="site"><!-- wrapping site wide elements -->
+<div class="section"><!-- wrapping section level elements -->
+<div class="page"><!-- wrapping page level elements -->
 <article>
 <h1></h1>
 <p></p>
@@ -30,6 +31,9 @@
 <aside id="page-aside" class="page"></aside>
 <nav id="page-nav" class="page"></nav>
 </div><!-- .page -->
+<aside id="section-aside" class="section"></aside>
+<nav id="section-nav" class="section"></nav>
+</div><!-- .section -->
 <aside id="site-aside" class="site"></aside>
 <nav id="site-nav" class="site"></nav>
 </div><!-- .site -->
