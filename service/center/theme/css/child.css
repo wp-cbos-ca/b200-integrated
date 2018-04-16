@@ -1,25 +1,13 @@
 /** Child Theme */
 
-.container {
-	
+header.site {
+	line-height: 3em;
 }
 
-.frame {
-	position: relative;
+article {
+	overflow: hidden;
 }
 
-.frame article {
-	
-}
-
-.column {
-	
-}
-
-.column-left {
-	
-}
-
-.column-right {
-	
+a {
+	text-decoration: none;
 }

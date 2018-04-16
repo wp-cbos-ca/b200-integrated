@@ -157,10 +157,9 @@ nav.site .caret {
 }
 
 article {
-	position: relative;
 	display: block;
 	margin: 0 auto;
-	padding: 1em 2em;
+	padding: 1em;
 	min-height: 10em;
 }
 

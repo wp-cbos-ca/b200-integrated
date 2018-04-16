@@ -1,7 +1,7 @@
 /* Blank CSS Stylesheet Matching Blank HTML Template. */
 /* Created: 2018-04-15. Updated: */
 
-/* Top Level Elements */
+/* Top Level Elements (Block Level Elements) */
 
 @media all and (min-width: 0) {
 	
@@ -37,7 +37,15 @@ header .wrap {
 	
 }
 
+address {
+	
+}
+
 article {
+	
+}
+
+article footer {
 	
 }
 
@@ -49,7 +57,15 @@ aside.page {
 	
 }
 
+aside.section {
+	
+}
+
 aside.site {
+	
+}
+
+blockquote {
 	
 }
 
@@ -57,15 +73,31 @@ caption {
 	
 }
 
-.column {
+canvas {
 	
 }
 
-.column-left {
+figure {
 	
 }
 
-.column-right {
+form {
+	
+}
+
+footer.site {
+	
+}
+
+footer.site nav {
+	
+}
+
+footer.site .copyright {
+	
+}
+
+main {
 	
 }
 
@@ -78,6 +110,10 @@ nav.site {
 }
 
 nav.page {
+	
+}
+
+section {
 	
 }
 
@@ -101,19 +137,11 @@ nav.page {
 	
 }
 
-article footer {
+table {
 	
 }
 
-footer.site {
-	
-}
-
-footer.site nav {
-	
-}
-
-footer.site .copyright {
+tfoot {
 	
 }
 
