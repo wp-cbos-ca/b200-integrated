@@ -40,9 +40,10 @@ Options -Indexes
 
 # END WordPress
 
-ErrorDocument 403 /bin/alt/code/403.html
-# ErrorDocument 404 /bin/alt/code/404.html
-ErrorDocument 500 /bin/alt/code/500.html
+ErrorDocument 403 /center/alt/code/403.html
+ErrorDocument 404 /center/alt/code/404.html
+ErrorDocument 500 /center/alt/code/500.html
+ErrorDocument 503 /center/alt/code/503.html
 
 # Use the Source, Luke!
 # https://httpd.apache.org/docs/2.4/
