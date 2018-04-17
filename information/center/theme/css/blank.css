@@ -1,0 +1,554 @@
+/* Blank CSS Stylesheet  Created: 2018-04-15  Updated: 2018-04-16 */
+
+/* Top Level Elements (Block Level Elements > 1 Line) */
+
+@media all and (min-width: 0) {
+	
+html {
+	
+}
+
+body {
+	
+}
+
+.container {
+	
+}
+
+header.site {
+	
+}
+
+header.site .title {
+	
+}
+
+header.site .description {
+	
+}
+
+header .wrap {
+	
+}
+
+.frame {
+	
+}
+
+/* Alphabetical order starts here */
+
+address {
+	
+}
+
+article {
+	
+}
+
+article footer {
+	
+}
+
+aside {
+	
+}
+
+aside.page {
+	
+}
+
+aside.section {
+	
+}
+
+aside.site {
+	
+}
+
+blockquote {
+	
+}
+
+caption {
+	
+}
+
+canvas {
+	
+}
+
+figure {
+	
+}
+
+footer.site {
+	
+}
+
+footer.site nav {
+	
+}
+
+footer.site .copyright {
+	
+}
+
+main {
+	
+}
+
+nav {
+	
+}
+
+nav.site {
+	
+}
+
+nav.page {
+	
+}
+
+section {
+	
+}
+
+.spacer {
+	
+}
+
+.spacer-header {
+	
+}
+
+.spacer-header-top {
+	
+}
+
+.spacer-footer {
+	
+}
+
+.spacer-footer-top {
+	
+}
+
+div.base {
+	
+}
+
+div.notice {
+	
+}
+
+/* Second Level Elements Inline (i.e. # lines typically equals 1) */
+
+/* Most Common, Then Alphabetical */
+
+a {
+	
+}
+
+p a {
+	
+}
+
+header a,
+footer a {
+	
+}
+
+a:hover {
+	
+}
+
+a:active {
+	
+}
+
+a:visited {
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+}
+
+h1 {	}
+
+h2 {	}
+
+h3 {	}
+
+h4 {	}
+
+h5 {	}
+
+h6 {	}
+
+pre {
+	
+}
+
+dd {
+	
+}
+
+ul {
+	
+}
+
+ol {
+	
+}
+
+nav ul {
+	
+}
+
+nav ul li {
+	
+}
+
+/* Second level alphabetical starts here */
+
+abbr {
+	
+}
+
+cite {
+	
+}
+
+code {
+	
+}
+
+data {
+	
+}
+
+del {
+	
+}
+
+dfn {
+	
+}
+
+em {
+	
+}
+
+i {
+	
+}
+
+ins {
+	
+}
+
+mark {
+	
+}
+
+q {
+	
+}
+
+strike {
+	
+}
+
+small {
+	
+}
+
+span {
+	
+}
+
+strong {
+	
+}
+
+sup {
+	
+}
+
+sub {
+	
+}
+
+time {
+	
+}
+
+u {
+	
+}
+
+var {
+	
+}
+
+/* Image and Multimedia */
+
+area {
+	
+}
+
+audio {
+	
+}
+
+img {
+	
+}
+
+map {
+	
+}
+
+track {
+	
+}
+
+video {
+	
+}
+
+/* Embedded Content */
+
+embed {
+	
+}
+
+iframe {
+	
+}
+
+object {
+	
+}
+
+param {
+	
+}
+
+picture {
+	
+}
+
+source {
+	
+}
+
+/* Table Content */
+
+caption {
+	
+}
+
+col {
+	
+}
+
+colgroup {
+	
+}
+
+table {
+	
+}
+
+tbody {
+	
+}
+
+tbody {
+	
+}
+
+td {
+	
+}
+
+tfoot {
+	
+}
+
+th {
+	
+}
+
+thead {
+	
+}
+
+tr {
+	
+}
+
+/* Forms */
+
+button {
+	
+}
+
+datalist {
+	
+}
+
+fieldset {
+	
+}
+
+form {
+	
+}
+
+input {
+	
+}
+
+label {
+	
+}
+
+legend {
+	
+}
+
+meter {
+	
+}
+
+optgroup {
+	
+}
+
+option {
+	
+}
+
+progress {
+	
+}
+
+select {
+	
+}
+
+textarea {
+	
+}
+
+/* Interactive Elements */
+
+details {
+	
+}
+
+dialog {
+	
+}
+
+menu {
+	
+}
+
+menuitem {
+	
+}
+
+summary {
+	
+}
+
+/* See also Web Components Technology */
+
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element */
+
+} /* media all and (min-width: 0) END 
+
+/* Responsive */
+
+
+/* Desktop Wide */
+
+@media screen and (min-width: 1920px) {
+	
+}
+
+/* Desktop Medium */
+
+@media screen and (min-width: 1440px) {
+	
+}
+
+/* Desktop / Tablet Landscape */
+
+@media screen and (min-width: 1024px) {
+	
+}
+
+/* Tablet Portrait Wide */
+
+@media (max-width: 1023px) {
+	
+}
+
+/* Tablet Portrait Wide */
+
+@media (max-width: 960px) {
+	
+}
+
+/* Tablet Portrait */
+
+@media (max-width: 840px) {
+	
+}
+
+/* Smartphone Landscape Wide */
+
+@media (max-width: 720px) {
+	
+}
+
+/* Smartphone Landscape Medium. */
+
+@media (max-width: 640px) {
+	
+}
+
+/* Smartphone Portrait Wide */
+
+@media (max-width: 480px) {
+	
+}
+
+/* Smartphone Portrait Medium */
+
+@media (max-width: 360px) {
+	
+}
+
+/* Smartphone Portrait Narrow */
+
+@media (max-width: 240px) {
+	
+}
+
+/* Print */
+
+@media print {
+
+}
+
+/* 
+120, 240, 360, 480, 600, 720 
+840, 960, 1080, 1200, 1320, 1440
+1560 ... 1920 */
