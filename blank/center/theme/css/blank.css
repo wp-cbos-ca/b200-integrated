@@ -1,7 +1,7 @@
-/* Blank CSS Stylesheet Matching Blank HTML Template. */
-/* Created: 2018-04-15. Updated: */
+/* Blank CSS Stylesheet */
+/* Created: 2018-04-15. Updated: 2018-04-16 */
 
-/* Top Level Elements (Block Level Elements) */
+/* Top Level Elements (Block Level Elements. No. lines typically > 1) */
 
 @media all and (min-width: 0) {
 	
@@ -36,6 +36,8 @@ header .wrap {
 .frame {
 	
 }
+
+/* Alphabetical order starts here */
 
 address {
 	
@@ -153,7 +155,9 @@ div.notice {
 	
 }
 
-/* Second Level Elements */
+/* Second Level Elements Inline (i.e. # lines typically equals 1) */
+
+/* Most Common, Then Alphabetical */
 
 a {
 	
@@ -165,6 +169,18 @@ p a {
 
 header a,
 footer a {
+	
+}
+
+a:hover {
+	
+}
+
+a:active {
+	
+}
+
+a:visited {
 	
 }
 
@@ -183,42 +199,6 @@ h4 {	}
 h5 {	}
 
 h6 {	}
-
-a:hover {
-	
-}
-
-a:active {
-	
-}
-
-a:visited {
-	
-}
-
-img, video {
-	
-}
-
-img {
-	
-}
-
-video {
-	
-}
-
-audio {
-	
-}
-
-cite {
-	
-}
-
-code {
-	
-}
 
 pre {
 	
@@ -243,6 +223,262 @@ nav ul {
 nav ul li {
 	
 }
+
+/* Second level alphabetical starts here */
+
+abbr {
+	
+}
+
+cite {
+	
+}
+
+code {
+	
+}
+
+data {
+	
+}
+
+del {
+	
+}
+
+dfn {
+	
+}
+
+em {
+	
+}
+
+i {
+	
+}
+
+ins {
+	
+}
+
+mark {
+	
+}
+
+q {
+	
+}
+
+strike {
+	
+}
+
+small {
+	
+}
+
+span {
+	
+}
+
+strong {
+	
+}
+
+sup {
+	
+}
+
+time {
+	
+}
+
+u {
+	
+}
+
+var {
+	
+}
+
+/* Image and Multimedia */
+
+area {
+	
+}
+
+audio {
+	
+}
+
+img {
+	
+}
+
+map {
+	
+}
+
+track {
+	
+}
+
+video {
+	
+}
+
+/* Embedded Content */
+
+embed {
+	
+}
+
+iframe {
+	
+}
+
+object {
+	
+}
+
+param {
+	
+}
+
+picture {
+	
+}
+
+source {
+	
+}
+
+/* Table Content */
+
+caption {
+	
+}
+
+col {
+	
+}
+
+colgroup {
+	
+}
+
+table {
+	
+}
+
+tbody {
+	
+}
+
+tbody {
+	
+}
+
+td {
+	
+}
+
+tfoot {
+	
+}
+
+th {
+	
+}
+
+thead {
+	
+}
+
+tr {
+	
+}
+
+/* Forms */
+
+button {
+	
+}
+
+datalist {
+	
+}
+
+fieldset {
+	
+}
+
+form {
+	
+}
+
+input {
+	
+}
+
+label {
+	
+}
+
+legend {
+	
+}
+
+meter {
+	
+}
+
+optgroup {
+	
+}
+
+option {
+	
+}
+
+progress {
+	
+}
+
+select {
+	
+}
+
+textarea {
+	
+}
+
+/* Interactive Elements */
+
+details {
+	
+}
+
+dialog {
+	
+}
+
+menu {
+	
+}
+
+menuitem {
+	
+}
+
+summary {
+	
+}
+
+/* See also Web Components Technology */
+
+/* Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element */
 
 } /* media all and (min-width: 0) END 
 
