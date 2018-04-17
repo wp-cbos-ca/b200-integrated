@@ -107,23 +107,27 @@ header {
 	text-align: left;
 }
 
-.title-wrap {
-	width: 100%;	
+header.site {
+	border-bottom: 1px solid #e0e0e0;
 }
 
-.site-title {
+header.site .wrap {
+	width: 100%;
+}
+
+header.site .title {
 	font-size: 2em;
 	font-weight: 700;
 	margin-bottom: 0;
 }
 
-.site-title a {
+header.site .title a {
 	color: #515151;
 	display: inline-block;
 	text-decoration: none;
 }
 
-.site-description {
+header.site .description {
 	font-weight: normal;
 	font-size: 1em;
 	color: #757575;
@@ -131,13 +135,13 @@ header {
 
 /*** NAV:HEADER START ***/
 
-header nav {
+nav.site {
 	text-align: center;
 	border-top: 1px solid #ededed;
 	border-bottom: 1px solid #ededed;
 }
 
-header nav ul {
+nav.site ul {
 	margin-left: 0;
 	padding: 0;
 }
@@ -231,6 +235,10 @@ nav .more-menu.has-parent {
 
 /***** BODY START *****/
 
+.container {
+    padding: 0 10px;
+}
+
 h1, h2, h3, h4 {
 	line-height: 1;
 }
@@ -258,7 +266,7 @@ h4 {
 article {
 	display: block;
 	margin: 0 auto;
-	padding: 1em 2em;
+	padding: 1em;
 	position: relative;
 }
 
@@ -268,10 +276,6 @@ article section {
 }
 
 aside {
-	margin-top: .5em;
-	padding: .5em;
-	text-align: center;
-	font-style: italic;
 }
 
 section {
@@ -407,7 +411,6 @@ nav.next a:hover {
 /***** FOOTER START *****/
 
 footer {
-	padding: .5em 0;
 	text-align: center;
 }
 
@@ -437,7 +440,6 @@ footer ul.menu {
 }
 
 footer {
-	border-top: #555 dashed 1px;
 	opacity: 0.5;
 }
 
@@ -498,31 +500,6 @@ ul.horizontal-menu {
 	width: 80%;
 }
 
-.half,
-.third,
-.quarter {
-	float: left;
-	margin-right: 1%;
-}
-
-.half {
-	width: 49%;
-}
-
-.third {
-	width: 32%;
-}
-
-.quarter {
-	width: 24%;
-}
-
-.half:last-child,
-.third:last-child,
-.quarter:last-child {
-	margin-right: 0;
-}
-
 .unit {
 	float: left;
 }
@@ -531,7 +508,7 @@ ul.horizontal-menu {
 	clear: both;
 }
 
-.boxes .unit .inner {
+.blocks .unit .inner {
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
@@ -541,15 +518,15 @@ ul.horizontal-menu {
 	border-radius: 3px;
 }
 
-.boxes .unit:first-child .inner {
+.blocks .unit:first-child .inner {
 	margin-left: 0;
 }
 
-.boxes .unit:last-child .inner {
+.blocks .unit:last-child .inner {
 	margin-right: 2px;
 }
 
-.boxes {
+.blocks {
 	overflow: hidden;
 }
 
@@ -621,20 +598,20 @@ span.entity-large {
 		max-width: 1600px;
 	}
 		
-	.full-screen .title-wrap {
+	.full-screen header.site .wrap {
 		line-height: .4;
 	}
 	
-	.full-screen .title-wrap .inner {
+	.full-screen header.site .wrap .inner {
 		padding-left: 2.25em;
 		background-size: 2em;
 	}
 	
-	.full-screen .site-title {
+	.full-screen header.site .title {
 		font-size: 1.25em;
 	}
 	
-	.full-screen .site-description {
+	.full-screen header.site .description {
 		display: none;
 	}
 	
@@ -851,11 +828,11 @@ span.entity-large {
 		padding: 1em 3%;
 	}
 	
-	.site-title {
+	header.site .title {
 		text-align: center;
 		font-size: 1.5em;
 	}
-	.site-description {
+	header.site .description {
 		text-align: center;
 		font-size: 1em;
 	}	
@@ -899,22 +876,22 @@ span.entity-large {
 
 @media screen and (max-width: 480px) {
 
-	.site-title {
+	header.site .title {
 		font-size: 1.25em;
 	}
 	
-	.site-description {
+	header.site .description {
 		font-size: .9em;
 	}	
 }
 
 @media screen and (max-width: 360px) {
 
-	.site-title {
+	header.site .title {
 		font-size: 1em;
 	}
 	
-	.site-description {
+	header.site .description {
 		font-size: .8em;
 	}
 }
@@ -996,7 +973,7 @@ folds match up with the number of menu items in the menu. */
 }
 
 @media screen and (max-width: 500px) {
-	.site-description {
+	header.site .description {
 		display: none;
 	}
 	.horizontal-menu li:nth-child(3) {
@@ -1061,20 +1038,20 @@ folds match up with the number of menu items in the menu. */
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.title-wrap .inner {
+header.site .wrap .inner {
 	padding: 1.25em;
 }
 
-.title-wrap .inner {
+header.site .wrap .inner {
 	text-align: center;
 }
 
-.site-description {
+header.site .description {
 	margin-top: 0.3em;
 }
 
-.site-title a,
-.site-description {
+header.site .title a,
+header.site .description {
 	color: #555;
 }
 
