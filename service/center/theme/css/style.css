@@ -1,5 +1,4 @@
 /* Theme: Theme15 Created: 2018-04-15 Updated: 2018.04.15 */ 
-/* Adapted from HTML5 / Created: 2017-12-15 */
 
 .updated { color: #180415; }
 
@@ -35,11 +34,13 @@ body {
 
 header.site {
 	min-height: 3em;
+	text-align: center;
 	border-bottom: 1px solid #e0e0e0;
 }
 
 header.site .title {
-	font-size: 135%;
+	font-size: 200%;
+	padding: .5em;
 	font-weight: bold;
 }
 
@@ -224,12 +225,12 @@ nav.page {
 	
 }
 
-article footer {
-	
+footer {
+	opacity: 0.5;
 }
 
 footer.site {
-	margin-top: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
 	min-height: 3em;
 	line-height: 3em;
 }
@@ -240,6 +241,13 @@ footer.site nav {
 
 footer.site .copyright {
 	opacity: 0.8;
+}
+
+article footer {
+    clear: both;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 80%;
 }
 
 /* Second Level Elements */
@@ -447,8 +455,18 @@ nav.site ul.has-parent li:last-child {
 	width: 80%;
 }
 
+.blocks {
+	text-align: center;
+	overflow: hidden;
+}
+
 .line {
 	clear: both;
+}
+
+.unit {
+	float: left;
+	overflow: hidden;
 }
 
 .unit .border {
@@ -470,10 +488,6 @@ nav.site ul.has-parent li:last-child {
 .unit .inner {
 	height: 7em;
 	line-height: 7em;
-}
-
-.unit {
-	overflow: hidden;
 }
 
 /* BLOCKS END */

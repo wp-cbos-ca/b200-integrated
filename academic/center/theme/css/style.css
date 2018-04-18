@@ -96,6 +96,8 @@ nav .has-parent li:hover {
 header.site {
 	padding: 0;
 	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
 }
 
 header.site .title {
@@ -113,11 +115,7 @@ header.site .title a {
 header.site .description {
 	font-weight: normal;
 	font-size: 1em;
-	color: #757575;
-}
-
-header.site {
-	border-bottom: 1px solid #e0e0e0;
+	color: inherit;
 }
 
 /*** NAV:HEADER START ***/
@@ -398,6 +396,7 @@ nav.next a:hover {
 /***** FOOTER START *****/
 
 footer {
+	opacity: 0.5;
 	padding: .5em 0;
 	text-align: center;
 }
@@ -425,10 +424,6 @@ footer ul.menu {
 	padding: 0;
 	display: inline-block;
 	width: 80%;
-}
-
-footer {
-	opacity: 0.5;
 }
 
 footer.article {
@@ -492,12 +487,17 @@ ul.horizontal-menu {
 	width: 80%;
 }
 
-.unit {
-	float: left;
+.blocks {
+	text-align: center;
+	overflow: hidden;
 }
 
 .line {
 	clear: both;
+}
+
+.unit {
+	float: left;
 }
 
 .blocks .unit .border {
@@ -510,17 +510,12 @@ ul.horizontal-menu {
 	border-radius: 3px;
 }
 
-.boxes .unit:first-child .inner {
+.blocks .unit:first-child .border {
 	margin-left: 0;
 }
 
-.boxes .unit:last-child .inner {
+.blocks .unit:last-child .border {
 	margin-right: 2px;
-}
-
-.blocks {
-	text-align: center;
-	overflow: hidden;
 }
 
 /***** RESPONSIVE DIVS END *****/
