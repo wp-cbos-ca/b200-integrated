@@ -1,32 +1,5 @@
 /** Child Theme */
 
-body {
-	border-radius: 7px;
-	border-color: #aaa;
-}
-
-.site-header {
-	border-top-right-radius: 7px;
-	border-top-left-radius: 7px;
-	background-color: #8e7cc3;
-	border-bottom-color: #ffd966;
-	border-bottom-width: 5px;
-	box-shadow: 0 1px 1px rgba( 20,20,20, 0.3);
-	background: url("/center/media/image/egypt-2226780-pby-cc0-850x80.jpg") no-repeat center center;
-}
-
-.site-title {
-	text-shadow: 1px 1px 2px rgba( 50,50,50, 1.0);
-}
-
-.site-title a {
-	color: #efefef;
-}
-
-article .border {
-	border: 1px solid #c8c8c8;
-	border-radius: 7px;
-	padding: 7px;
-	background: #efefef;
-	box-sizing: border-box;
+.spacer-header-bottom {
+	margin-bottom: 10px;
 }

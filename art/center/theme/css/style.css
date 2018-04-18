@@ -24,7 +24,7 @@ html {
 body {
 	box-shadow: 0 2px 2px rgba(100, 100, 100, 0.5);
 	border: 1px solid #bbb;
-	border-radius: 3px;
+	border-radius: 7px;
 	font: 1em/1.6 sans-serif;
 	color: #222;
 	max-width: 850px;
@@ -137,8 +137,6 @@ header.site .description {
 
 nav.site {
 	text-align: center;
-	border-top: 1px solid #ededed;
-	border-bottom: 1px solid #ededed;
 }
 
 nav.site ul {
@@ -236,7 +234,7 @@ nav .more-menu.has-parent {
 /***** BODY START *****/
 
 .container {
-    padding: 0 10px;
+    padding: 10px;
 }
 
 h1, h2, h3, h4 {
@@ -266,7 +264,7 @@ h4 {
 article {
 	display: block;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 10px;
 	position: relative;
 }
 
@@ -1039,7 +1037,7 @@ folds match up with the number of menu items in the menu. */
 }
 
 header.site .wrap .inner {
-	padding: 1.25em;
+	padding: 1em;
 }
 
 header.site .wrap .inner {
