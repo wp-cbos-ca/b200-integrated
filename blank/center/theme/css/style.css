@@ -44,6 +44,8 @@ body.page {
 
 header.site {
 	min-height: 3em;
+	line-height: 3em;
+	text-align: center;
 	border-bottom: 1px solid #e0e0e0;
 }
 
