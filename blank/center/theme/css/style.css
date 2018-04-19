@@ -515,7 +515,7 @@ summary {
 
 /* Responsive */
 
-.block {
+.blocks {
 	
 }
 
@@ -524,6 +524,7 @@ summary {
 }
 
 .unit {
+	float: left;
 	overflow: hidden;
 }
 
@@ -535,6 +536,7 @@ summary {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+
 .inner {
 	
 }
@@ -577,6 +579,10 @@ summary {
 
 .size4of5 {
 	width: 80%;
+}
+
+.blocks .unit {
+	text-align: center;
 }
 
 .blocks .unit .inner {
