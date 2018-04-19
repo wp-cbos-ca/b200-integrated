@@ -491,7 +491,11 @@ summary {
 
 /* Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element */
 
-} /* media all and (min-width: 0) END 
+/* Other */
+
+.hide {
+	
+}
 
 /* Responsive */
 
@@ -562,6 +566,8 @@ summary {
 .blocks .unit .inner {
 	
 }
+
+} /* media all and (min-width: 0) END */
 
 /* Desktop Wide */
 
