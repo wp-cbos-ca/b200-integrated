@@ -78,10 +78,9 @@ article {
 }
 
 article footer {
-	text-align: center;
 	min-height: 3em;
 	line-height: 3em;
-
+	text-align: center;
 }
 
 aside {
