@@ -1,6 +1,6 @@
-/* Blank CSS to Basic CSS. Created: 2018-04-19.  Updated: 2018-04-19. */
+/* Basic CSS. Created: 2018-04-19.  Updated: 2018-04-19. */
 
-.updated { color: #180415; }
+.updated { color: #180419; }
 
 /* Top Level Elements (Block Level Elements > 1 Line) */
 
@@ -43,15 +43,16 @@ body.page {
 }
 
 header.site {
-	min-height: 4em;
-	line-height: 4em;
+	min-height: 3em;
+	line-height: 1em;
 	text-align: center;
 	border-bottom: 1px solid #e0e0e0;
 	margin-bottom: 10px;
 }
 
 header.site .title {
-	font-size: 135%;
+	font-size: 200%;
+	padding: 1em 0;
 	font-weight: bold;
 }
 
@@ -153,23 +154,19 @@ section {
 	float: none;
 }
 
-.spacer {
+.header-trim {
 	
 }
 
-.spacer-header {
+.header-trim-bottom {
 	
 }
 
-.spacer-header-top {
+.footer-trim {
 	
 }
 
-.spacer-footer {
-	
-}
-
-.spacer-footer-top {
+.footer-trim-top {
 	
 }
 
