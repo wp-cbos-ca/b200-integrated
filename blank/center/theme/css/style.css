@@ -43,10 +43,11 @@ body.page {
 }
 
 header.site {
-	min-height: 3em;
-	line-height: 3em;
+	min-height: 4em;
+	line-height: 4em;
 	text-align: center;
 	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 10px;
 }
 
 header.site .title {
@@ -77,7 +78,9 @@ article {
 }
 
 article footer {
-	
+	min-height: 3em;
+	line-height: 3em;
+	text-align: center;
 }
 
 aside {
@@ -146,6 +149,7 @@ nav.page {
 }
 
 section {
+	overflow: hidden;
 	float: none;
 }
 
@@ -533,6 +537,7 @@ summary {
 }
 
 .unit .border {
+	margin: 5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
