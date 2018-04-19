@@ -94,6 +94,10 @@ figure {
 	
 }
 
+footer {
+	
+}
+
 footer.site {
 	
 }
@@ -112,6 +116,10 @@ main {
 
 nav {
 	
+}
+
+nav .more {
+	display: none;
 }
 
 nav.site {
@@ -487,6 +495,73 @@ summary {
 
 /* Responsive */
 
+.block {
+	
+}
+
+.line {
+	
+}
+
+.unit {
+	
+}
+
+.border {
+	
+}
+
+.unit .border {
+	
+}
+
+.inner {
+	
+}
+
+.size1of1 {
+	
+}
+
+.size1of2 {
+	
+}
+
+.size1of3 {
+	
+}
+
+.size1of4 {
+	
+}
+
+.size1of5 {
+	
+}
+
+.size2of3 {
+	
+}
+
+.size3of4 {
+	
+}
+
+.size2of5 {
+	
+}
+
+.size3of5 {
+	
+}
+
+.size4of5 {
+	
+}
+
+.blocks .unit .inner {
+	
+}
 
 /* Desktop Wide */
 
