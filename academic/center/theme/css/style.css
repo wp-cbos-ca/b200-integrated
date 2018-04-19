@@ -43,13 +43,16 @@ body.page {
 }
 
 header.site {
-	min-height: 4em;
-	line-height: 4em;
+	min-height: 3em;
+	line-height: 1em;
 	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 10px;
 }
 
 header.site .title {
-	font-size: 165%;
+	font-size: 200%;
+	padding: 1em 0;
 	font-weight: bold;
 }
 
