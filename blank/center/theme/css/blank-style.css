@@ -1,15 +1,29 @@
-/* Blank CSS Stylesheet  Created: 2018-04-15  Updated: 2018-04-16 */
+/* Blank CSS to Basic CSS. Created: 2018-04-19.  Updated: 2018-04-19. */
+
+.updated { color: #180415; }
 
 /* Top Level Elements (Block Level Elements > 1 Line) */
 
 @media all and (min-width: 0) {
-	
+
 html {
-	
+	padding: 1em;
+	background-color: #e6e6e6;
 }
 
 body {
-	
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	min-width: 240px;
+	max-width: 850px;
+	font: 1em/1.6 sans-serif;
+	color: #222;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(100, 100, 100, 0.5);
 }
 
 body.root {
@@ -24,16 +38,18 @@ body.page {
 	
 }
 
-body > .container {
-	
+.container {
+	padding: 0 10px;
 }
 
 header.site {
-	
+	min-height: 3em;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 header.site .title {
-	
+	font-size: 135%;
+	font-weight: bold;
 }
 
 header.site .description {
