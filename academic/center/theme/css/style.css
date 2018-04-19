@@ -46,8 +46,6 @@ header.site {
 	min-height: 4em;
 	line-height: 4em;
 	text-align: center;
-	border-bottom: 1px solid #e0e0e0;
-	margin-bottom: 10px;
 }
 
 header.site .title {
@@ -187,8 +185,9 @@ div.notice {
 /* Most Common, Then Alphabetical */
 
 a {
-	color: inherit;
+	display: inline-block;
 	text-decoration: none;
+	color: inherit;
 }
 
 p a {
