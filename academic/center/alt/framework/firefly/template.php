@@ -15,16 +15,32 @@ function get_firefly_html(){
 	$str .= '<meta name="viewport" content="width=device-width, initial-scale=1"/>' . PHP_EOL;
 	$str .= sprintf( '<title>%s</title>%s', $page['page-title'], PHP_EOL );
 	$str  .= SITE_INDEX_ALLOW ? '' : '<meta name="robots" content="noindex,nofollow" />' . PHP_EOL;
-	$str .= '<link rel=stylesheet href="/theme/css/style.css">';
+	$str .= '<link rel=stylesheet href="/center/theme/css/style.css">' . PHP_EOL;
+	$str .= '<link rel=stylesheet href="/center/theme/css/child.css">' . PHP_EOL;
 	$str .= '</head>' . PHP_EOL;
 	$str .= '<body>' . PHP_EOL;
-	$str .= '<div class="wrap">' . PHP_EOL;
-	$str .= '<div class="inner">' . PHP_EOL;
+	
+	$str .= '<div class="notice" id="notice"></div>' . PHP_EOL;
+	$str .= '<div class="container" id="site-container">' . PHP_EOL;
 	$str .= $page['header'];
+	$str .= '<div class="header-trim header-trim-bottom"></div><!-- trim; as in a house -->' . PHP_EOL;
+	$str .= '<div class="site" id="site-wrap"><!-- wrapping site wide elements -->' . PHP_EOL;
+	$str .= '<div class="section" id="section-wrap"><!-- wrapping section level elements -->' . PHP_EOL;
+	$str .= '<div class="page" id="page-wrap"><!-- wrapping page level elements -->' . PHP_EOL;
+	$str .= '<main role="main"><!-- content unique to the document -->' . PHP_EOL;
 	$str .= $page['article'];
 	$str .= '</div>' . PHP_EOL; //inner
-	$str .= $page['sidebar'];
-	$str .= '</div>' . PHP_EOL; //wrap
+	$str .= '<aside class="page" id="page-aside"></aside>' . PHP_EOL;
+	$str .= '</main>' . PHP_EOL;
+	$str .= '<nav class="page" id="page-nav"></nav>' . PHP_EOL;
+	$str .= '</div><!-- .page -->' . PHP_EOL;
+	$str .= '<aside class="section" id="section-aside"></aside>' . PHP_EOL;
+	$str .= '<nav class="section" id="section-nav"></nav>' . PHP_EOL;
+	$str .= '</div><!-- .section -->' . PHP_EOL;
+	$str .= '<aside class="site" id="site-aside"></aside>' . PHP_EOL;
+	$str .= '<nav class="site" id="site-nav"></nav>' . PHP_EOL;
+	$str .= '</div><!-- .site -->' . PHP_EOL;
+	$str .= '<div class="footer-trim footer-trim-top"></div>' . PHP_EOL;
 	$str .= $page['footer'];
 	$str .= DISPLAY_ELAPSED_TIME ? get_firefly_elapsed() : '';
 	$str .= '</body>' . PHP_EOL;
@@ -47,7 +63,7 @@ function get_firefly_elapsed(){
 	/** Calculates elapsed time (accurate to 1/10000 seconds). Expressed as milliseconds */
 	$time = number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' );
 	
-	$str = '<div id="elapsed-time" class="subdued text-center" ';
+	$str = '<footer class="elapsed" id="elapsed-time" ';
 	$str .= sprintf( 'title="%s">Elapsed: %s ms</div>%s', $msg, $time , PHP_EOL ) ;
 	
 	return $str;

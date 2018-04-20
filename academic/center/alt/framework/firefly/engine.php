@@ -48,7 +48,6 @@ function get_firefly_header( $page ){
 		//opening header tag in header.html file.
 		$str = file_get_contents( $file );
 		$str .= get_firefly_menu();
-		$str .= '</header>' . PHP_EOL;
 		return $str;
 	} else {
 		return $str;

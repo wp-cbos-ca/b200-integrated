@@ -226,7 +226,10 @@ h5 {	}
 h6 {	}
 
 pre {
-	
+	padding: 1em;
+	overflow-x: scroll;
+	background-color: #e6e6e6;
+	border-radius: 5px;
 }
 
 dd {

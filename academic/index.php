@@ -15,6 +15,19 @@ define( 'SITE_PATH', __DIR__ );
 /** Record which directory we are in, for later. */
 define( 'SITE_DIR', '/' . basename(__DIR__) );
 
+/** Record which directory we are in, for later. */
+define( 'SITE_CENTER_DIR', '/center' );
+
+global $site_dir;
+
+$site_dir['mathematics'] = '/mathematics';
+$site_dir['chemistry'] = '/chemistry';
+$site_dir['cognition'] = '/cognition';
+$site_dir['genetics'] = '/genetics';
+$site_dir['geology'] = '/geology';
+$site_dir['physics'] = '/physics';
+$site_dir['logic'] = '/logic';
+
 /** Use this directory as the domain name. Comment out if not. */
 define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
 
@@ -38,14 +51,14 @@ if 	( 	SITE_USE_CORE && ( SITE_USE_CORE_POST
 
 }
 /** If the core is not used, use an alternate framework, if it is available. */
-else if ( SITE_USE_ALT && file_exists( __DIR__ . '/alt/framework/index.php' ) ) {
+else if ( SITE_USE_ALT && file_exists( __DIR__ . '/center/alt/framework/index.php' ) ) {
 
 	require_once( __DIR__ . '/center/alt/framework/index.php' );
 	
 }
 /** Otherwise, look for a plain text index.html file and serve that. */
 else if ( file_exists( __DIR__ . "/index.html" ) ){
-
+	
 	echo file_get_contents( __DIR__ . '/index.html' );
 	
 }
