@@ -3,11 +3,11 @@
 /** Used as a check to ensure files are being called correctly */
 define( 'FIREFLY', true );
 
-if ( defined( 'SITE_PATH' ) && defined( 'SITE_CENTER_DIR' ) ) {
+if ( defined( 'SITE_PATH' ) ) {
 	
-	if ( file_exists ( SITE_PATH . SITE_CENTER_DIR . '/alt/config/site.php' ) ){
+	if ( file_exists ( SITE_PATH . '/center/alt/config/site.php' ) ){
 		
-		require_once( SITE_PATH . SITE_CENTER_DIR . '/alt/config/site.php' );
+		require_once( SITE_PATH . '/center/alt/config/site.php' );
 	}
 	else {
 		exit( 'Please check the path to the config file.' );
