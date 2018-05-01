@@ -70,11 +70,12 @@ function get_firefly_article_directory( $page ){
 	if ( ! defined( 'SITE_DEPT_DIR' ) && strstr ( rtrim( $page['slug'], '/' ), '/' ) ) {
 		$file = SITE_HTML_PATH . $page['slug'] . SITE_ARTICLE_STUB. SITE_HTML_EXT;
 	}
-	else if( strpos( rtrim( $page['slug'], '/' ), SITE_DEPT_DIR ) !== FALSE ){
+	else if( ! empty( SITE_DEPT_DIR ) && strpos( rtrim( $page['slug'], '/' ), SITE_DEPT_DIR ) !== FALSE ){
 		$file = SITE_DEPT_ARTICLE_PATH . SITE_ARTICLE_STUB. SITE_HTML_EXT;
 	}
+	/* We are in the root of the directory. Use the Centers HTML here, please */
 	else {
-		$file = SITE_HTML_PATH . SITE_ROOT_PAGE_DIR . $page['slug'] . SITE_ARTICLE_STUB. SITE_HTML_EXT;
+		$file = SITE_ROOT_PATH . SITE_CENTER_DIR . SITE_HTML_DIR . SITE_ROOT_PAGE_DIR . rtrim( $page['slug'], '/' ) . SITE_ARTICLE_STUB. SITE_HTML_EXT;
 	}
 	return $file;
 }

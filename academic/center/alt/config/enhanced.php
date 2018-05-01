@@ -31,6 +31,9 @@ define( 'SITE_HTML_DIR', '/html' );
 /** The directory root pages go. */
 define( 'SITE_ROOT_PAGE_DIR', '/root' );
 
+/** The name of the "Center" directory. */
+define( 'SITE_CENTER_DIR', '/center' );
+
 /** Intended for static HTML content. */
 define( 'SITE_PAGE_DIR', '/page' );
 

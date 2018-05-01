@@ -15,9 +15,6 @@ define( 'SITE_PATH', __DIR__ );
 /** Record which directory we are in, for later. */
 define( 'SITE_DIR', '/' . basename(__DIR__) );
 
-/** Record which directory we are in, for later. */
-define( 'SITE_CENTER_DIR', '/center' );
-
 global $department;
 
 define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
