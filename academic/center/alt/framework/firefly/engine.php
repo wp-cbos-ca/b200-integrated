@@ -72,7 +72,6 @@ function get_firefly_article_directory( $page ){
 	}
 	else if( strpos( rtrim( $page['slug'], '/' ), SITE_DEPT_DIR ) !== FALSE ){
 		$file = SITE_DEPT_ARTICLE_PATH . SITE_ARTICLE_STUB. SITE_HTML_EXT;
-		echo $file;
 	}
 	else {
 		$file = SITE_HTML_PATH . SITE_ROOT_PAGE_DIR . $page['slug'] . SITE_ARTICLE_STUB. SITE_HTML_EXT;
