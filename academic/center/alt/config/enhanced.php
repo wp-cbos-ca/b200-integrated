@@ -275,13 +275,13 @@ define( 'SITE_MEDIA_PATH', SITE_ROOT_PATH . SITE_MEDIA_DIR );
 /*** PAGE PATH ***/
 
 /** HTML Path */
-define( 'SITE_HTML_PATH', SITE_ROOT_PATH . SITE_HTML_DIR );
+define( 'SITE_HTML_PATH', SITE_ROOT_PATH . SITE_DEPT_DIR . SITE_HTML_DIR );
 
 /** Page Path */
 define( 'SITE_PAGE_PATH', SITE_HTML_PATH . SITE_PAGE_DIR );
 
 /** Article Stub */
-define( 'SITE_ARTICLE_STUB', 'article' );
+define( 'SITE_ARTICLE_STUB', '/article' );
 
 /** Article Stub */
 define( 'SITE_HTML_EXT', '.html' );
@@ -291,23 +291,32 @@ define( 'SITE_HTML_EXT', '.html' );
 /** Theme Path */
 define( 'SITE_THEME_PATH', SITE_ROOT_PATH . SITE_THEME_DIR );
 
-/** Site HTML Path */
-define( 'SITE_THEME_HTML_PATH', SITE_THEME_PATH . SITE_HTML_DIR );
+/** Department Path */
+define( 'SITE_DEPT_PATH', SITE_ROOT_PATH . SITE_DEPT_DIR );
+
+/** Site Department HTML Path */
+define( 'SITE_DEPT_HTML_PATH', SITE_DEPT_PATH . SITE_HTML_DIR );
+
+/** Site Department Article Path */
+define( 'SITE_DEPT_ARTICLE_PATH', SITE_DEPT_PATH . '/article' );
+
+/** Site Department Section Path (Header, Footer, Sidebar, etc.) */
+define( 'SITE_DEPT_SECTION_PATH', SITE_DEPT_PATH . '/section' );
 
 /** The CSS files that style the site. */
-define( 'SITE_CSS_PATH', SITE_THEME_HTML_PATH . SITE_CSS_DIR );
+define( 'SITE_CSS_PATH', SITE_DEPT_HTML_PATH . SITE_CSS_DIR );
 
 /** Theme Path */
-define( 'SITE_HEADER_PATH', SITE_THEME_HTML_PATH . SITE_HEADER_DIR );
+define( 'SITE_HEADER_PATH', SITE_DEPT_SECTION_PATH . SITE_HEADER_DIR );
 
 /** Theme Path */
-define( 'SITE_FOOTER_PATH', SITE_THEME_HTML_PATH . SITE_FOOTER_DIR );
+define( 'SITE_FOOTER_PATH', SITE_DEPT_SECTION_PATH . SITE_FOOTER_DIR );
 
 /** Theme Path */
-define( 'SITE_SIDEBAR_PATH', SITE_THEME_HTML_PATH . SITE_SIDEBAR_DIR );
+define( 'SITE_SIDEBAR_PATH', SITE_DEPT_SECTION_PATH . SITE_SIDEBAR_DIR );
 
 /** Theme Path */
-define( 'SITE_MENU_PATH', SITE_THEME_HTML_PATH . SITE_MENU_DIR );
+define( 'SITE_MENU_PATH', SITE_DEPT_SECTION_PATH . SITE_MENU_DIR );
 
 /*** ALT PATH ***/
 

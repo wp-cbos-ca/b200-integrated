@@ -20,6 +20,8 @@ define( 'SITE_CENTER_DIR', '/center' );
 
 global $site_dir;
 
+define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
+
 $site_dir['mathematics'] = '/mathematics';
 $site_dir['chemistry'] = '/chemistry';
 $site_dir['cognition'] = '/cognition';

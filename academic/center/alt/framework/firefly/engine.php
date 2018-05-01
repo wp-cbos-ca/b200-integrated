@@ -66,8 +66,13 @@ function get_firefly_article( $page ){
 }
 
 function get_firefly_article_directory( $page ){
-	if ( strstr ( rtrim( $page['slug'], '/' ), '/' ) ) {
+	$file = '';
+	if ( ! defined( 'SITE_DEPT_DIR' ) && strstr ( rtrim( $page['slug'], '/' ), '/' ) ) {
 		$file = SITE_HTML_PATH . $page['slug'] . SITE_ARTICLE_STUB. SITE_HTML_EXT;
+	}
+	else if( strpos( rtrim( $page['slug'], '/' ), SITE_DEPT_DIR ) !== FALSE ){
+		$file = SITE_DEPT_ARTICLE_PATH . SITE_ARTICLE_STUB. SITE_HTML_EXT;
+		echo $file;
 	}
 	else {
 		$file = SITE_HTML_PATH . SITE_ROOT_PAGE_DIR . $page['slug'] . SITE_ARTICLE_STUB. SITE_HTML_EXT;
