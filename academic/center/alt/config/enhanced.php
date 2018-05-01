@@ -296,6 +296,19 @@ define( 'SITE_THEME_PATH', SITE_ROOT_PATH . SITE_THEME_DIR );
  * framework--the codeset--is in the "center" folder. This is not "normal"
  * behaviour. There needs to be some flexibility--yet some structure. We
  * want to imagine cross disciplinary interaction... to a degree.
+ *
+ * If we gave each department (a half dozen) for each major section (~16-18) its
+ * own framework, we would have about a hundred copies of that framework. This isn't
+ * efficient... and it isn't how an actual university campus is set up. But this
+ * isn't how a codeset is normally set up.
+ *
+ * So, the picture is of diving into the "center" folder to get our bearings and
+ * pick up the configuration constants that we need, while all the "static" content
+ * (the HTML pages) are in the folder of the individual department. This is
+ * different from otherwise.
+ *
+ * In addition, sub-domains are used for each individual "domain". So, the sub folder
+ * level in the sub domain is actual the first folder level.
  */
 
 /** Department Path. This is because we are drawing from directories peer to the center directory. */
