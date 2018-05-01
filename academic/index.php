@@ -18,17 +18,17 @@ define( 'SITE_DIR', '/' . basename(__DIR__) );
 /** Record which directory we are in, for later. */
 define( 'SITE_CENTER_DIR', '/center' );
 
-global $site_dir;
+global $department;
 
 define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
 
-$site_dir['mathematics'] = '/mathematics';
-$site_dir['chemistry'] = '/chemistry';
-$site_dir['cognition'] = '/cognition';
-$site_dir['genetics'] = '/genetics';
-$site_dir['geology'] = '/geology';
-$site_dir['physics'] = '/physics';
-$site_dir['logic'] = '/logic';
+$department['mathematics'] = '/mathematics';
+$department['chemistry'] = '/chemistry';
+$department['cognition'] = '/cognition';
+$department['genetics'] = '/genetics';
+$department['geology'] = '/geology';
+$department['physics'] = '/physics';
+$department['logic'] = '/logic';
 
 /** Use this directory as the domain name. Comment out if not. */
 define( 'SITE_DOMAIN_NAME', basename(__DIR__) );

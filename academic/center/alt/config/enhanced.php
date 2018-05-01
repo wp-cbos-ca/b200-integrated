@@ -291,7 +291,14 @@ define( 'SITE_HTML_EXT', '.html' );
 /** Theme Path */
 define( 'SITE_THEME_PATH', SITE_ROOT_PATH . SITE_THEME_DIR );
 
-/** Department Path */
+/**
+ * The HTML files need to be in the appropriate sections folder, but the
+ * framework--the codeset--is in the "center" folder. This is not "normal"
+ * behaviour. There needs to be some flexibility--yet some structure. We
+ * want to imagine cross disciplinary interaction... to a degree.
+ */
+
+/** Department Path. This is because we are drawing from directories peer to the center directory. */
 define( 'SITE_DEPT_PATH', SITE_ROOT_PATH . SITE_DEPT_DIR );
 
 /** Site Department HTML Path */
@@ -303,20 +310,20 @@ define( 'SITE_DEPT_ARTICLE_PATH', SITE_DEPT_PATH . '/article' );
 /** Site Department Section Path (Header, Footer, Sidebar, etc.) */
 define( 'SITE_DEPT_SECTION_PATH', SITE_DEPT_PATH . '/section' );
 
-/** The CSS files that style the site. */
-define( 'SITE_CSS_PATH', SITE_DEPT_HTML_PATH . SITE_CSS_DIR );
-
-/** Theme Path */
+/** Site Header Path */
 define( 'SITE_HEADER_PATH', SITE_DEPT_SECTION_PATH . SITE_HEADER_DIR );
 
-/** Theme Path */
+/** Site Footer Path */
 define( 'SITE_FOOTER_PATH', SITE_DEPT_SECTION_PATH . SITE_FOOTER_DIR );
 
-/** Theme Path */
+/** Site Sidebar Path */
 define( 'SITE_SIDEBAR_PATH', SITE_DEPT_SECTION_PATH . SITE_SIDEBAR_DIR );
 
-/** Theme Path */
+/** Site Menu Path */
 define( 'SITE_MENU_PATH', SITE_DEPT_SECTION_PATH . SITE_MENU_DIR );
+
+/** The CSS files that style the site. */
+define( 'SITE_CSS_PATH', SITE_DEPT_HTML_PATH . SITE_CSS_DIR );
 
 /*** ALT PATH ***/
 
