@@ -63,8 +63,8 @@ function get_firefly_elapsed(){
 	/** Calculates elapsed time (accurate to 1/10000 seconds). Expressed as milliseconds */
 	$time = number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' );
 	
-	$str = '<footer class="elapsed" id="elapsed-time" ';
-	$str .= sprintf( 'title="%s">Elapsed: %s ms</div>%s', $msg, $time , PHP_EOL ) ;
+	$str = '<footer class="message elapsed-time" id="elapsed-time" ';
+	$str .= sprintf( 'title="%s"><div class="inner">Elapsed: %s ms</div></div>%s', $msg, $time , PHP_EOL ) ;
 	
 	return $str;
 }
