@@ -54,6 +54,9 @@ define( 'SITE_SCRIPT_DIR', '/script' );
 /** Note the singular "theme". */
 define( 'SITE_THEME_DIR', '/theme' );
 
+/** Note the singular "theme". */
+define( 'SITE_DEPT_THEME_DIR', '/theme' );
+
 /** Header HTML */
 define( 'SITE_HEADER_DIR', '/header' );
 
@@ -324,19 +327,19 @@ define( 'SITE_DEPT_HTML_PATH', SITE_DEPT_PATH . SITE_HTML_DIR );
 define( 'SITE_DEPT_ARTICLE_PATH', SITE_DEPT_PATH . '/article' );
 
 /** Site Department Section Path (Header, Footer, Sidebar, etc.) */
-define( 'SITE_DEPT_SECTION_PATH', SITE_DEPT_PATH . '/section' );
+define( 'SITE_DEPT_THEME_PATH', SITE_DEPT_PATH . SITE_DEPT_THEME_DIR );
 
 /** Site Header Path */
-define( 'SITE_HEADER_PATH', SITE_DEPT_SECTION_PATH . SITE_HEADER_DIR );
+define( 'SITE_HEADER_PATH', SITE_DEPT_THEME_PATH . SITE_HTML_DIR . SITE_HEADER_DIR );
 
 /** Site Footer Path */
-define( 'SITE_FOOTER_PATH', SITE_DEPT_SECTION_PATH . SITE_FOOTER_DIR );
+define( 'SITE_FOOTER_PATH', SITE_DEPT_THEME_PATH . SITE_HTML_DIR . SITE_FOOTER_DIR );
 
 /** Site Sidebar Path */
-define( 'SITE_SIDEBAR_PATH', SITE_DEPT_SECTION_PATH . SITE_SIDEBAR_DIR );
+define( 'SITE_SIDEBAR_PATH', SITE_DEPT_THEME_PATH . SITE_HTML_DIR . SITE_SIDEBAR_DIR );
 
 /** Site Menu Path */
-define( 'SITE_MENU_PATH', SITE_DEPT_SECTION_PATH . SITE_MENU_DIR );
+define( 'SITE_MENU_PATH', SITE_DEPT_THEME_PATH . SITE_HTML_DIR . SITE_MENU_DIR );
 
 /** The CSS files that style the site. */
 define( 'SITE_CSS_PATH', SITE_DEPT_HTML_PATH . SITE_CSS_DIR );

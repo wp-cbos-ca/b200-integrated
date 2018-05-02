@@ -17,7 +17,11 @@ define( 'SITE_DIR', '/' . basename(__DIR__) );
 
 global $department;
 
-define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
+if ( $_SERVER['REQUEST_URI'] == '/' ) {
+	define( 'SITE_DEPT_DIR', '/center' );
+} else {
+	define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
+}
 
 $department['mathematics'] = '/mathematics';
 $department['chemistry'] = '/chemistry';
