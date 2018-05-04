@@ -2,8 +2,8 @@
 /**
 Plugin Name: WP Bundle Base DNA
 Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-base-dna/
-Description: Securely holds the complete site configuration (with very little "junk" DNA) in a repeating set of files and arrays. Capable of installing pages, posts, menus, featured images, categories, tags and users. Also capable of setting permalinks, timezones, the front and posts page, etc. Ideally stored elsewhere once used. Can be retained for restoring site to user specified factory default. 
-Version: 2018.03.10
+Description: Mimics actual DNA to store the site configuration in a set of text files. 
+Version: 2018.05.04
 Author: wp.cbos.ca
 Author URI: http://wp.cbos.ca
 License: GPLv2+

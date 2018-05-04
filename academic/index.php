@@ -15,14 +15,16 @@ define( 'SITE_PATH', __DIR__ );
 /** Record which directory we are in, for later. */
 define( 'SITE_DIR', '/' . basename(__DIR__) );
 
-global $department;
-
 if ( $_SERVER['REQUEST_URI'] == '/' ) {
+	/* If we are in the root directory (of the sub domain), use the "center" directory. */
 	define( 'SITE_DEPT_DIR', '/center' );
 } else {
+	/* Else, use the folder we are in, which is leftmost in the URI requested. */ 
 	define( 'SITE_DEPT_DIR', substr( $_SERVER['REQUEST_URI'], 0, strpos( $_SERVER['REQUEST_URI'], '/', 1 ) ) );
 }
 
+/* To assist in cross disciplinary interaction. */
+global $department;
 $department['mathematics'] = '/mathematics';
 $department['chemistry'] = '/chemistry';
 $department['cognition'] = '/cognition';
