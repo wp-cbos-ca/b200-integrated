@@ -13,7 +13,7 @@ function get_wp_bundle_developer_plugins_html() {
 		
 		$str = '<div class="wrap">';
 		$str .= sprintf( '<p>%s</p>%s', $items['desc'], PHP_EOL );
-		if ( 0 ){
+		if ( 1 ){
 			$str .= '<p><form action="" method="post">';
 			$str .= sprintf('<button class="button button-primary" name="print-plugins">%s</button>', $items['button_text'], PHP_EOL );
 			$str .= wp_nonce_field( 'print-plugins', 'print-plugins', true, false );

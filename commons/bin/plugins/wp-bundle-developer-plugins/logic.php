@@ -17,9 +17,15 @@ function wp_bundle_developer_plugins_print(){
 			$str .= "\t" . '$items = [ ' . PHP_EOL;
 			foreach ( $plugins as $k => $plugin ){
 				$str .= "\t\t" . '[ \'plugin\' => \'' . $k . '\', ';
-				if ( is_plugin_active( $k ) && $switch['keep'] ){
+				if ( is_plugin_active( $k ) && $switch['leave_unchanged'] ){
 					$str .= '\'active\' => 1, ';
-				} else {
+				} else if ( $switch['all_active'] ) {
+					$str .= '\'active\' => 1, ';
+				}
+				else if ( $switch['all_inactive'] ) {
+					$str .= '\'active\' => 0, ';
+				}
+				else {
 					$str .= '\'active\' => 0, ';
 				}
 				$str .= '],' . PHP_EOL;

@@ -2,9 +2,15 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * all_active and all_inactive must be
+ * the inverse of the other for it to work.
+ */
 function get_wp_bundle_developer_plugins_switch(){
 	$items = [ 
-		'keep' => 0,
+		'leave_unchanged' => 0,
+		'all_active' => 1,
+		'all_inactive' => 0,
 	];
 	return $items;
 }

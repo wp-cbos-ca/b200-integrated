@@ -40,7 +40,7 @@ function wp_bundle_cache_adjuster_file( $post ){
 	//do_action( 'wp_log_info', 'source:36', $source );
 	//do_action( 'wp_log_info', 'dest:37', $dest );
 	if ( file_exists( $source ) ){
-		if ( $result = wp_bundle_refresh_cache_path( $path, $source ) ){
+		if ( $result = wp_bundle_cache_adjuster_refresh_cache_path( $path, $source ) ){
 			$result = copy ( $source, $dest );
 			//do_action( 'wp_log_info', 'result:36', $result );
 		}
@@ -55,7 +55,7 @@ function wp_bundle_get_cached_file_sub_path( $post_id, $slug ){
 	return $sub_path;
 }
 */
-function wp_bundle_refresh_cache_path( $path, $file ){
+function wp_bundle_cache_adjuster_refresh_cache_path( $path, $file ){
 	if( $mkdir = wp_mkdir_p( $path ) ) {
 		return true;
 	}
@@ -64,7 +64,7 @@ function wp_bundle_refresh_cache_path( $path, $file ){
 	}
 }
 
-function wp_bundle_copy_front_page( $file, $slug ){
+function wp_bundle_cache_adjuster_copy_front_page( $file, $slug ){
 	if ( $slug == 'front-page' || $slug == 'home' ) {
 		$dest = SITE_ROOT_PATH . '/' . SITE_INDEX_FILE;
 		if ( $result = copy( $file, $dest ) ) {
