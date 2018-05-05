@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-function get_wp_bundle_plugins_data(){
+function get_wp_bundle_maintenance_plugins_data(){
 	$items = array( 
 		array ( 
 			'display' => 1,
