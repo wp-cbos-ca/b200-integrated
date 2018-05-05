@@ -80,10 +80,10 @@ function run_site_one_files() {
 				switch( $item['name'] ) {
 					case 'https':
 						configure_https();
-						break;	
+						break;
 					case 'dashboard':
 						configure_dashboard_user();
-						break;	
+						break;
 					case 'themes':
 						activate_themes();
 						break;
