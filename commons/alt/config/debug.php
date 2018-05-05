@@ -3,7 +3,6 @@
 ( defined( 'SITE' ) || defined( 'WP_ADMIN' ) ) || exit;
 
 // Rename this file to turn WordPress debug mode OFF.
-
 if ( ! defined( 'WP_DEBUG' ) ) {
 	
 	define( 'WP_DEBUG', true );

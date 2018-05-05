@@ -4,8 +4,11 @@
 
 /***** ROOT DIRECTORY *****/
 
-/** A "catch-all" for things in the bin dept. */
+/** Catch-all. Replaced with /etc */
 define( 'SITE_ALT_DIR', '/alt' );
+
+/** Catch-all.  Default: /bin/etc. */
+define( 'SITE_ETC_DIR', '/etc' );
 
 /** Replaces {wp-content} */
 define( 'SITE_BIN_DIR', '/bin' );
@@ -89,7 +92,7 @@ define( 'SITE_BACKUP_DIR' , '/backup' );
 
 
 /** Logs */
-define( 'SITE_LOG_DIR', '/logs' );
+define( 'SITE_LOG_DIR', '/log' );
 
 // Other
 /** For flexibility, with ref. to WP_CONTENT_DIR. */
@@ -245,7 +248,7 @@ define( 'SITE_JS_DIR', '/js' );
 define( 'SITE_BIN_PATH', SITE_ROOT_PATH . SITE_BIN_DIR );
 
 /** Contains "backups", "codes", "config", "cron", and "logs". */
-define( 'SITE_ALT_PATH', SITE_ROOT_PATH . SITE_BIN_DIR );
+define( 'SITE_ETC_PATH', SITE_ROOT_PATH . SITE_BIN_DIR . SITE_ETC_DIR );
 			
 /** In the "bin" directory. Some plugins assume it is here. */
 define( 'SITE_CACHE_PATH', SITE_BIN_PATH . SITE_CACHE_DIR );
@@ -312,19 +315,19 @@ define( 'SITE_MENU_PATH', SITE_THEME_HTML_PATH . SITE_MENU_DIR );
 /*** ALT PATH ***/
 
 /** Backups are "point in time". May be deleted. */
-define( 'SITE_BACKUP_PATH' , SITE_ALT_PATH . SITE_BACKUP_DIR );
+define( 'SITE_BACKUP_PATH' , SITE_ETC_PATH . SITE_BACKUP_DIR );
 
 /** Status codes such as 403, 404, 500, etc. */
-define( 'SITE_CODE_PATH', SITE_ALT_PATH . SITE_CODE_DIR );
+define( 'SITE_CODE_PATH', SITE_ETC_PATH . SITE_CODE_DIR );
 
 /** Where most of the site configurations are stored. */
 define( 'SITE_CONFIG_PATH', SITE_ALT_PATH . SITE_CONFIG_DIR );
 
 /** Handles server side crons. */
-define( 'SITE_CRON_PATH', SITE_ALT_PATH . SITE_CRON_DIR );
+define( 'SITE_CRON_PATH', SITE_ETC_PATH . SITE_CRON_DIR );
 
 /** Default: false. Shows errors if set to true. (See below for hiding these errors). */
-define( 'SITE_LOG_PATH', SITE_ALT_PATH . SITE_LOG_DIR );
+define( 'SITE_LOG_PATH', SITE_ETC_PATH . SITE_LOG_DIR );
 
 /***** URLS *****/
 

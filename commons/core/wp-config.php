@@ -1,10 +1,14 @@
 <?php
 
+if ( ! defined( 'SITE' ) ){
+	/** Used to ensure files are not accessed directly. */
+	define( 'SITE', true );
+}
+
 /** Default: false */
 define( 'WP_CACHE', true );
 
 if ( file_exists( __DIR__ . '/../alt/config/site.php' ) ) {
-
 	require_once( __DIR__ . '/../alt/config/site.php' );
 }
 else {

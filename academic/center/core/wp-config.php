@@ -1,5 +1,10 @@
 <?php
 
+if ( ! defined( 'SITE' ) ){
+	/** Used to ensure files are not accessed directly. */
+	define( 'SITE', true );
+}
+
 /** Default: false */
 define( 'WP_CACHE', true );
 

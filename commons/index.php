@@ -1,6 +1,6 @@
 <?php
 
-/** Set a constant for security. Use it to ensure files are not accessed directly. */
+/** Used to ensure files are not accessed directly. */
 define( 'SITE', true );
 
 /** Set a timer to measure performance. */
@@ -19,13 +19,13 @@ define( 'SITE_DIR', '/' . basename(__DIR__) );
 define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
 
 /** Use the core, if available. Start by using only if needed. */
-define( 'SITE_USE_CORE', false );
+define( 'SITE_USE_CORE', true );
 
 /** Use the core to handle requests or not. Default is true. */
 define( 'SITE_USE_CORE_POST', true );
 
 /** Use the alternative framework, if available. */
-define( 'SITE_USE_ALT', falsew );
+define( 'SITE_USE_ALT', false );
 
 /** Use the core if we have decided to. If we have decided to for a request and if it is there. */
 
