@@ -57,9 +57,9 @@ function check_wp_bundle_developer_plugins() {
 function get_wp_bundle_plugins_form_data(){
 	$items = array(
 		'title' => 'Run WP Bundle Developer Plugins',
-		'desc' => 'Creates a file with a list of plugins and associated data: active, folder size, and number of files.',
-		'button_text' => 'Create File',
-		'activate_text' => 'Activate Plugins',
+		'desc' => 'Creates a file with a list of plugins and active/inactive status.',
+		'button_text' => 'Create List of Plugins',
+		'activate_text' => 'Activate/Deactivate Plugins',
 		'help' => '',
 	);
 	return $items;
