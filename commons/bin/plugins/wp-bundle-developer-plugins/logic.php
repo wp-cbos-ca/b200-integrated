@@ -62,4 +62,3 @@ function wp_bundle_developer_plugins_activate(){
 		}
 	}
 }
-

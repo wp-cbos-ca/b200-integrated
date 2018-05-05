@@ -23,3 +23,17 @@ function configure_plugins(){
 		}
 	}
 }
+
+function wp_bundle_dna_activate_plugins(){
+	require_once( __DIR__ . '/activate.php' );
+	$plugins = get_wp_bundle_dna_plugins_data();
+	if ( ! empty ( $plugins ) )  {
+		$self = 'wp-bundle-base-dna-plugins/plugin.php';
+		foreach ( $plugins as $plugin ) {
+			$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
+			if ( ! is_plugin_active( $plugin['plugin'] ) && $plugin['active'] ) {
+				activate_plugin( $file );
+			}
+		}
+	}
+}

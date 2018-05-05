@@ -9,8 +9,8 @@ defined( 'ABSPATH' ) || exit;
 function get_wp_bundle_developer_plugins_switch(){
 	$items = [ 
 		'leave_unchanged' => 0,
-		'all_active' => 1,
-		'all_inactive' => 0,
+		'all_active' => 0,
+		'all_inactive' => 1,
 	];
 	return $items;
 }

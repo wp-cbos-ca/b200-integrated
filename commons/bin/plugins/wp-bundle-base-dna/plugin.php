@@ -2,8 +2,8 @@
 /**
 Plugin Name: WP Bundle Base DNA
 Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-base-dna/
-Description: Mimics actual DNA to store the site configuration in a set of text files. 
-Version: 2018.05.04
+Description: Mimics actual DNA to store the site configuration in a set of text files. ...But, this is easier to configure...
+Version: 2018.05.05
 Author: wp.cbos.ca
 Author URI: http://wp.cbos.ca
 License: GPLv2+
@@ -91,7 +91,8 @@ function run_site_one_files() {
 						configure_theme_plugins();
 						break;
 					case 'plugins':
-						configure_plugins();
+						//configure_plugins();
+						wp_bundle_dna_activate_plugins();
 						break;
 					case 'users':
 						install_users();

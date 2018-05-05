@@ -5,10 +5,10 @@ defined( 'ABSPATH' ) || exit;
 function get_installer_run_data(){
 	$items = array(
 		'site_one'  => array ( 'run' => 1, 'ran' => 0 ),
-		'site_two'  => array ( 'run' => 1, 'ran' => 0 ),
-		'settings'  => array ( 'run' => 1, 'ran' => 0 ),
-		'content'   => array ( 'run' => 1, 'ran' => 0 ),
-		'images'	=> array ( 'run' => 1, 'ran' => 0 ),
+		'site_two'  => array ( 'run' => 0, 'ran' => 0 ),
+		'settings'  => array ( 'run' => 0, 'ran' => 0 ),
+		'content'   => array ( 'run' => 0, 'ran' => 0 ),
+		'images'	=> array ( 'run' => 0, 'ran' => 0 ),
 		'sorting'   => array ( 'run' => 0, 'ran' => 0 ),
 	);
 	return $items;
@@ -17,11 +17,11 @@ function get_installer_run_data(){
 function get_site_one_data(){
 	$items = array(
 		array( 'name' => 'https',		 'run' => 0, 'ran' => 0 ),
-		array( 'name' => 'dashboard',	 'run' => 1, 'ran' => 0 ),
-		array( 'name' => 'themes',		'run' => 1, 'ran' => 0 ),
-		array( 'name' => 'theme',		 'run' => 1, 'ran' => 0 ),		
-		array( 'name' => 'plugins',	   'run' => 1, 'ran' => 0 ),		
-		array( 'name' => 'users',		 'run' => 1, 'ran' => 0 ),
+		array( 'name' => 'dashboard',	 'run' => 0, 'ran' => 0 ),
+		array( 'name' => 'themes',		'run' => 0, 'ran' => 0 ),
+		array( 'name' => 'theme',		 'run' => 0, 'ran' => 0 ),
+		array( 'name' => 'plugins',	   'run' => 1, 'ran' => 0 ),
+		array( 'name' => 'users',		 'run' => 0, 'ran' => 0 ),
 	);
 	return $items;
 }
