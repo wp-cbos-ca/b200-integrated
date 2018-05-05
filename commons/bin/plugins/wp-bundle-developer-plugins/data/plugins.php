@@ -1,6 +1,6 @@
 <?php
 
-$items = array( 
+$items = [ 
 	[ backupwordpress/backupwordpress.php, active => 0, ],
 	[ cache-enabler/cache-enabler.php, active => 0, ],
 	[ wordpress-importer/wordpress-importer.php, active => 0, ],
@@ -44,4 +44,4 @@ $items = array(
 	[ wp-bundle-write-import-html/plugin.php, active => 0, ],
 	[ wp-crontrol/wp-crontrol.php, active => 0, ],
 	[ wp-dashboard-notes/wp-dashboard-notes.php, active => 0, ],
- ); 
+]; 
