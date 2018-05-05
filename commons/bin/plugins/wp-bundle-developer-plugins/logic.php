@@ -39,10 +39,19 @@ function wp_bundle_developer_plugins_activate( $plugins ){
 	require_once( __DIR__ . '/data/active.php' );
 	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
+		$self = 'wp-bundle-developer-plugins/plugin.php';
 		foreach ( $plugins as $plugin ) {
+			$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
 			if ( $plugin['active'] ) {
-				$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
 				activate_plugin( $file );
+			}
+			else if ( is_plugin_active( $plugin['plugin'] ) ){
+				if ( $plugin['plugin'] !== $self ) {
+					deactivate_plugins( $file );
+				}
+			}
+			else {
+				//do nothing;
 			}
 		}
 	}
