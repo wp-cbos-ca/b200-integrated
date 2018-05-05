@@ -18,8 +18,10 @@ if ( file_exists( __DIR__ . '/logic.php' ) ) {
 if ( 0 ) {
 	
 function wp_bundle_plugins_add_dashboard_widget() {
-	$args = array( 'slug' => 'wp_bundle_dashboard_widget', 'title' => 'WP Bundle Developer Plugins', 'function' => 'wp_bundle_plugins_get_dashboard_html' );
-	wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );																				
+	if ( current_user_can( 'manage_options' ) ) {
+		$args = array( 'slug' => 'wp_bundle_dashboard_widget', 'title' => 'WP Bundle Developer Plugins', 'function' => 'wp_bundle_plugins_get_dashboard_html' );
+		wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );
+	}
 }
 add_action( 'wp_dashboard_setup', 'wp_bundle_plugins_add_dashboard_widget' );
 

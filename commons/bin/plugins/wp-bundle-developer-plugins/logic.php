@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-if ( 1 ) {
+if ( 0 ) {
 	get_wp_bundle_plugins();
 }
 
