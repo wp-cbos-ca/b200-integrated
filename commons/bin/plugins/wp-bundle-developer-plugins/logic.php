@@ -36,22 +36,13 @@ function run_wp_bundle_developer_plugins(){
 }
 
 function wp_bundle_developer_plugins_activate( $plugins ){
-	require_once( dirname(__FILE__) . '/data/plugins.php' );
-	$plugins = get_plugins_data();
+	require_once( __DIR__ . '/data/active.php' );
+	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
 		foreach ( $plugins as $plugin ) {
-			$file = WP_PLUGIN_DIR  . '/' .  $plugin['folder'] . '/' . $plugin['file'];
-			if ( file_exists( $file ) ) {
-				if ( $plugin['activate'] ) {
-					if ( ( $plugin['local'] && is_localhost() ) || ( $plugin['online'] && ! is_localhost() ) ) {
-						activate_plugin( $file );
-						if ( isset( $plugin['configure'] ) && $plugin['configure'] && isset( $plugin['settings'] ) ) {
-							foreach ( $plugin['settings'] as $setting ) {
-								update_option( $setting['option_name'], $setting['option_value'] );
-							}
-						}
-					}
-				}
+			if ( $plugin['active'] ) {
+				$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
+				activate_plugin( $file );
 			}
 		}
 	}
