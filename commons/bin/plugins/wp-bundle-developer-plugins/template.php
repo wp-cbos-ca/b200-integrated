@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-function get_wp_bundle_plugins_html() {
+function get_wp_bundle_developer_plugins_html() {
 	if ( current_user_can( 'manage_options' ) )  {
 		if ( $msg = check_wp_bundle_developer_plugins() ) { }
 		else {
@@ -11,14 +11,15 @@ function get_wp_bundle_plugins_html() {
 		
 		$items = get_wp_bundle_plugins_form_data();
 		
-		$str = '<div class="wrap" style="width: 50%;">';
-		$str .= sprintf('<h1>%s</h1>%s', $items['title'], PHP_EOL );
-		$str .= sprintf( '<p>%s</p>%s', $items['desc'], PHP_EOL );
+		$str = '<div class="wrap">';
+		$str .= sprintf('<h3>%s</h3>%s', $items['title'], PHP_EOL );
 		$str .= '<form action="" method="post">';
-		$str .= sprintf('<button class="button button-secondary" name="site-installer" >%s</button>', $items['button_text'], PHP_EOL );
-		$str .= wp_nonce_field( 'developer-plugins', 'developer-plugins' );
+		$str .= sprintf('<button class="button button-primary" name="developer-plugins">%s</button>', $items['button_text'], PHP_EOL );
+		$str .= wp_nonce_field( 'developer-plugins', 'developer-plugins', true, false );
 		$str .= '</form>';
-		$str .= '<p>' . $msg . '</p>';
+		$str .= sprintf( '<p>%s</p>%s', $items['desc'], PHP_EOL );
+		$str .= '<p>' . $msg . '</p>' . PHP_EOL;
+		$str .= get_wp_bundle_developer_plugins_footer();
 		$str .= '</div>';
 		return $str;
 	}
@@ -28,7 +29,7 @@ function get_wp_bundle_plugins_html() {
 }
 
 function the_wp_bundle_developer_plugins_html() {
-	echo the_wp_bundle_developer_plugins_html();
+	echo get_wp_bundle_developer_plugins_html();
 }
 	
 function check_wp_bundle_developer_plugins() {
@@ -44,10 +45,14 @@ function check_wp_bundle_developer_plugins() {
 function get_wp_bundle_plugins_form_data(){
 	$items = array(
 		'title' => 'Run WP Bundle Developer Plugins',
-		'desc' => 'See plugin file for more information.',
+		'desc' => 'Creates a file with a list of plugins and associated data: active/inactive, folder size, number of files.',
 		'button_text' => 'Run',
 		'help' => '',
 	);
 	return $items;
 }
 
+function get_wp_bundle_developer_plugins_footer(){
+	$str = '<p><small>Do not use on a production site.<br />Delete after use.</small></p>';
+	return $str;
+}

@@ -40,3 +40,4 @@ Stack trace:
 #5 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/plugins.php(10): require_once('/var/www/html/1...')
 #6 {main}
   thrown in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 6
+[05-May-2018 15:42:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/plugin.php on line 79

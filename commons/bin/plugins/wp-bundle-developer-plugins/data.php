@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-function get_wp_bundle_plugins_data(){
+function get_wp_bundle_developer_plugins_data(){
 	$items = array( 
 		array ( 
 			'display' => 1,
@@ -10,7 +10,7 @@ function get_wp_bundle_plugins_data(){
 			'title' => 'P3 (Plugin Performance Profiler)', 
 			'name' => 'p3-profiler', 
 			'uri' => 'https://wordpress.org/plugins/p3-profiler/', 
-			'notes' => '',			 
+			'notes' => '',
 		),
 		array( 
 			'display' => 1,
