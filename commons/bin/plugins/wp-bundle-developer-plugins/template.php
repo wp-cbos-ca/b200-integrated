@@ -12,12 +12,11 @@ function get_wp_bundle_developer_plugins_html() {
 		$items = get_wp_bundle_plugins_form_data();
 		
 		$str = '<div class="wrap">';
-		$str .= sprintf('<h3>%s</h3>%s', $items['title'], PHP_EOL );
+		$str .= sprintf( '<p>%s</p>%s', $items['desc'], PHP_EOL );
 		$str .= '<form action="" method="post">';
 		$str .= sprintf('<button class="button button-primary" name="developer-plugins">%s</button>', $items['button_text'], PHP_EOL );
 		$str .= wp_nonce_field( 'developer-plugins', 'developer-plugins', true, false );
 		$str .= '</form>';
-		$str .= sprintf( '<p>%s</p>%s', $items['desc'], PHP_EOL );
 		$str .= '<p>' . $msg . '</p>' . PHP_EOL;
 		$str .= get_wp_bundle_developer_plugins_footer();
 		$str .= '</div>';
@@ -45,7 +44,7 @@ function check_wp_bundle_developer_plugins() {
 function get_wp_bundle_plugins_form_data(){
 	$items = array(
 		'title' => 'Run WP Bundle Developer Plugins',
-		'desc' => 'Creates a file with a list of plugins and associated data: active/inactive, folder size, number of files.',
+		'desc' => 'Creates a file with a list of plugins and associated data: active, folder size, and number of files.',
 		'button_text' => 'Run',
 		'help' => '',
 	);
