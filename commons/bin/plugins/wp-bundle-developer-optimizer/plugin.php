@@ -12,7 +12,7 @@ License: GPLv2+
 defined( 'ABSPATH' ) || exit;
 
 function wp_bundle_add_dashboard_widget() {
-	$args = array( 'slug' => 'wp_bundle_dashboard_widget', 'title' => 'WP Bundle Developer Optimizer', 'function' => 'wp_bundle_function' );
+	$args = array( 'slug' => 'wp_bundle_optimizer_dashboard_widget', 'title' => 'WP Bundle Developer Optimizer', 'function' => 'wp_bundle_function' );
 	wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );																				
 }
 add_action( 'wp_dashboard_setup', 'wp_bundle_add_dashboard_widget' );

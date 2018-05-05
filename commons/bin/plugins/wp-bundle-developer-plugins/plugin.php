@@ -20,7 +20,7 @@ if ( 1 ) {
 function wp_bundle_plugins_add_dashboard_widget() {
 
 	if ( current_user_can( 'manage_options' ) ) {
-		$args = array( 'slug' => 'wp_bundle_dashboard_widget', 'title' => 'WP Bundle Developer Plugins', 'function' => 'the_wp_bundle_developer_plugins_html' );
+		$args = array( 'slug' => 'wp_bundle_developer_dashboard_widget', 'title' => 'WP Bundle Developer Plugins', 'function' => 'the_wp_bundle_developer_plugins_html' );
 		wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );
 	}
 }
