@@ -41,3 +41,29 @@ Stack trace:
 #6 {main}
   thrown in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 6
 [05-May-2018 15:42:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/plugin.php on line 79
+[05-May-2018 17:14:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php on line 41
+[05-May-2018 17:15:17 UTC] PHP Parse error:  syntax error, unexpected 'check_admin_referer' (T_STRING), expecting '(' in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php on line 38
+[05-May-2018 17:26:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php on line 73
+[05-May-2018 17:30:30 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 40
+[05-May-2018 17:30:46 UTC] PHP Notice:  Undefined variable: count in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 40
+[05-May-2018 17:30:46 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php:40
+Stack trace:
+#0 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(49): wp_bundle_developer_plugins_activate()
+#1 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(7): check_wp_bundle_developer_plugins()
+#2 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(39): get_wp_bundle_developer_plugins_html()
+#3 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/includes/template.php(1063): the_wp_bundle_developer_plugins_html('', Array)
+#4 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/includes/dashboard.php(218): do_meta_boxes(Object(WP_Screen), 'normal', '')
+#5 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/index.php(134): wp_dashboard()
+#6 {main}
+  thrown in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 40
+[05-May-2018 17:32:23 UTC] PHP Notice:  Undefined variable: count in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 41
+[05-May-2018 17:32:23 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php:41
+Stack trace:
+#0 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(49): wp_bundle_developer_plugins_activate()
+#1 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(7): check_wp_bundle_developer_plugins()
+#2 /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/template.php(39): get_wp_bundle_developer_plugins_html()
+#3 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/includes/template.php(1063): the_wp_bundle_developer_plugins_html('', Array)
+#4 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/includes/dashboard.php(218): do_meta_boxes(Object(WP_Screen), 'normal', '')
+#5 /var/www/html/1/bundle/b200-integrated/commons/core/wp-admin/index.php(134): wp_dashboard()
+#6 {main}
+  thrown in /var/www/html/1/bundle/b200-integrated/commons/bin/plugins/wp-bundle-developer-plugins/logic.php on line 41

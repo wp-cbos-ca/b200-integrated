@@ -48,5 +48,6 @@ function get_wp_bundle_developer_plugins_data() {
 		[ 'plugin' => 'wp-bundle-write-import-html/plugin.php', 'active' => 0, ],
 		[ 'plugin' => 'wp-crontrol/wp-crontrol.php', 'active' => 0, ],
 		[ 'plugin' => 'wp-dashboard-notes/wp-dashboard-notes.php', 'active' => 0, ],
-	]; 
+	];
+	return $items;
 };

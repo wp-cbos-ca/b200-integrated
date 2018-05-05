@@ -2,8 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-function run_wp_bundle_developer_plugins(){
-	
+function wp_bundle_developer_plugins_print(){
 	if ( 1 && current_user_can( 'manage_options' ) ) {
 		if ( function_exists( 'get_plugins' ) ) {
 			$plugins = get_plugins();
@@ -26,6 +25,7 @@ function run_wp_bundle_developer_plugins(){
 				$str .= '],' . PHP_EOL;
 			}
 			$str .= "\t" . ']; '. PHP_EOL;
+			$str .= "\t" . 'return $items;' . PHP_EOL;
 			$str .= '};'. PHP_EOL;
 			$result = file_put_contents( $file, $str );
 		}
@@ -35,7 +35,7 @@ function run_wp_bundle_developer_plugins(){
 	}
 }
 
-function wp_bundle_developer_plugins_activate( $plugins ){
+function wp_bundle_developer_plugins_activate(){
 	require_once( __DIR__ . '/data/active.php' );
 	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
