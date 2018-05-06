@@ -6,8 +6,7 @@ function wp_bundle_developer_plugins_print(){
 	if ( 1 && current_user_can( 'manage_options' ) ) {
 		if ( function_exists( 'get_plugins' ) ) {
 			$plugins = get_plugins();
-			$switch = get_wp_bundle_developer_plugins_switch();
-			var_dump( $switch );
+			$switch = get_wp_bundle_developer_plugins_print_switch();
 			$file = ( __DIR__ . '/data/printed.php' );
 			$str = '<?php' . PHP_EOL;
 			$str .= PHP_EOL;
@@ -43,7 +42,7 @@ function wp_bundle_developer_plugins_print(){
 }
 
 function wp_bundle_developer_plugins_activate( $type = 0 ){
-	require_once( __DIR__ . '/data/active.php' );
+	require_once( __DIR__ . '/data/activate.php' );
 	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
 		$self = 'wp-bundle-developer-plugins/plugin.php';
