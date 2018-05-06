@@ -7,6 +7,7 @@ function wp_bundle_developer_plugins_print(){
 		if ( function_exists( 'get_plugins' ) ) {
 			$plugins = get_plugins();
 			$switch = get_wp_bundle_developer_plugins_switch();
+			var_dump( $switch );
 			$file = ( __DIR__ . '/data/printed.php' );
 			$str = '<?php' . PHP_EOL;
 			$str .= PHP_EOL;
@@ -41,17 +42,24 @@ function wp_bundle_developer_plugins_print(){
 	}
 }
 
-function wp_bundle_developer_plugins_activate(){
+function wp_bundle_developer_plugins_activate( $type = 0 ){
 	require_once( __DIR__ . '/data/active.php' );
 	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
 		$self = 'wp-bundle-developer-plugins/plugin.php';
+		echo "here";
 		foreach ( $plugins as $plugin ) {
 			$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
-			if ( $plugin['active'] ) {
+			if ( $type == 0 && $plugin['plugin'] !== $self ) {
+				deactivate_plugins( $file );
+			}
+			else if ( $type == 1 && $plugin['plugin'] !== $self ) {
 				activate_plugin( $file );
 			}
-			else if ( is_plugin_active( $plugin['plugin'] ) ){
+			else if ( $type == 2 && $plugin['active'] ) {
+				activate_plugin( $file );
+			}
+			else if ( $type == 2 && is_plugin_active( $plugin['plugin'] ) ){
 				if ( $plugin['plugin'] !== $self ) {
 					deactivate_plugins( $file );
 				}
@@ -59,6 +67,31 @@ function wp_bundle_developer_plugins_activate(){
 			else {
 				//do nothing;
 			}
+		}
+	}
+}
+
+function check_wp_bundle_developer_plugins() {
+	if ( ! empty( $_POST ) ) {
+		if ( check_admin_referer( 'print-plugins', 'print-plugins' ) ) {
+			if ( isset( $_POST['plugins-list'] ) )  {
+				$msg = wp_bundle_developer_plugins_print();
+				return $msg;
+			}
+			else if ( isset( $_POST['plugins-deactivate-all'] ) ) {
+				$msg = wp_bundle_developer_plugins_activate( 0 );
+				return $msg;
+			}
+			else if ( isset( $_POST['plugins-activate-all'] ) ) {
+				$msg = wp_bundle_developer_plugins_activate( 1 );
+				return $msg;
+			}
+			else if ( isset( $_POST['plugins-activate-select'] ) ) {
+				$msg = wp_bundle_developer_plugins_activate( 2);
+				return $msg;
+			}
+		} else {
+				return false;
 		}
 	}
 }

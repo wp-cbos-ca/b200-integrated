@@ -3,12 +3,15 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * all_active and all_inactive must be
- * the inverse of the other for it to work.
+ * In order:
+ * leave_unchanged
+ * all_active
+ * all_inactive
+ * Leave unchanged takes precedence.
  */
-function get_wp_bundle_developer_plugins_switch(){
+function get_wp_bundle_developer_plugins_print_switch(){
 	$items = [ 
-		'leave_unchanged' => 0,
+		'leave_unchanged' => 1,
 		'all_active' => 0,
 		'all_inactive' => 1,
 	];
