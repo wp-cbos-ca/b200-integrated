@@ -24,6 +24,7 @@ $_wp_opt = array(
 	'remove_wp_generator' => 1,
 	'remove_x_pingback' => 1,
 	'disable_xmlrpc' => 1,
+	'deregister_jquery_migrate' => 0,
 	'deregister_jquery_ui_core' => 1, //front end
 	);
 
@@ -123,8 +124,19 @@ if ( $_wp_opt['disable_xmlrpc'] ) {
 	add_filter( 'xmlrpc_enabled', '__return_false' );
 }
 
+if ( $_wp_opt[ 'deregister_jquery_migrate' ] ){
+	function wp_bundle_base_optimizer_deregister_jquery_migrate( &$scripts ){
+		$script = $scripts -> registered['jquery'];
+		if ( $script -> deps ) { // Check whether the script has any dependencies
+			$script -> deps = array_diff( $script -> deps, array( 'jquery-migrate' ) );
+		}
+	}
+	add_filter( 'wp_default_scripts', 'wp_bundle_base_optimizer_deregister_jquery_migrate' );
+	// src: https://wordpress.org/plugins/remove-jquery-migrate/ (Henry Tarnando)
+}
+
 if ( $_wp_opt[ 'deregister_jquery_ui_core' ] ) {
-	function deregister_jquery_ui_core() {		
+	function deregister_jquery_ui_core() {
 		if ( ! is_admin() ) { 
 			wp_deregister_script( 'jquery-ui-core' ); 
 		}
