@@ -46,7 +46,6 @@ function wp_bundle_developer_plugins_activate( $type = 0 ){
 	$plugins = get_wp_bundle_developer_plugins_data();
 	if ( ! empty ( $plugins ) )  {
 		$self = 'wp-bundle-developer-plugins/plugin.php';
-		echo "here";
 		foreach ( $plugins as $plugin ) {
 			$file = WP_PLUGIN_DIR . '/' . $plugin['plugin'];
 			if ( $type == 0 && $plugin['plugin'] !== $self ) {
