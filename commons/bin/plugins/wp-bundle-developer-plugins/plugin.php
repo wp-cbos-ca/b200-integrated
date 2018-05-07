@@ -11,17 +11,28 @@ License: GPLv2+
 
 defined( 'ABSPATH' ) || exit;
 
-function wp_bundle_plugins_add_dashboard_widget() {
-
-	if ( 1 ) {
-		require_once( __DIR__ . '/data.php' );
-		require_once( __DIR__ . '/template.php' );
-		require_once( __DIR__ . '/logic.php' );
-	}
-
+function wp_bundle_developer_plugins_menu(){
 	if ( 1 && current_user_can( 'manage_options' ) ) {
-		$args = array( 'slug' => 'wp_bundle_developer_dashboard_widget', 'title' => 'WP Bundle Developer Plugins', 'function' => 'the_wp_bundle_developer_plugins_html' );
-		wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );
+		if ( 1 ) {
+			require_once( __DIR__ . '/data.php' );
+			require_once( __DIR__ . '/template.php' );
+			require_once( __DIR__ . '/logic.php' );
+		}
+		if ( 1 ) {
+			$args = get_wp_bundle_developer_data();
+			add_management_page( $args['page_title'], $args['menu_title'], $args['capability'], $args['menu_slug'], $args['function'] );
+		}
 	}
 }
-add_action( 'wp_dashboard_setup', 'wp_bundle_plugins_add_dashboard_widget' );
+add_action( 'admin_menu', 'wp_bundle_developer_plugins_menu' );
+
+function get_wp_bundle_developer_data() {
+	$items = array( 
+		'page_title' => 'WP Bundle Plugins',
+		'menu_title' => 'WP Bundle Plugins',
+		'capability' => 'manage_options',
+		'menu_slug' => 'wp-bundle-developer-plugins',
+		'function' => 'the_wp_bundle_developer_plugins_html',
+	);
+	return $items;
+}

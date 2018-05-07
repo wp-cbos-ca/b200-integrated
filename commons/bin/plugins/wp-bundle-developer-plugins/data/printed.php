@@ -6,8 +6,8 @@ function get_wp_bundle_developer_plugins_data() {
 
 	$items = [ 
 		[ 'plugin' => 'backupwordpress/backupwordpress.php', 'active' => 1, ],
-		[ 'plugin' => 'cache-enabler/cache-enabler.php', 'active' => 1, ],
-		[ 'plugin' => 'wordpress-importer/wordpress-importer.php', 'active' => 1, ],
+		[ 'plugin' => 'cache-enabler/cache-enabler.php', 'active' => 0, ],
+		[ 'plugin' => 'wordpress-importer/wordpress-importer.php', 'active' => 0, ],
 		[ 'plugin' => 'wp-bundle-base-cache/plugin.php', 'active' => 1, ],
 		[ 'plugin' => 'wp-bundle-base-cache-adjuster/plugin.php', 'active' => 1, ],
 		[ 'plugin' => 'wp-bundle-base-cron/plugin.php', 'active' => 1, ],
@@ -47,7 +47,7 @@ function get_wp_bundle_developer_plugins_data() {
 		[ 'plugin' => 'wp-bundle-write-footnotes/plugin.php', 'active' => 1, ],
 		[ 'plugin' => 'wp-bundle-write-import-html/plugin.php', 'active' => 1, ],
 		[ 'plugin' => 'wp-crontrol/wp-crontrol.php', 'active' => 1, ],
-		[ 'plugin' => 'wp-dashboard-notes/wp-dashboard-notes.php', 'active' => 1, ],
+		[ 'plugin' => 'wp-dashboard-notes/wp-dashboard-notes.php', 'active' => 0, ],
 	]; 
 	return $items;
 };
