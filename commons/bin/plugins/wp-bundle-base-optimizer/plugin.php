@@ -125,17 +125,18 @@ if ( $_wp_opt['disable_xmlrpc'] ) {
 }
 
 if ( $_wp_opt[ 'use_latest_jquery' ] ){
-	function wp_bundle_base_optimizer_use_latest_jquery( &$scripts ){
+	function wp_bundle_base_optimizer_deregister_jquery_migrate( &$scripts ){
 		$script = $scripts -> registered['jquery'];
 		if ( $script -> deps ) { // Check whether the script has any dependencies
 			$script -> deps = array_diff( $script -> deps, array( 'jquery-migrate' ) );
 		}
 	}
-	add_filter( 'wp_default_scripts', 'wp_bundle_base_optimizer_use_latest_jquery' );
+	add_filter( 'wp_default_scripts', 'wp_bundle_base_optimizer_deregister_jquery_migrate' );
 	
 	function wp_bundle_base_optimizer_use_latest_jquery(){
 		wp_deregister_script( 'jquery' );
 		wp_register_script( 'jquery-latest', SITE_SCRIPT_URL . '/jquery/jquery-latest.min.js' );
+		wp_enqueue_script( 'jquery-latest' );
 	}
 	add_action('wp_enqueue_scripts', 'wp_bundle_base_optimizer_use_latest_jquery', 15 );
 }
