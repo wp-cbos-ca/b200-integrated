@@ -24,7 +24,7 @@ $_wp_opt = array(
 	'remove_wp_generator' => 1,
 	'remove_x_pingback' => 1,
 	'disable_xmlrpc' => 1,
-	'deregister_jquery_migrate' => 0,
+	'use_latest_jquery' => 1,
 	'deregister_jquery_ui_core' => 1, //front end
 	);
 
@@ -124,15 +124,20 @@ if ( $_wp_opt['disable_xmlrpc'] ) {
 	add_filter( 'xmlrpc_enabled', '__return_false' );
 }
 
-if ( $_wp_opt[ 'deregister_jquery_migrate' ] ){
-	function wp_bundle_base_optimizer_deregister_jquery_migrate( &$scripts ){
+if ( $_wp_opt[ 'use_latest_jquery' ] ){
+	function wp_bundle_base_optimizer_use_latest_jquery( &$scripts ){
 		$script = $scripts -> registered['jquery'];
 		if ( $script -> deps ) { // Check whether the script has any dependencies
 			$script -> deps = array_diff( $script -> deps, array( 'jquery-migrate' ) );
 		}
 	}
-	add_filter( 'wp_default_scripts', 'wp_bundle_base_optimizer_deregister_jquery_migrate' );
-	// src: https://wordpress.org/plugins/remove-jquery-migrate/ (Henry Tarnando)
+	add_filter( 'wp_default_scripts', 'wp_bundle_base_optimizer_use_latest_jquery' );
+	
+	function wp_bundle_base_optimizer_use_latest_jquery(){
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery-latest', SITE_SCRIPT_URL . '/jquery/jquery-latest.min.js' );
+	}
+	add_action('wp_enqueue_scripts', 'wp_bundle_base_optimizer_use_latest_jquery', 15 );
 }
 
 if ( $_wp_opt[ 'deregister_jquery_ui_core' ] ) {
@@ -145,13 +150,7 @@ if ( $_wp_opt[ 'deregister_jquery_ui_core' ] ) {
 }
 
 /*
-https://orbitingweb.com/blog/remove-unnecessary-tags-wp-head/
-
-remove_action('wp_head', 'rsd_link');
-remove_action('wp_head', 'wlwmanifest_link');
-remove_action('wp_head', 'wp_generator');
-remove_action('wp_head', 'wp_shortlink_wp_head');
-remove_action( 'wp_head', 'feed_links', 2 ); 
-remove_action('wp_head', 'feed_links_extra', 3 );
-
+ Credits:
+ https://orbitingweb.com/blog/remove-unnecessary-tags-wp-head/
+ https://wordpress.org/plugins/remove-jquery-migrate/ (Henry Tarnando)
 */
