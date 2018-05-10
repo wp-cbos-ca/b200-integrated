@@ -29,5 +29,8 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 			ini_set( 'error_log', SITE_LOG_PATH . '/debug.log' );
 		}
 		// Don't set both WP_DEBUG_LOG and SITE_DEBUG_LOG to the same value.
+		
+		/* Capture import bugs */
+		define( 'IMPORT_DEBUG', true );
 	}
 }

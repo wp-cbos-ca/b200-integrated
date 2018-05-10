@@ -1,4 +1,4 @@
-/** Child Theme Created: 2018-04-10 Last Updated: 2018-04-13 10:24 HRS EST*/
+/** Child Theme Created: 2018-04-10 Last Updated: 2018-05-09 18:53 HRS EST*/
 
 .title-wrap {
 	background-image: url('/commons/theme/image/1051872-white-cc.png');	
@@ -42,6 +42,7 @@
 .building { background: #d9d9d9; }
 .information { background: #ffe599; }
 .project { background: #ffd966; }
+.recovery { background: #93c47d; }
 .profession { background: #d0e0e3; }
 .trade { background: #f6b26b; }
 .news { background: #f1c232; }
