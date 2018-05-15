@@ -6,6 +6,8 @@
  * @subpackage Importer
  */
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * WordPress Importer class for managing parsing of WXR files.
  */

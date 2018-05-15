@@ -9,6 +9,7 @@ Version: 2018-05-15
 Text Domain: wordpress-importer
 License: GPL v2+
 */
+defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'WP_LOAD_IMPORTERS' ) ) {
 	return;
@@ -19,21 +20,30 @@ if ( ! defined( 'IMPORT_DEBUG' ) ){
 	define( 'IMPORT_DEBUG', false );
 }
 
-/* Load files start. Only load files if needed */
-
-// Load Importer API
-require_once ABSPATH . 'wp-admin/includes/import.php';
-
 if ( ! class_exists( 'WP_Importer' ) ) {
-	$class_wp_importer = ABSPATH . 'wp-admin/includes/class-wp-importer.php';
-	if ( file_exists( $class_wp_importer ) )
-		require $class_wp_importer;
+	if ( file_exists( ABSPATH . 'wp-admin/includes/class-wp-importer.php' ) ) {
+		require ABSPATH . 'wp-admin/includes/class-wp-importer.php';
+	}
 }
 
-// include WXR file parsers
-require dirname( __FILE__ ) . '/parsers.php';
+function wordpress_importer_init() {
+	
+	// Load Importer API
+	require_once ABSPATH . 'wp-admin/includes/import.php';
+	
+	// include WXR file parsers
+	require dirname( __FILE__ ) . '/parsers.php';
+		
+	load_plugin_textdomain( 'wordpress-importer' );
 
-/* Load files end. Only load files if needed */
+	/**
+	 * WordPress Importer object for registering the import callback
+	 * @global WP_Import $wp_import
+	 */
+	$GLOBALS['wp_import'] = new WP_Import();
+	register_importer( 'wordpress', 'WordPress', __('Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file.', 'wordpress-importer'), array( $GLOBALS['wp_import'], 'dispatch' ) );
+}
+add_action( 'admin_init', 'wordpress_importer_init' );
 
 /**
  * WordPress Importer class for managing the import process of a WXR file
@@ -283,7 +293,7 @@ class WP_Import extends WP_Importer {
 <?php if ( $this->allow_fetch_attachments() ) : ?>
 	<h3><?php _e( 'Import Attachments', 'wordpress-importer' ); ?></h3>
 	<p>
-		<input type="checkbox" value="1" name="fetch_attachments" id="import-attachments" />
+		<input type="checkbox" name="fetch_attachments" value="1" checked id="import-attachments" />
 		<label for="import-attachments"><?php _e( 'Download and import file attachments', 'wordpress-importer' ); ?></label>
 	</p>
 <?php endif; ?>
@@ -1221,15 +1231,3 @@ class WP_Import extends WP_Importer {
 }
 
 } // class_exists( 'WP_Importer' )
-
-function wordpress_importer_init() {
-	load_plugin_textdomain( 'wordpress-importer' );
-
-	/**
-	 * WordPress Importer object for registering the import callback
-	 * @global WP_Import $wp_import
-	 */
-	$GLOBALS['wp_import'] = new WP_Import();
-	register_importer( 'wordpress', 'WordPress', __('Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file.', 'wordpress-importer'), array( $GLOBALS['wp_import'], 'dispatch' ) );
-}
-add_action( 'admin_init', 'wordpress_importer_init' );
