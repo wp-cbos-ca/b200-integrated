@@ -156,3 +156,7 @@ section {
 	left: 130px;
 	top: 160px;
 }
+
+article footer {
+	display: none;
+}
