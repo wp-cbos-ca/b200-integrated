@@ -91,7 +91,7 @@ function get_tier_1_role_data(){
 	['order'=>3,'group'=>'An','code' =>'Ph','name'=>'Photographer','cast' => 1,'color'=>['hex'=>'#fff2cd','name'=>'yellow']],
 	['order'=>5,'group'=>'An','code' =>'Ad','name'=>'Audio','cast' => 1,'color'=>['hex'=>'#d8ead2','name'=>'green']],
 	['order'=>4,'group'=>'An','code' =>'Vd','name'=>'Video','cast' => 1,'color'=>['hex'=>'#d1e0ef','name'=>'blue']],
-	['order'=>2,'group'=>'An','code' =>'Sp','name'=>'Analytics','cast' => 1,'color'=>['hex'=>'#dad2e9','name'=>'violet']],
+	['order'=>2,'group'=>'An','code' =>'An','name'=>'Analytics','cast' => 1,'color'=>['hex'=>'#dad2e9','name'=>'violet']],
 	
 	];
 	return $items;

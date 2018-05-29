@@ -84,12 +84,12 @@ function get_2d_community_css_calculated(){
  */
 function get_2dco_css_roles_calculated( $type, $group, $role ){
 	$css = '';
-	$adjust['left'] = -2;
+	$adjust['left'] = -3;
 	$adjust['top'] = -4;
 	$pos['pos11']['left'] = round( $type['size'] * $group['width'] * 5/16 ) + $adjust['left'];
 	$pos['pos12']['left'] = round( $type['size'] * $group['width'] * 11/16 ) + $adjust['left'];
-	$pos['pos21']['left'] = round( $type['size'] * $group['width'] * 1/5 ) + $adjust['left'];
-	$pos['pos22']['left'] = round( $type['size'] * $group['width'] * 4/5 ) + $adjust['left'];
+	$pos['pos21']['left'] = round( $type['size'] * $group['width'] * 3/16 ) + $adjust['left'];
+	$pos['pos22']['left'] = round( $type['size'] * $group['width'] * 13/16 ) + $adjust['left'];
 	$pos['pos31']['left'] = round( $type['size'] * $group['width'] * 5/16 ) + $adjust['left'];
 	$pos['pos32']['left'] = round( $type['size'] * $group['width'] * 11/16 ) + $adjust['left'];
 	
