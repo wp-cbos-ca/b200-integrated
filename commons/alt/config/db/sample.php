@@ -35,9 +35,9 @@ define('NONCE_SALT',       'copy_from_above_link');
 /**
  * Notes: Copy this file to:
  *
- * config-db-local.php
- * config-db-staging.php
- * config-db-production.php
+ * /alt/config/db/local.php
+ * /alt/config/db/staging.php
+ * /alt/config/db/production.php
  *
  * as needed.
  * */

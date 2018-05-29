@@ -12,7 +12,8 @@
 
 /********** GENERIC STYLING BEGIN **********/
 
-.updated { color: #180330; }
+.created { background: #180401; }
+.updated { background: #180522; }
 
 html {
 	background-color: #e6e6e6;
@@ -1075,10 +1076,6 @@ folds match up with the number of menu items in the menu. */
 
 .title-wrap .inner {
 	text-align: center;
-}
-
-.site-description {
-	margin-top: 0.3em;
 }
 
 .site-title a,

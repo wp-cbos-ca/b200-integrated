@@ -1,9 +1,12 @@
-/** Child Theme Created: 2018-04-10 Last Updated: 2018-05-09 18:53 HRS EST*/
+/** Child Theme Created: 2018-04-10 Last Updated: 2018-05-22 10:15 AM EST*/
+
+.created { background: #180410; }
+.updated { background: #180522; }
 
 .title-wrap {
-	background-image: url('/commons/theme/image/1051872-white-cc.png');	
+	background-image: url('/commons/theme/image/uni-village-logo-120x120.png');	
 	background-repeat: no-repeat;
-	background-size: 142px;
+	background-size: 120px;
 	background-position: 18px center;
 }
 

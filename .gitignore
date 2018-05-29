@@ -41,4 +41,6 @@ roboto/
 roboto-condensed/
 
 media/
+log/
 debug.log
+commons/bin/etc/log/debug.log

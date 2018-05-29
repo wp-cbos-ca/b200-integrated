@@ -1,0 +1,177 @@
+
+.last-updated { color: #180204; }
+
+.site-header {
+	display: none;
+}
+
+.community {
+	position: relative;
+	width: 700px;
+	height: 700px;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.community {
+	overflow: hidden;
+	background-color: #d8ead2;
+	border: 3px solid #999;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+section {
+	position: relative;
+}
+
+.type {
+	position: relative;
+	height: 600px;
+}
+
+.type-1 {
+	background: #d8ead2;
+	top: -50px;
+}
+
+.type-2{
+	background: #fde5cd;
+	left: -50px;
+}
+
+.type-3 {
+	background: #d1e0e5;
+	right: -50px;
+}
+
+.group {
+	display: block;
+	margin: 10px;
+	text-align: center;
+	overflow: hidden;
+	background: #d8ead2;
+	border: 3px solid #999;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0;
+}
+
+.group {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+
+.group > .inner {
+	padding: 10px;
+}
+
+.group-1 {
+	left: 225px;
+	top: 125px;
+}
+
+.group-2 {
+	left: 460px;
+	top: 125px;
+}
+
+.group-3 {
+	left: 125px;
+	top: 350px;
+}
+.group-4 {
+	left: 570px;
+	top: 350px;
+}
+
+.group-5 {
+	left: 225px;
+	top: 575px;
+}
+
+.group-6 {
+	left: 460px;
+	top: 575px;
+}
+
+.text {
+	position: absolute;
+	font-weight: bold;
+	color: #777;
+	font-size: 12px;
+	text-align: center;
+}
+
+.community-text {
+	left: 350px;
+	top: 350px;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	margin-left: -75px;
+	margin-top: -75px;
+}
+
+.group-text {
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	left: 97px;
+	top: 100px;
+	margin-left: -40px;
+	margin-top: -25px;
+}
+
+.role {
+	color: #777;
+	font-size: 14px;
+	font-weight: 700;
+	border: 2px solid #999;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.role {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.role-1 {
+	left: 65px;
+	top: 40px;
+}
+
+.role-2 {
+	left: 130px;
+	top: 40px;
+}
+
+.role-3 {
+	left: 40px;
+	top: 100px;
+}
+
+.role-4 {
+	left: 155px;
+	top: 100px;
+}
+
+.role-5 {
+	left: 65px;
+	top: 160px;
+}
+
+.role-6 {
+	left: 130px;
+	top: 160px;
+}
