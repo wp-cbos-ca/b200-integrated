@@ -27,26 +27,6 @@ section {
 	position: relative;
 }
 
-.type {
-	position: relative;
-	height: 600px;
-}
-
-.type-1 {
-	background: #d8ead2;
-	top: -50px;
-}
-
-.type-2{
-	background: #fde5cd;
-	left: -50px;
-}
-
-.type-3 {
-	background: #d1e0e5;
-	right: -50px;
-}
-
 .group {
 	display: block;
 	margin: 10px;
@@ -126,6 +106,7 @@ section {
 	top: 100px;
 	margin-left: -40px;
 	margin-top: -25px;
+	font-size: 10px;
 }
 
 .role {

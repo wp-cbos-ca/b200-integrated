@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
  */
 function get_2d_role_type_data(){
 	$items = [
-	['id'=>1, 'order'=>1,'code'=>'Li','name'=>'Living','slug'=>'living','size'=>1,'load'=>0,'color'=>['hex'=>'#d8ead2','name'=>'green']],
+	['id'=>1, 'order'=>1,'code'=>'Li','name'=>'Living','slug'=>'living','size'=>1,'load'=>1,'color'=>['hex'=>'#d8ead2','name'=>'green']],
 	['id'=>2, 'order'=>2,'code'=>'Le','name'=>'Learning','slug'=>'learning','size'=>0.68,'load'=>1,'color'=>['hex'=>'#fde5cd','name'=>'orange']],
 	['id'=>3, 'order'=>3,'code'=>'Wo','name'=>'Working','slug'=>'working','size'=>1,'load'=>0,'color'=>['hex'=>'#d1e0e5','name'=>'blue']],
 	];

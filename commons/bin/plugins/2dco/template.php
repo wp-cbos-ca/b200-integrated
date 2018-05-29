@@ -53,13 +53,14 @@ function get_2d_community_css_calculated(){
 		$css .= sprintf( "\theight: %spx;%s", $type['size'] * $group['height'], PHP_EOL );
 		$css .= sprintf( "\tmargin-left: -%spx;%s", $type['size'] * $group['width'] / 2, PHP_EOL );
 		$css .= sprintf( "\tmargin-top: -%spx;%s", $type['size'] * $group['height'] / 2, PHP_EOL );
+		$css .= sprintf( "\tbackground-color: %s !important;%s", $type['color']['hex'], PHP_EOL );
 		$css .= '}' . PHP_EOL;
 		$css .= PHP_EOL;
 		
 		$css .= sprintf( ".type-%s .group-text {%s", $type['id'], PHP_EOL );
 		$css .= sprintf( "\tleft: %spx;%s", $type['size'] * $group['width'] / 2 + $adjust['left'], PHP_EOL );
 		$css .= sprintf( "\ttop: %spx;%s", $type['size'] * $group['height'] / 2 + $adjust['top'], PHP_EOL );
-		$css .= sprintf( "\tfont-size: %s%%;%s", $type['size'] * 100, PHP_EOL );
+		$css .= sprintf( "\tfont-size: %s%%;%s", $type['size'] * 90, PHP_EOL );
 		$css .= '}' . PHP_EOL;
 		$css .= PHP_EOL;
 
