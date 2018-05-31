@@ -1,4 +1,13 @@
-# SECURITY BEGIN (Deny First, Then Allow)
+# SECURITY BEGIN
+# 1. Ensure Secure Connection
+# 2. Deny First, Then Allow
+
+# Redirect to https
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} off
+#  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
 
 Options -Indexes
 # Do not allow the listing of directories by default

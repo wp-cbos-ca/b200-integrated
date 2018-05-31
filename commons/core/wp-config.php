@@ -6,7 +6,7 @@ if ( ! defined( 'SITE' ) ){
 }
 
 /** Default: false */
-define( 'WP_CACHE', true );
+define( 'WP_CACHE', false );
 
 if ( file_exists( __DIR__ . '/../alt/config/site.php' ) ) {
 	require_once( __DIR__ . '/../alt/config/site.php' );

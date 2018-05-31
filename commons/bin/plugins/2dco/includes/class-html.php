@@ -18,12 +18,15 @@ defined( 'ABSPATH' ) || exit;
  * learning will be smaller in size (about 2/3 of the others), and the border color
  * and font color will be greyed out.
  */
-function get_2d_community_css() {
+
+class Integrated_Framework_HTML {
+	
+public function css() {
 	$file = __DIR__ . '/script/css/design.css';
 	if ( file_exists( $file ) ){
 		$css = '<style>';
 		$css .= file_get_contents( $file );
-		$css .= get_2d_community_css_calculated();
+		$css .= $this->get_2d_community_css_calculated();
 		$css .= '</style>' . PHP_EOL;
 		return $css;
 	}
@@ -32,14 +35,10 @@ function get_2d_community_css() {
 	}
 }
 
-function get_2d_community_css_calculated(){
-	$types = get_2d_role_type_data();
+private function get_2d_community_css_calculated(){
+	$data = new Integrated_Framework_Data();
+	$types = $data->types();
 	$css = '';
-	$group['width'] = 200;
-	$group['height'] = 200;
-	$role['width'] = $group['width'] / 4;
-	$role['height'] = $group['height'] / 4;
-	$role['font-size'] = 14;
 	$adjust['left'] = -2;
 	$adjust['top'] = -4;
 	foreach ( $types as $type ){
@@ -73,7 +72,7 @@ function get_2d_community_css_calculated(){
 		$css .= sprintf( "\tfont-size: %spx%s", $type['size'] * $role['font-size'], PHP_EOL );
 		$css .= '}' . PHP_EOL;
 		$css .= PHP_EOL;
-		$css .= get_2dco_css_roles_calculated( $type, $group, $role );
+		$css .= $this->get_2dco_css_roles_calculated( $type, $group, $role );
 	}
 	return $css;
 }
@@ -83,7 +82,7 @@ function get_2d_community_css_calculated(){
  * middle row 1/4 and 3/4 middle
  * bottom row: 1/3 and 2/3 2/3 down
  */
-function get_2dco_css_roles_calculated( $type, $group, $role ){
+private function get_2dco_css_roles_calculated( $type, $group, $role ){
 	$css = '';
 	$adjust['left'] = -3;
 	$adjust['top'] = -4;
@@ -114,39 +113,12 @@ function get_2dco_css_roles_calculated( $type, $group, $role ){
 	}
 	return $css;
 }
-/*
 
-.role-1 {
-    left: 65px;
-    top: 40px;
-}
-
-formula to calculate left and top
-
-position: absolute;
-width: 50px;
-height: 50px;
-line-height: 48px;
-margin-left: -25px;
-margin-top: -25px;
-
-width: 200px;
-height: 200px;
-margin-top: -100px;
-margin-left: -100px;
-*/
-
-/*
-.type-1 {
-	top: -50px;
-}
-*/
-
-function get_2d_community_html() {
+public function html() {
 	$community = '' . PHP_EOL;
 	$community .= '<div id="community" class="community">' . PHP_EOL;
 	$community .= '<div class="inner">' . PHP_EOL;
-	$community .= get_2d_community_inner_html();
+	$community .= $this->get_2d_community_inner_html();
 	$community .= '<div class="text community-text">Commons</div>' . PHP_EOL;
 	$community .= '</div><!-- .inner -->' . PHP_EOL;
 	$community .= '</div><!-- #community -->' . PHP_EOL;
@@ -157,29 +129,31 @@ function get_2d_community_html() {
  * live, learn, work
  * commons, learning, center
  */
-function get_2d_community_inner_html(){
-	$types = get_2d_role_type_data();
+private function get_2d_community_inner_html(){
+	$data = new Integrated_Framework_Data();
+	$types = $data->types();
 	$html = '';
 	foreach ( $types as $type ){
 		if ( $type['load'] ){
 			$html .= sprintf( '<div class="type type-%s %s">%s', $type['id'], $type['slug'], PHP_EOL );
-			$html .= get_2d_community_group_html();
+			$html .= $this->get_2d_community_group_html();
 			$html .= '<div><!-- .type -->' . PHP_EOL;
 		}
 	}
 	return $html;
 }
 
-function get_2d_community_group_html(){
-	/* applied, trades, arts, academic, gardening, analysis */
-	$groups = get_2d_role_group_data();
+/** applied, trades, arts, academic, gardening, analysis */
+private function get_2d_community_group_html(){
+	$data = new Integrated_Framework_Data();
+	$groups = $data->groups();
 	$html = '';
 	foreach ( $groups as $group ){
 		if ( $group['load'] ){
 			$html .= sprintf( '<section title="%s" class="group group-%s" style="background-color: %s">%s', $group['name'], $group['order'],$group['color']['hex'], PHP_EOL);
 			$html .= '<div class="inner">';
 			$html .= sprintf( '<div class="text group-text">%s</div>%s', $group['name'], PHP_EOL );
-			$html .= get_2d_community_role_html( $group );
+			$html .= $this->get_2d_community_role_html( $group );
 			$html .= '</div><!-- .inner -->' . PHP_EOL;
 			$html .= '</section>' . PHP_EOL;
 		}
@@ -187,11 +161,11 @@ function get_2d_community_group_html(){
 	return $html;
 }
 
-function get_2d_community_role_html( $group ) {
-	$roles = get_tier_1_role_data();
+private function get_2d_community_role_html( $group ) {
+	$data = new Integrated_Framework_Data();
+	$roles = $data->roles_tier_one();
 	$str = '';
 	foreach ( $roles as $role ){
-		$k = $k+1; //convert to 1 based from 0 based.
 		if ( $group['code'] == $role['group'] && $role['cast'] ){
 			$str .= sprintf( '<div class="wrap role role-%s" style="background-color: %s">', $role['order'], $role['color']['hex'] );
 			$str .= '<div class="inner">' . PHP_EOL;
@@ -200,4 +174,5 @@ function get_2d_community_role_html( $group ) {
 		}
 	}
 	return $str;
+}
 }

@@ -6,6 +6,19 @@ defined( 'ABSPATH' ) || exit;
  * Title: Role Group Data and Tier 1 Role Data
  * Description: Groups roles and lists roles for the first expected needed.
  */
+class Integrated_Framework_Data{
+
+/**
+ * Adjust top and left
+ */
+static function sizes(){
+	$items = [
+		'group' => ['width' => 200, 'height' => 200 ],
+		'role' => [ 'width' => 50, 'height' => 50 ],
+		'adjust' => ['left' => -4, 'top' => -2 ],
+	];
+	return $items;
+}
 
 /**
  * Table Name: 2d-role-type-data
@@ -15,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
  *
  *@return array
  */
-function get_2d_role_type_data(){
+static function types(){
 	$items = [
 	['id'=>1, 'order'=>1,'code'=>'Li','name'=>'Living','slug'=>'living','size'=>1,'load'=>1,'color'=>['hex'=>'#d8ead2','name'=>'green']],
 	['id'=>2, 'order'=>2,'code'=>'Le','name'=>'Learning','slug'=>'learning','size'=>0.68,'load'=>1,'color'=>['hex'=>'#fde5cd','name'=>'orange']],
@@ -30,7 +43,7 @@ function get_2d_role_type_data(){
  *
  * @return array
  */  
-function get_2d_role_group_data(){
+static function groups(){
 	$items = [
 	['order'=>6,'code'=>'Ap','name'=>'Applied','slug'=>'applied','load' => 1,'color'=>['hex'=>'#f4cccc','name'=>'red']],
 	['order'=>3,'code'=>'Tr','name'=>'Trades','slug'=>'trades','load' => 1,'color'=>['hex'=>'#fde5cd','name'=>'orange']],
@@ -48,8 +61,7 @@ function get_2d_role_group_data(){
  * 
  * @return array
  */
-
-function get_tier_1_role_data(){
+static function roles_tier_one(){
 	$items = [
 	['order'=>1,'group'=>'Tr','code' =>'Ca','name'=>'Carpenter','cast' => 1,'color'=>['hex'=>'#f4cccc','name'=>'red']],
 	['order'=>6,'group'=>'Tr','code' =>'El','name'=>'Electrician','cast' => 1,'color'=>['hex'=>'#fde5cd','name'=>'orange']],
@@ -117,3 +129,4 @@ We need to define time, space and type parameters. Materials contruction, equipm
  
  equipment needed: equip.
 */
+}

@@ -14,12 +14,12 @@ defined( 'ABSPATH' ) || exit;
 add_shortcode( 'two-dee-community', 'get_2d_community' );
 
 function get_2d_community(){
-	require_once( __DIR__ . '/data/role/role-1.php' );
-	require_once( __DIR__ . '/template.php' );
-
-	$html = '';
+	require_once( __DIR__ . '/data/class-data.php' );
+	require_once( __DIR__ . '/includes/class-css.php' );
+	require_once( __DIR__ . '/includes/class-html.php' );
 	
-	echo get_2d_community_css();
-	$str = get_2d_community_html();
-	return $str;
+	$css = new Integrated_Framework_CSS();
+	echo $css->css();
+	$html = new Integrated_Framework_HTML();
+	return $html->html();
 }

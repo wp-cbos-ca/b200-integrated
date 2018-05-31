@@ -10,7 +10,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 		
 	if ( WP_DEBUG ) {
 		
-		define( 'WP_DEBUG_DISPLAY', false );
+		define( 'WP_DEBUG_DISPLAY', true );
 		// WordPress default true. Bundle default: false.
 		// Note: Don't display bugs to the public.
 		
@@ -21,7 +21,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 		// Default: false (check). Uses development versions of core CSS and JS Files.
 		
 		// SITE SPECIFIC VALUES
-		define( 'SITE_DEBUG_LOG', true );
+		define( 'SITE_DEBUG_LOG', false );
 		// Put debug.log in the /logs directory. Makes it easier to find.
 		
 		if ( SITE_DEBUG_LOG ) {
