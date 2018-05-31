@@ -13,17 +13,11 @@ License: GPLv2+
 defined( 'ABSPATH' ) || exit;
 
 class WP_Bundle_Boiler_Plate {
-	
-    /**
-     * The Class Object
-     */
-    static private $class = null;
-
+		
 	/**
-	 * Function description here.
+	 * Initializes the class.
 	 *
-	 * @since 3.0.0
-	 * @var string
+	 * @since 1.0.0
 	 */
 	public static function init() {
 		if ( null === self::$class ) { 
@@ -33,25 +27,16 @@ class WP_Bundle_Boiler_Plate {
 	}
 	
 	/**
-	 * Function description here.
+	 * Starts the class
 	 *
 	 * @since 1.0.0
-	 * @var string
 	 */
-    public function __construct() {
-		add_action( 'init', array( $this, 'function_one' ) );
-	}
-
-	/**
-	 * Function description here.
-	 *
-	 * @since 1.0.0
-	 * @var string
-	 */
-    public function function_one() {
+    public function on_loaded() {
 		
 	}
 	
 } // end class
 
+//decouple class from WordPress hook to increase portability of class.
 add_action( 'init', array ( 'WP_Bundle_Boiler_Plate', 'init' ), 0 );
+
