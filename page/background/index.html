@@ -69,7 +69,11 @@ What this did is to place one or two intermediate folders between the root of th
 <li>Enforcing HTTPS from the outset (new)</li>
 <li>Other as needed</li>
 </ul>
- 
+
+<h2>Grouped WordPress Plugins</h2>
+
+<p>Given that the starting point was WordPress, and that the WordPress platform is so popular and has a heavy reliance on plugins, the plugins in this bundle package have been carefully grouped. These groupings include: base, developer, import, maintenance, security, social, monitor, theme and write, in alphabetical order. If a particular grouping is not needed, then it is easier to find and delete them. Integrated with this approach is a plugin which creates a list of all the plugins that are on the site and saves it as an array in a separate file. Then the DNA plugin can take that list to reconstruct the site if needed. I am not aware of these features being available anywhere else.</p>
+
 <h2>Three Stage Fallback</h2>
 
 <p>"Three Stage Fallback" means here that there is a three level redundancy built in. Moving backwards from the expected WordPress installation is a much simpler three file set that assembles the template parts and then delivers them, usually in under a millisecond. This means that this approach can handle 1,000 requests per second. In contrast, the overhead WordPress ships with allows it to only handle about eight requests per second; much less. One step simpler is just the straight HTML file. That is, normally WordPress plugins cache HTML files somewhere deep in the <code>wp-content</code> folder. To get at those deeply buried files requires a script in the <code>.htaccess</code> file. However, the default configuration <em>allows</em> for the direct retreival of files or images, if the exist.</p>
