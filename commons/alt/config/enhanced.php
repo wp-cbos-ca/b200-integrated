@@ -276,8 +276,8 @@ define( 'WP_UNIQUE_ID', md5( SITE_ROOT_URL ) );
 
 /** Load remaining files, if they exist */
 
-if ( file_exists( __DIR__ . '/wp-constants.php' ) ) {
-	require_once( __DIR__ . '/wp-constants.php' );
+if ( file_exists( __DIR__ . '/constants-wp.php' ) ) {
+	require_once( __DIR__ . '/constants-wp.php' );
 }
 
 if ( file_exists( __DIR__ . '/plugins.php' ) ) {

@@ -24,19 +24,19 @@ define('WP_FOOTNOTES_CLOSE', "))");
 define('WP_FOOTNOTES_VERSION', '1.3.1');
 
 // Instantiate the class 
-$swas_wp_footnotes = new swas_wp_footnotes();
+$wp_bundle_write_footnotes = new WP_Bundle_Write_Footnotes();
 
 // Encapsulate in a class
-class swas_wp_footnotes {
+class WP_Bundle_Write_Footnotes {
 	var $current_options;
 	var $default_options;
 	
 	/**
 	 * Constructor.
 	 */
-	function swas_wp_footnotes() {		
+	function swas_wp_footnotes() {
 	
-		// Define the implemented option styles		
+		// Define the implemented option styles
 		$this->styles = array(
 			'decimal' => '1,2...10',
 			'decimal-leading-zero' => '01, 02...10',
@@ -144,5 +144,3 @@ class swas_wp_footnotes {
 		return $data;
 	}
 }
-
-?>
