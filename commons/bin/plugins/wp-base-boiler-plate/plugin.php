@@ -20,10 +20,12 @@ class WP_Bundle_Boiler_Plate {
 	 * @since 1.0.0
 	 */
 	public static function init() {
+		/*
 		if ( null === self::$class ) { 
 			self::$class = new self;
 		}
 		return self::$class;
+		*/
 	}
 	
 	/**

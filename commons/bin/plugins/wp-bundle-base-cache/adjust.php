@@ -1,13 +1,6 @@
 <?php
-/**
-Plugin Name: WP Bundle Base Cache Adjuster
-Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-base-cache-adjuster/
-Description: Copies the cached index files from the cache folder several levels deep to where they can be accessed directly.
-Author: wp.cbos.ca
-Author URI: http://wp.cbos.ca
-Version: 2018.03.24
-License: GPLv2+
-*/
+
+/* Was cache adjuster */
 
 defined( 'ABSPATH' ) || exit;
 
