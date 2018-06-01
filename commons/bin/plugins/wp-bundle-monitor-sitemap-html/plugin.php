@@ -1,7 +1,7 @@
 <?php
 /**
-Plugin Name: WP Bundle Monitor Site Map
-Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-monitor-site-map
+Plugin Name: WP Bundle Monitor Sitemap HTML
+Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-monitor-sitemap-html
 Description: Displays a site map of your published pages in alphabetical order with tabbed indents for child pages. Shortcode: [site-map]
 Version: 2018.03.10
 Author: wp.cbos.ca
