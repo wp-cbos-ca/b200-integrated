@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name:    2D Community
-Plugin URI:     http://wp.cbos.ca/plugins/2d-community/
-Description:    2D Community Design.
-Version:        2018.02.03
-Author:         wp.cbos.ca
-Author URI:     http://wp.cbos.ca
-License:        GPLv2+
+Plugin Name: 2D Community
+Plugin URI: http://wp.cbos.ca/plugins/2d-community/
+Description: 2D Community Design.
+Version: 2018.02.03
+Author: wp.cbos.ca
+Author URI: http://wp.cbos.ca
+License: GPLv2+
 */ 
 
 defined( 'ABSPATH' ) || exit;

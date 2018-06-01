@@ -18,6 +18,8 @@ Original Author: <a href="https://defomicron.net/colophon">Austin Sweeney</a>
 // If you’d like to edit the output, scroll down to the
 // “Display the footnotes” section near the end of this file.
 
+defined( 'ABSPATH' ) || exit;
+
 // Some important constants
 define('WP_FOOTNOTES_OPEN', " ((");
 define('WP_FOOTNOTES_CLOSE', "))");
