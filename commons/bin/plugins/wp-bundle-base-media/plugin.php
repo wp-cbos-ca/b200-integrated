@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 Plugin Name: WP Bundle Base Media
 Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-base-media/
 Description: Implementing a reworked directory structure as a peer of the application core. Uploads media per file type.
