@@ -2,7 +2,7 @@
 /**
 Plugin Name: WP Bundle Maintenance Scheduled
 Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-maintenance-scheduled/
-Description: Whether or not you are on scheduled maintenance.
+Description: Whether or not site is on scheduled maintenance.
 Version: 2018.03.15
 Author: wp.cbos.ca
 Author URI: http://wp.cbos.ca

@@ -17,7 +17,7 @@ if ( WP_BUNDLE_DASHBOARD_BREAKER_ON ) {
 	function wp_bundle_dashboard() {
 		if ( current_user_can( 'manage_options' ) ) {
 			$args = array( 'slug' => 'wp_bundle_dashboard', 'title' => 'WP Bundle Dashboard', 'function' => 'get_wp_bundle_dashboard' );
-			wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );																				
+			wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );
 		}
 	}
 	add_action( 'wp_dashboard_setup', 'wp_bundle_dashboard' );

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Bundle Maintenance Mode
  * Plugin URI: http://wp.cbos.ca
- * Description: Maintenance Mode and Coming Soon page using WordPress markup. Bundlified from L. Juhas' Maintenance Mode plugin. 
+ * Description: Maintenance Mode and Coming Soon page using default WordPress markup. (Credit: L. Juhas' Maintenance Mode Plugin). 
  * Version: 2018.03.13
  * Author: wp.cbos.ca
  * Author URI: http://wp.cbos.ca

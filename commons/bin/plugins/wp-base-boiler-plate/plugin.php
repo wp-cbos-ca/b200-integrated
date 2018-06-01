@@ -40,3 +40,5 @@ class WP_Bundle_Boiler_Plate {
 //decouple class from WordPress hook to increase portability of class.
 add_action( 'init', array ( 'WP_Bundle_Boiler_Plate', 'init' ), 0 );
 
+//see: https://carlalexander.ca/designing-class-wordpress-hooks/
+
