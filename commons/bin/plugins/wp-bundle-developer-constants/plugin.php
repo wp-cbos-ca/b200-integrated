@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'wp_dashboard_setup', 'wp_bundle_constants' );
 
 function wp_bundle_constants() {
-	if( current_user_can( 'install_plugins' ) ) {
+	//if( current_user_can( 'install_plugins' ) ) {
 		wp_add_dashboard_widget( 'wp_bundle_constants', __( 'WP Bundle Constants' ), 'get_wp_bundle_constants' );
-	}
+	//}
 }
 function get_wp_bundle_constants() {
 	if ( file_exists( __DIR__ . '/data.php' ) ){
@@ -25,10 +25,10 @@ function get_wp_bundle_constants() {
 	}
 	$str = '<table style="width: 100%;">' . PHP_EOL;
 	if ( ! empty( $items ) ) {
-		foreach ( $items as $item ) {
-			$str .= '<tr>';
-			$str .=  sprintf( '<td>%s: %s</td>%s', $item, constant( $item ), PHP_EOL );
-			$str .= '</tr>';
+		$str .= '<tr><th>No.</th><th style="text-align: left;">Name: Value</th></tr>';
+		foreach ( $items as $k => $item ) {
+			$k = $k + 1; // adjust from 0 based to 1 based.
+			$str .=  sprintf( '<tr><td>%s</td><td><span style="font-weight: bold;">%s</span> : %s</td></tr>%s', $k, $item, constant( $item ), PHP_EOL );
 		}
 	}
 	else {
