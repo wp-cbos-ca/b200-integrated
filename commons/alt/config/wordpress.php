@@ -121,6 +121,8 @@ define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 
 /*** OTHER BEGIN ***/
 
+/** Default: 'wp-content/mu-plugins' (Must Use Plugin Directory) */
+define( 'MUPLUGINDIR', SITE_BIN_DIR . '/required' );
 
 /*** OTHER END ***/
 
