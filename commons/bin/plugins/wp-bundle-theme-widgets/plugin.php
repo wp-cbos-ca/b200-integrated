@@ -64,6 +64,9 @@ class HTML5_Widget extends WP_Widget {
 		parent::__construct(false, $name = 'HTML5 Widget');
 	}
 	
+	/**
+	 *
+	 */
 	function widget( $args, $instance ) {
 		extract( $args );
 		$title 		= apply_filters( 'widget_title', $instance['title'] );
