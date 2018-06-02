@@ -13,7 +13,7 @@ function get_bundle_constants_data(){
 		array( 'name' => 'W3TC_', 'include' => 0 ),
 		);
 	
-	$excludes = array( 'DB_', 'AUTH_' );
+	$excludes = array( 'DB_', 'AUTH_', 'LOGGED_IN_', 'NONCE_' );
 	$arr = array();
 	if( ! empty( $items ) ) {
 		foreach ( $items as $key => $item ) {
@@ -35,13 +35,19 @@ function get_bundle_constants_data(){
 				if (
 					strpos( $key, $excludes[0] ) === FALSE 
 					&& strpos( $key, $excludes[1] ) === FALSE
+					&& strpos( $key, $excludes[2] ) === FALSE
+					&& strpos( $key, $excludes[3] ) === FALSE
 					){
 					$arr[] = $key;
 				}
 			}
 		}
 		if ( ! empty( $arr ) ){
-			//sort( $arr );
+			// Unsorted returns in order created. Can be useful.
+			if ( 0 ){
+				// Sort in alphabetical order.
+				sort( $arr );
+			}
 			return $arr;
 		}
 		else {

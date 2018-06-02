@@ -35,6 +35,17 @@ define( 'WP_PLUGIN_URL', WP_CONTENT_URL . SITE_PLUGIN_DIR );
 /** Default: uploads */
 define( 'UPLOADS', '..' . SITE_MEDIA_DIR );
 
+/** Default: 'latest bundled theme' */
+// define( 'WP_DEFAULT_THEME', 'twentyseventeen' );
+
+/** Useful constants that can't be overriden */
+
+/** Parent theme (wp-includes/default-constants.php) */
+// 'TEMPLATEPATH' : get_template_directory();
+
+/** Child theme (wp-includes/default-constants.php)  */
+// 'STYLESHEETPATH' : get_stylesheet_directory();
+
 /*** WORDPRESS FINE TUNING BEGIN ***/
 
 /* FILE MANAGEMENT */
@@ -107,5 +118,10 @@ define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 // From wp-includes.php/default-constants.php
 
 /*** WORDPRESS FINE TUNING END ***/
+
+/*** OTHER BEGIN ***/
+
+
+/*** OTHER END ***/
 
 /***** WORDPRESS SPECIFIC CONSTANTS END *****/
