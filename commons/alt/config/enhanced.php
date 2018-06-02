@@ -273,17 +273,3 @@ define( 'WP_UNIQUE_ID', md5( SITE_ROOT_URL ) );
 // define( 'SITE_CACHING', false );
 
 // We may develop a different caching solution, but will use this for now:
-
-/** Load remaining files, if they exist */
-
-if ( file_exists( __DIR__ . '/constants-wp.php' ) ) {
-	require_once( __DIR__ . '/constants-wp.php' );
-}
-
-if ( file_exists( __DIR__ . '/plugins.php' ) ) {
-	require_once( __DIR__ . '/plugins.php' );
-}
-
-if ( file_exists( __DIR__ . '/debug.php' ) ) {
-	require_once( __DIR__ . '/debug.php' );
-}

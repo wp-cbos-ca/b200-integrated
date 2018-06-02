@@ -23,7 +23,7 @@ function get_bundle_copyright_text(){
 	return $str;
 }
 
-class html5_copyright_widget extends WP_Widget {
+class HTML5_Copyright_Widget extends WP_Widget {
 	
 	function __construct() {
 		parent::__construct(false, $name = 'Copyright Widget');
@@ -53,4 +53,4 @@ class html5_copyright_widget extends WP_Widget {
  
  
 } 
-add_action( 'widgets_init', create_function( '', 'return register_widget("html5_copyright_widget");' ) );
+add_action( 'widgets_init', create_function( '', 'return register_widget("HTML5_Copyright_Widget");' ) );

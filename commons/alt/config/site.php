@@ -165,14 +165,28 @@ define( 'SITE_USE_CHILD', false );
 
 /***** STYLE END *****/
 
-define( 'BUNDLE_VER', 'B200-WP-4.9' );
-// Values: B000-AA-0.0 (Default: B200-WP-4.9)
+/** Values: B000-AA-0.0 (Default: B200-WP-4.9) */
+define( 'BUNDLE_VER', 'B200-INTEGRATED' );
 
-define( 'BUNDLE_UNIQUE_ID', BUNDLE_VER . ':' . '2018.03.31:1910' );
-// Bundle Version, plus date and time stamp at time of installation
+/** Bundle Version, plus date and time stamp at time of installation */
+define( 'BUNDLE_UNIQUE_ID', BUNDLE_VER . ':' . '2018.06.01:0900' );
 
 if ( file_exists( __DIR__ . '/enhanced.php' ) ) {
 	require_once( __DIR__ . '/enhanced.php' );
+
+	/** These files depend on the "enhanced configuration */
+
+	if ( file_exists( __DIR__ . '/plugins.php' ) ) {
+		require_once( __DIR__ . '/plugins.php' );
+	}
+	
+	if ( file_exists( __DIR__ . '/debug.php' ) ) {
+		require_once( __DIR__ . '/debug.php' );
+	}
+	
+	if ( file_exists( __DIR__ . '/wordpress.php' ) ) {
+		require_once( __DIR__ . '/wordpress.php' );
+}
 } else {
 	exit( 'Cannot serve your files. The complete configuration is not available.' );
 }

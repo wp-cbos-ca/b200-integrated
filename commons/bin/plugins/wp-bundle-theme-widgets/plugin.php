@@ -1,56 +1,64 @@
 <?php 
-/**
- Plugin Name: WP Bundle Theme Widgets
- Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-theme-widgets/
- Description: Adds a sidebar and an HTML compatible widget.
- Version: 2017.12.30
- Author: wp.cbos.ca
- Author URI: http://wp.cbos.ca
- License: GPLv2+
+/*
+Plugin Name: WP Bundle Theme Widgets
+Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-theme-widgets/
+Description: Adds a sidebar and an HTML compatible widget. 	Switch on in plugin file if needed (for optimization purposes).
+Version: 2018.06.02
+Author: wp.cbos.ca
+Author URI: http://wp.cbos.ca
+License: GPLv2+
  */
 
 defined( 'ABSPATH' ) || exit;
 
-if ( 1 ){
+/*
+ Switch on (change 0 to 1) as needed.
+ Kept off for optimization purposes.
+*/
+
+if ( 0 ){
+	// This extends the Widget class to deal with the internal widget wrap.
+	add_action( 'widgets_init', create_function( '', 'return register_widget("HTML5_Widget");'));
+}
+
+if ( 0 ){
 	require_once( __DIR__ . '/unregister.php' );
 	add_action( 'widgets_init' , 'bundle_unregister_default_widgets' );
 }
 
-if ( 1 ){
+if ( 0 ){
 	require_once( __DIR__ . '/widgets/aside.php' );
 	//add body class aside
 	add_action( 'widgets_init', 'html5_aside' );
 }
 
-if ( 1 ){
+if ( 0 ){
 	require_once( __DIR__ . '/widgets/copyright.php' );
 	add_action( 'widgets_init', 'html5_copyright' );
 }
 
-if ( 1 ){
+if ( 0 ){
 	require_once( __DIR__ . '/widgets/footer-menu.php' );
 	add_action( 'widgets_init', 'html5_footer_menu' );
 }
 
-if ( 1 ){
+if ( 0 ){
 	require_once( __DIR__ . '/widgets/footer-credits.php' );
 	add_action( 'widgets_init', 'html5_footer_credits' );
 }
 
-if ( 1 ){
+if ( 0 ){
 	require_once( __DIR__ . '/widgets/footer-social.php' );
 	add_action( 'widgets_init', 'html5_footer_social' );
 }
 
-/**
-Notes: 
-
-https://core.trac.wordpress.org/ticket/38614 (Can't easily replace internal widget wrap.)
-Therefore, must extend widget and do what we need there. See /widgets.php.
-
+/*
+ The internal widget wrap can't easily be replaced
+ (https://core.trac.wordpress.org/ticket/38614) 
+ Therefore, we must extend widget and do what we need there.
+ See /widgets/.php.
 */
-
-class html5_widget extends WP_Widget {
+class HTML5_Widget extends WP_Widget {
 	
 	public function __construct() {
 		parent::__construct(false, $name = 'HTML5 Widget');
@@ -87,8 +95,8 @@ class html5_widget extends WP_Widget {
 		</p>
 		<?php 
 	}
-}
-add_action( 'widgets_init', create_function( '', 'return register_widget("html5_widget");' ) );
+} // end class
 
-//(2017)
-//See also: /core/wp-includes/widgets/class-wp-widget-text.php and similar.
+/*
+Notes: See also: /core/wp-includes/widgets/class-wp-widget-text.php and similar.
+*/
