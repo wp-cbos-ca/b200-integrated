@@ -52,7 +52,7 @@ if ( 0 ){
 	add_action( 'widgets_init', 'html5_footer_social' );
 }
 
-/*
+/**
  The internal widget wrap can't easily be replaced
  (https://core.trac.wordpress.org/ticket/38614) 
  Therefore, we must extend widget and do what we need there.
@@ -97,6 +97,4 @@ class HTML5_Widget extends WP_Widget {
 	}
 } // end class
 
-/*
-Notes: See also: /core/wp-includes/widgets/class-wp-widget-text.php and similar.
-*/
+// See also: /core/wp-includes/widgets/class-wp-widget-text.php and similar.
