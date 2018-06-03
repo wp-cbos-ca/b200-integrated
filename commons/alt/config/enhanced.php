@@ -220,6 +220,7 @@ define( 'SITE_SIDEBAR_PATH', SITE_THEME_HTML_PATH . SITE_SIDEBAR_DIR );
 define( 'SITE_MENU_PATH', SITE_THEME_HTML_PATH . SITE_MENU_DIR );
 
 /*** ALT PATH ***/
+define( 'SITE_ALT_PATH', SITE_ROOT_PATH . SITE_ALT_DIR );
 
 /** Backups are "point in time". May be deleted. */
 define( 'SITE_BACKUP_PATH' , SITE_BIN_PATH . SITE_BACKUP_DIR );

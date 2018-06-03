@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: WP Bundle Base urn:uiuid as the_guid
-Plugin URI:  http://wp.cbos.ca/plugins/wp-bundle-base-urn-uuid/
-Description: Use an urn:uuid:<uuid4> for the_guid rather than using the_permalink.
+Plugin Name: WP Bundle Required urn:uiuid as the guid
+Plugin URI:  http://wp.cbos.ca/plugins/wp-bundle-required-urn-uuid/
+Description: Use an urn:uuid(4) for the guid rather than using the permalink (Required).
 Version:     2018.06.01
 Author:      wp.cbos.ca
 Author URI:  http://wp.cbos.ca
