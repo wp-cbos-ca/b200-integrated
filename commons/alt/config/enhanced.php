@@ -68,10 +68,10 @@ define( 'SITE_SIDEBAR_DIR', '/sidebar' );
 
 /***** BIN DIRECTORY (Generally) *****/
 
-/** */
+/** Site Framework Directory */
 define( 'SITE_FRAMEWORK_DIR', '/frameworks' );
 
-/** */
+/** Site Plugin Directory */
 define( 'SITE_PLUGIN_DIR', '/plugins' );
 
 /** As opposed to root theme directory. */
@@ -239,19 +239,19 @@ define( 'SITE_LOG_PATH', SITE_ETC_PATH . SITE_LOG_DIR );
 
 /***** URLS *****/
 
-/** */
+/** Site Theme URL */
 define( 'SITE_THEME_URL', SITE_ROOT_URL . SITE_THEME_DIR );
 
-/** */
+/** Site Script URL (for JavaScript, etc.) */
 define( 'SITE_SCRIPT_URL', SITE_ROOT_URL . SITE_SCRIPT_DIR );
 
-/** */
+/** Site JS URL */
 define( 'SITE_JS_URL', SITE_ROOT_URL . SITE_SCRIPT_DIR . SITE_JS_DIR );
 
-/** */
-define( 'SITE_CSS_URL', SITE_ROOT_URL . SITE_SCRIPT_DIR . SITE_CSS_DIR );
+/** Site CSS URL */
+define( 'SITE_CSS_URL', SITE_THEME_URL . SITE_CSS_DIR );
 
-/** */
+/** Site CDN URL */
 define( 'SITE_CDN_URL', '' );
 
 /** Relative to ABSPATH. No leading slash. */
