@@ -13,7 +13,10 @@ function get_bundle_constants_data(){
 		array( 'name' => 'W3TC_', 'include' => 0 ),
 		);
 	
-	$excludes = array( 'DB_', 'AUTH_', 'LOGGED_IN_', 'NONCE_' );
+	$excludes = array(
+		'DB_', 'AUTH_', 'LOGGED_IN_', 'NONCE_',
+		'HASH', 'USER_COOKIE', 'PASS_COOKIE',
+		);
 	$arr = array();
 	if( ! empty( $items ) ) {
 		foreach ( $items as $key => $item ) {
@@ -37,6 +40,9 @@ function get_bundle_constants_data(){
 					&& strpos( $key, $excludes[1] ) === FALSE
 					&& strpos( $key, $excludes[2] ) === FALSE
 					&& strpos( $key, $excludes[3] ) === FALSE
+					&& strpos( $key, $excludes[4] ) === FALSE
+					&& strpos( $key, $excludes[5] ) === FALSE
+					&& strpos( $key, $excludes[6] ) === FALSE
 					){
 					$arr[] = $key;
 				}
