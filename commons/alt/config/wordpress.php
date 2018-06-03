@@ -23,9 +23,6 @@ define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . SITE_PLUGIN_DIR );
 /** Absolute path based on location of this file. A path, not a directory */
 define( 'WP_LANG_DIR', WP_CONTENT_DIR . SITE_LANG_DIR );
 
-/** Must use Plugin Directory URL */
-define( 'WPMU_PLUGIN_URL', SITE_ROOT_URL . SITE_BIN_DIR . 'mu-' . SITE_PLUGIN_DIR );
-
 /** Important if different than default. */
 define( 'WP_CONTENT_URL', SITE_ROOT_URL . SITE_BIN_DIR );
 
@@ -123,6 +120,13 @@ define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 
 /** Default: 'wp-content/mu-plugins' (Must Use Plugin Directory) */
 define( 'MUPLUGINDIR', SITE_BIN_DIR . '/required' );
+
+/** Default: 'wp-content/mu-plugins' (Must Use Plugins Directory) */
+define( 'WPMU_PLUGIN_DIR', SITE_BIN_PATH . '/required' ); 
+
+/** Default: 'wp-content/mu-plugins' (Must Use Plugins URL) */
+define( 'WPMU_PLUGIN_URL', WP_CONTENT_URL . '/required' );
+
 
 /*** OTHER END ***/
 
