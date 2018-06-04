@@ -48,7 +48,7 @@ global $site_elapsed;
 
 $site_elapsed['end'] = microtime( true );
 
-$str .= DISPLAY_ELAPSED_TIME ? sprintf( '<div id="elapsed-time" class="subdued text-center" title="Time (in milliseconds) to process the underlying code from when the request reaches the server to just before it leaves the server. Lower numbers are better.">Elapsed: %s ms</div>%s', number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' ) , PHP_EOL ) : '';
+$str .= SITE_ELAPSED_TIME ? sprintf( '<div id="elapsed-time" class="subdued text-center" title="Time (in milliseconds) to process the underlying code from when the request reaches the server to just before it leaves the server. Lower numbers are better.">Elapsed: %s ms</div>%s', number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' ) , PHP_EOL ) : '';
 $str .= '</body>' . PHP_EOL;
 $str .= '</html>';
 echo $str;

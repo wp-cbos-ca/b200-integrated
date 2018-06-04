@@ -575,7 +575,7 @@ function wp_get_mu_plugins() {
 	}
 	closedir( $dh );
 	sort( $mu_plugins );
-
+	
 	return $mu_plugins;
 }
 

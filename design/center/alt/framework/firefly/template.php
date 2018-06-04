@@ -31,7 +31,7 @@ function get_firefly_html(){
 	$str .= $page['sidebar'];
 	$str .= '</div>' . PHP_EOL; //wrap
 	$str .= $page['footer'];
-	$str .= DISPLAY_ELAPSED_TIME ? get_firefly_elapsed() : '';
+	$str .= SITE_ELAPSED_TIME ? get_firefly_elapsed() : '';
 	$str .= '</body>' . PHP_EOL;
 	$str .= '</html>';
 	

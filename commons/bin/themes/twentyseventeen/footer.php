@@ -43,7 +43,7 @@
 <?php wp_footer(); ?>
 <?php /** End time to four decimal places in seconds (float) */
 
-if ( defined( 'DISPLAY_ELAPSED_TIME' ) && DISPLAY_ELAPSED_TIME && isset( $site_elapsed['start'] ) ) {
+if ( defined( 'SITE_ELAPSED_TIME' ) && SITE_ELAPSED_TIME && isset( $site_elapsed['start'] ) ) {
 	$site_elapsed['end'] = microtime( true );
 	printf( '<div id="site-elapsed-time" class="site-elapsed-time" style="font-size: small; opacity: .5; margin: 10px 0; text-align: center;" title="Time (in milliseconds) to process the underlying code from when the request reaches the server to just before it leaves the server. Lower numbers are better.">Elapsed: %s ms</div>%s', number_format( ( $site_elapsed['end'] - $site_elapsed['start'] ) * 1000, 2, '.', ',' ) , PHP_EOL );
 } ?>

@@ -68,28 +68,23 @@ define( 'DISALLOW_UNFILTERED_HTML', true );
 /** Default: false (true: Disable plugin and theme file editing) */
 define( 'DISALLOW_FILE_EDIT', true );
 
+/* UPDATES */
+
 /** Default: false. (true: Disable plugin updating and deleting) */
 define( 'DISALLOW_FILE_MODS', true );
 
 /** Default: false (When true, disables plugin updating & deleting) */
 define( 'WP_AUTO_UPDATE_CORE', false );
 
-/**
- * Block requests through the proxy.
- *
- * Those who are behind a proxy and want to prevent access to certain hosts may do so. This will
- * prevent plugins from working and core functionality, if you don't include api.wordpress.org.
- *
-* You block external URL requests by defining WP_HTTP_BLOCK_EXTERNAL as true in your wp-config.php
-* file and this will only allow localhost and your site to make requests. The constant
-* WP_ACCESSIBLE_HOSTS will allow additional hosts to go through for requests. The format of the
-* WP_ACCESSIBLE_HOSTS constant is a comma separated list of hostnames to allow, wildcard domains
-* are supported, eg *.wordpress.org will allow for all subdomains of wordpress.org to be contacted.
-*
-* see: core/wp-includes/class-http.php
-*/
+/* ACCESS */
 
-/** Default: undefined (When true, blocks external requests */
+/**
+ * Block requests through the proxy. "Prevents plugins from working and core
+ * functionality OR include api.wordpress.org.
+ * see: core/wp-includes/class-http.php
+ */
+
+/** Default: undefined (When true, blocks external requests. Allows only site and localhost */
 // define( 'WP_HTTP_BLOCK_EXTERNAL', true );
 
 /** Default: undefined  (a comma seperated list of allowable hostnames) */
@@ -112,22 +107,17 @@ define( 'WP_MEMORY_LIMIT', '40M' );
 /** Last Default: 256M */
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 
-// From wp-includes.php/default-constants.php
-
 /*** WORDPRESS FINE TUNING END ***/
 
-/*** OTHER BEGIN ***/
+/*** MUST-USE (REQUIRED) PLUGINS DIR ***/
 
-/** Default: 'wp-content/mu-plugins' (Must Use Plugin Directory) */
-define( 'MUPLUGINDIR', SITE_BIN_DIR . '/required' );
+/** Default: 'wp-content/mu-plugins' (Must Use Plugin Directory *Stub*) */
+define( 'MUPLUGINDIR', SITE_BIN_DIR . SITE_REQUIRED_DIR );
 
-/** Default: 'wp-content/mu-plugins' (Must Use Plugins Directory) */
-define( 'WPMU_PLUGIN_DIR', SITE_BIN_PATH . '/required' ); 
+/** Default: 'wp-content/mu-plugins' (Must Use Plugins *Path*) */
+define( 'WPMU_PLUGIN_DIR', SITE_BIN_PATH . SITE_REQUIRED_DIR ); 
 
 /** Default: 'wp-content/mu-plugins' (Must Use Plugins URL) */
-define( 'WPMU_PLUGIN_URL', WP_CONTENT_URL . '/required' );
-
-
-/*** OTHER END ***/
+define( 'WPMU_PLUGIN_URL', WP_CONTENT_URL . SITE_REQUIRED_DIR );
 
 /***** WORDPRESS SPECIFIC CONSTANTS END *****/

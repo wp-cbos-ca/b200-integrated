@@ -42,7 +42,7 @@ function get_firefly_html(){
 	$str .= '</div><!-- .site -->' . PHP_EOL;
 	$str .= '<div class="footer-trim footer-trim-top"></div>' . PHP_EOL;
 	$str .= $page['footer'];
-	$str .= DISPLAY_ELAPSED_TIME ? get_firefly_elapsed() : '';
+	$str .= SITE_ELAPSED_TIME ? get_firefly_elapsed() : '';
 	$str .= '</body>' . PHP_EOL;
 	$str .= '</html>';
 	

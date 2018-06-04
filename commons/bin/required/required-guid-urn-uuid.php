@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: WP Bundle Required urn:uiuid as the guid
-Plugin URI:  http://wp.cbos.ca/plugins/wp-bundle-required-urn-uuid/
+Plugin URI: http://wp.cbos.ca/plugins/wp-bundle-required-urn-uuid/
 Description: Use an urn:uuid(4) for the guid rather than using the permalink (Required).
-Version:     2018.06.01
-Author:      wp.cbos.ca
-Author URI:  http://wp.cbos.ca
-License:     GPLv3
+Version: 2018.06.01
+Author: wp.cbos.ca
+Author URI: http://wp.cbos.ca
+License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 

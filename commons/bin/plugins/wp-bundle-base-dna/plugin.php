@@ -29,7 +29,7 @@ function wp_site_installer_menu(){
 add_action( 'admin_menu', 'wp_site_installer_menu' );
 
 function run_site_installer(){
-	require_once( dirname(__FILE__) . '/data.php' );		
+	require_once( dirname(__FILE__) . '/data.php' );
 	$items = get_installer_run_data();
 	if ( $items['site_one']['run'] ) {
 		load_site_one_files();
@@ -329,7 +329,7 @@ add_action( 'wp_dashboard_setup', 'global_remove_welcome_panel' );
 
 function wpsi_add_dashboard_widget() {
 	$args = array( 'slug' => 'wpsi_dashboard_widget', 'title' => 'WP Site DNA', 'function' => 'wpsi_function' );
-	wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );																				
+	wp_add_dashboard_widget( $args['slug'], $args['title'], $args['function'] );
 }
 add_action( 'wp_dashboard_setup', 'wpsi_add_dashboard_widget' );
 

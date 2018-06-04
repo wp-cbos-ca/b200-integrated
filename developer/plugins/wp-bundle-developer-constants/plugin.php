@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'wp_dashboard_setup', 'wp_bundle_constants' );
 
 function wp_bundle_constants() {
-	//if( current_user_can( 'install_plugins' ) ) {
+	if ( current_user_can( 'manage_options' ) ) { //@TODO check
 		wp_add_dashboard_widget( 'wp_bundle_constants', __( 'WP Bundle Constants' ), 'get_wp_bundle_constants' );
-	//}
+	}
 }
 function get_wp_bundle_constants() {
 	if ( file_exists( __DIR__ . '/data.php' ) ){

@@ -74,6 +74,9 @@ define( 'SITE_FRAMEWORK_DIR', '/frameworks' );
 /** Site Plugin Directory */
 define( 'SITE_PLUGIN_DIR', '/plugins' );
 
+/** Site Required Plugins Directory (i.e. 'mu-plugins' directory) */
+define( 'SITE_REQUIRED_DIR', '/required' );
+
 /** As opposed to root theme directory. */
 define( 'SITE_THEMES_DIR', '/themes' );
 
@@ -121,7 +124,7 @@ define( 'SITE_USE_WP_FOOTER', false );
 define( 'SITE_USE_WP_AUTO_PARA', false );
 
 /** Default: true (Displays code processing time in milliseconds) */
-define( 'DISPLAY_ELAPSED_TIME', true );
+define( 'SITE_ELAPSED_TIME', true );
 
 /***** FILES *****/
 
