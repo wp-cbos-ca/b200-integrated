@@ -57,6 +57,15 @@ function is_debug_on(){
 	}
 }
 
+function is_display_debug_on(){
+	if ( defined ( 'WP_DEBUG_DISPLAY' ) && WP_DEBUG_DISPLAY ) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
 function is_optimization_on(){
 	if ( is_plugin_active( 'autoptimize/autoptimize.php' ) ) {
 		return true;

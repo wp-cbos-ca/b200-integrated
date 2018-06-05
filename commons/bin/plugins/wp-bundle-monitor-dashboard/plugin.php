@@ -37,6 +37,10 @@ function _q( $key ) {
 			return is_debug_on();
 			break;
 		
+		case 'display_debug' :
+			return is_display_debug_on();
+			break;
+		
 		case 'security' :
 			return is_security_on();
 			break;
@@ -166,6 +170,14 @@ function get_wp_bundle_dashboard() {
 	$str .= _rna( 'social', $m );
 	$str .= '</td><td>';
 	$str .= _rna( 'analytics', $m );
+	$str .= '</td></tr>';
+	
+	$str .= '<tr><td>';
+	$str .= _rna( 'display_debug', $m );
+	$str .= '</td><td>';
+	//$str .= _rna( '', $m );
+	$str .= '</td><td>';
+	//$str .= _rna( '', $m );
 	$str .= '</td></tr>';
 	
 	//$str .= '<tr><td>';
