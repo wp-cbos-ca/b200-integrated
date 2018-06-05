@@ -30,7 +30,7 @@ define( 'WP_CONTENT_URL', SITE_ROOT_URL . SITE_BIN_DIR );
 define( 'WP_PLUGIN_URL', WP_CONTENT_URL . SITE_PLUGIN_DIR );
 
 /** Default: uploads */
-//define( 'UPLOADS', SITE_MEDIA_DIR );
+//define( 'UPLOADS', '..' . SITE_MEDIA_DIR );
 
 /** Default: uploads */
 //define( 'BLOGUPLOADDIR', SITE_MEDIA_DIR );
