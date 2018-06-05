@@ -95,11 +95,11 @@ else {
 }
 
 if ( ! defined( 'SITE_SUB_DOMAIN_NAME' ) ){
-	/** Empty, unless otherwise noted. */
+	/** Empty, unless otherwise noted. This could be 'www'. */
 	define( 'SITE_SUB_DOMAIN_NAME', 'commons' );
 }
 
-if ( ! defined( 'SITE_DOMAIN' ) && SITE_SUB_DOMAIN ){
+if ( SITE_SUB_DOMAIN ){
 	/** Domain of the site (top, second, sub). */
 	define( 'SITE_DOMAIN', SITE_SUB_DOMAIN_NAME . '.' . SITE_DOMAIN_NAME . SITE_DOMAIN_EXT );
 } else {
