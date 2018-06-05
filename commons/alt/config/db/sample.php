@@ -18,6 +18,11 @@ define( 'DB_HOST', 'localhost' );
 $table_prefix  = 'change_';
 // Keep the same for all environments for better compatibility.
 
+if ( ! defined( 'WP_DEFAULT_THEME' ) ){
+	/** Change if different for local and production, etc. */
+	define( 'WP_DEFAULT_THEME', 'html5' );
+}
+
 /**#@+
  * Authentication Unique Keys and Salts. Change to force a re-login.
  * @link https://api.wordpress.org/secret-key/1.1/salt/
