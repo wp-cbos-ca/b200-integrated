@@ -35,7 +35,7 @@ define( 'WP_PLUGIN_URL', WP_CONTENT_URL . SITE_PLUGIN_DIR );
 /** Default: uploads */
 //define( 'BLOGUPLOADDIR', SITE_MEDIA_DIR );
 
-/** Default: 'latest bundled theme' */
+/** Default: 'latest bundled theme' Comment out to use different for local, production, etc.*/
 // define( 'WP_DEFAULT_THEME', 'twentyseventeen' );
 
 /** Useful constants that can't be overriden */

@@ -20,7 +20,7 @@ $table_prefix  = 'change_';
 
 if ( ! defined( 'WP_DEFAULT_THEME' ) ){
 	/** Change if different for local and production, etc. */
-	define( 'WP_DEFAULT_THEME', 'html5' );
+	// define( 'WP_DEFAULT_THEME', 'html5' );
 }
 
 /**#@+
