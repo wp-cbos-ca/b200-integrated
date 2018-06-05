@@ -2011,8 +2011,7 @@ function _wp_upload_dir( $time = null ) {
 
 	$dir .= $subdir;
 	$url .= $subdir;
-
-	return array(
+	$arr = array(
 		'path'    => $dir,
 		'url'     => $url,
 		'subdir'  => $subdir,
@@ -2020,6 +2019,12 @@ function _wp_upload_dir( $time = null ) {
 		'baseurl' => $baseurl,
 		'error'   => false,
 	);
+	if( 0 ){
+		echo '<pre>';
+		var_dump( $arr );
+		echo '</pre>';
+	}
+	return $arr;
 }
 
 /**

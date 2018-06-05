@@ -20,7 +20,7 @@ Original Author URI: http://richieri.com/
 
 class WP_Bundle_Write_Workflow{
 
-    function init(){
+   static function init(){
         global $post;
         
         if ( 'publish' == $post->post_status ) {
