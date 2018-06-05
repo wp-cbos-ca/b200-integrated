@@ -16,7 +16,10 @@ define( 'SITE_PATH', __DIR__ );
 define( 'SITE_DIR', '/' . basename(__DIR__) );
 
 /** Use this directory as the domain name. Comment out if not. */
-define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
+// define( 'SITE_DOMAIN_NAME', basename(__DIR__) );
+
+/** Use this directory name as the sub domain name. Comment out if not. */
+// define( 'SITE_SUB_DOMAIN_NAME', basename(__DIR__) );
 
 /** Use the core, if available. Start by using only if needed. */
 define( 'SITE_USE_CORE', true );

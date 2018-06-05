@@ -5,12 +5,6 @@ defined( 'SITE' ) || exit;
 /***** USER EDITABLE VARIABLES BEGIN *****/
 
 /** If not defined from the directory above. We define it here */
-if ( ! defined( 'SITE_DOMAIN_NAME' ) ){
-	
-	/** The second level domain of the site. This needs to be unique. */
-	define( 'SITE_DOMAIN_NAME', 'commons' );
-
-}
 
 /** Example: 'en-CA'  Used in the HTML Page. Default Below. */
 //define( 'SITE_LANG', '' );
@@ -77,6 +71,12 @@ if ( file_exists( SITE_ROOT_PATH . '/.localhost' ) ){
 		/** .local if we are on a local machine */
 		define( 'SITE_DOMAIN_EXT', '.local' );
 	}
+	if ( ! defined( 'SITE_DOMAIN_NAME' ) ){	
+		/** The second level domain of the site. This needs to be unique. */
+		define( 'SITE_DOMAIN_NAME', 'commons' );
+	}
+	/** Default: false (Whether or not site is a subdomain. */
+	define( 'SITE_SUB_DOMAIN', false );
 }
 else {
 	/** Should be https if production. No override provided.*/
@@ -86,18 +86,26 @@ else {
 		/** Localized according to region emanating from. Override above. */
 		define( 'SITE_DOMAIN_EXT', '.ca' );
 	}
+	if ( ! defined( 'SITE_DOMAIN_NAME' ) ){	
+		/** The second level domain of the site. This needs to be unique. */
+		define( 'SITE_DOMAIN_NAME', 'wpbundles' );
+	}
+	/** Default: false (Whether or not site is a subdomain. */
+	define( 'SITE_SUB_DOMAIN', true );
 }
 
-if ( ! defined( 'SITE_SUB_DOMAIN' ) ){
+if ( ! defined( 'SITE_SUB_DOMAIN_NAME' ) ){
 	/** Empty, unless otherwise noted. */
-	define( 'SITE_SUB_DOMAIN', '' );
+	define( 'SITE_SUB_DOMAIN_NAME', 'commons' );
 }
 
-if ( ! defined( 'SITE_DOMAIN' ) ){
+if ( ! defined( 'SITE_DOMAIN' ) && SITE_SUB_DOMAIN ){
 	/** Domain of the site (top, second, sub). */
-	define( 'SITE_DOMAIN', SITE_SUB_DOMAIN . SITE_DOMAIN_NAME . SITE_DOMAIN_EXT );
+	define( 'SITE_DOMAIN', SITE_SUB_DOMAIN_NAME . '.' . SITE_DOMAIN_NAME . SITE_DOMAIN_EXT );
+} else {
+	/** Domain of the site (top, second, no sub domain). */
+	define( 'SITE_DOMAIN', SITE_DOMAIN_NAME . SITE_DOMAIN_EXT );
 }
-	   
 /** The URL to the base of the site. */
 define( 'SITE_ROOT_URL', SITE_PROTOCOL . SITE_DOMAIN );
 
