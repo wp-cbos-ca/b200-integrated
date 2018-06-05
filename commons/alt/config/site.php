@@ -104,8 +104,6 @@ define( 'SITE_ROOT_URL', SITE_PROTOCOL . SITE_DOMAIN );
 /** The URL to the base of the site. */
 define( 'SITE_URL', SITE_PROTOCOL . SITE_DOMAIN );
 
-var_dump( SITE_URL );
-
 /** May be the same as the domain. With leading forward slash. */
 define( 'SITE_CACHE_SLUG', '/' . SITE_DOMAIN );
 

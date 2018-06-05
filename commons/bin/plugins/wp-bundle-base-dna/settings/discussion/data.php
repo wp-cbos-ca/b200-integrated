@@ -8,12 +8,11 @@ function get_discussion_data() {
 	$items = array(
 		array ( 'title' => 'Other comment settings', 'option_name' => 'page_comments' , 'option_value' => 0, 'update' => 1 ),		
 		array ( 'title' => 'Avatar Display', 'option_name' => 'show_avatars' , 'option_value' => 0, 'update' => 1 ),
-		
 		array ( 'title' => 'Default article settings', 'option_name' => 'default_pingback_flag' , 'option_value' => 1, 'update' => 0 ),
 		array ( 'title' => 'Default article settings', 'option_name' => 'default_ping_status' , 'option_value' => 0, 'update' => 0 ),
 		array ( 'title' => 'Default article settings', 'option_name' => 'default_comment_status' , 'option_value' => 0, 'update' => 0 ),
 		array ( 'title' => 'Other comment settings', 'option_name' => 'require_name_email' , 'option_value' => 1, 'update' => 0 ),
-		array ( 'title' => 'Other comment settings', 'option_name' => 'comment_registration' , 'option_value' => 1, 'update' => 0 ),
+		array ( 'title' => 'Other comment settings', 'option_name' => 'comment_registration' , 'option_value' => 1, 'update' => 1 ),
 		array ( 'title' => 'Other comment settings', 'option_name' => 'close_comments_for_old_post' , 'option_value' => 1, 'update' => 0 ),
 		array ( 'title' => 'Other comment settings', 'option_name' => 'close_comments_days_old' , 'option_value' => 14, 'update' => 0 ),
 		array ( 'title' => 'Other comment settings', 'option_name' => 'thread_comments' , 'option_value' => 0, 'update' => 0 ),
