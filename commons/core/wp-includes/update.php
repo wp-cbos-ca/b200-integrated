@@ -335,7 +335,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 	$url = $http_url = 'http://api.wordpress.org/plugins/update-check/1.1/';
 	if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 		$url = set_url_scheme( $url, 'https' );
-
+	
 	$raw_response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $raw_response ) ) {
 		trigger_error(
