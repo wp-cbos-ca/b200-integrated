@@ -2019,11 +2019,6 @@ function _wp_upload_dir( $time = null ) {
 		'baseurl' => $baseurl,
 		'error'   => false,
 	);
-	if( 1 ){
-		echo '<pre>';
-		var_dump( $arr );
-		echo '</pre>';
-	}
 	return $arr;
 }
 

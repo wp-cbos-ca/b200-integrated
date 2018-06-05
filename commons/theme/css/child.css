@@ -60,6 +60,14 @@
 .commons { background: #b6d7a8; }
 .download { background: #279f43; }
 
+.core .border {
+	background: #a2c4c9;
+}
+
+.alt .border {
+	background: #ffd966;
+}
+
 .order-01 { }
 
 .boxes .unit .border {
