@@ -9,7 +9,7 @@ function get_bundle_constants_data(){
 	
 	$includes = array(
 		array( 'name' => 'SITE_', 'include' => 0 ),
-		array( 'name' => 'WP_', 'include' => 0 ),
+		array( 'name' => 'WP_', 'include' => 1 ),
 		array( 'name' => 'W3TC_', 'include' => 0 ),
 		);
 	
@@ -29,7 +29,7 @@ function get_bundle_constants_data(){
 	$arr = array();
 	if( ! empty( $items ) ) {
 		foreach ( $items as $key => $item ) {
-			if ( 0 ){
+			if ( 1 ){
 				foreach( $includes as $include ) {
 					if ( strpos( $key, $include['name'] ) !== FALSE && $include['include'] ) {
 						$arr[] = $key;
@@ -50,7 +50,7 @@ function get_bundle_constants_data(){
 					}
 				}
 			}
-			if ( 1 ){
+			if ( 0 ){
 				if (
 					strpos( $key, $excludes[0] ) === FALSE 
 					&& strpos( $key, $excludes[1] ) === FALSE
